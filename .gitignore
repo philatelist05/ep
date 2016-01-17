@@ -30,3 +30,8 @@
 
 # Debug files
 *.dSYM/
+
+------------------------------------------
+# Dist file
+ep15.tar.gz
+ep15.out
