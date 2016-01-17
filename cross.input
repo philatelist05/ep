@@ -1,0 +1,4413 @@
+
+5space
+5cr
+5type
+5emit
+1makeflag
+1YET
+1BUT
+1?DO
+1REPEAT
+1AGAIN
+1UNTIL
+1WHILE
+1DO
+1BEGIN
+1ELSE
+1AHEAD
+1THEN
+1IF
+1>offset
+1~cond
+1PREFETCHT2
+1PREFETCHT1
+1PREFETCHT0
+1PREFETCHNTA
+1SFENCE
+1PSWABD
+1PFPNACC
+1PFNACC
+1PF2IW
+1PI2FW
+1PSHUFW
+1PSADBW
+1PMULHUW
+1PMOVMSKB
+1PMINUB
+1PMINSW
+1PMAXUB
+1PMAXSW
+1PINSRW
+1PEXTRW
+1PAVGW
+1PAVGB
+1MOVNTQ
+1MASKMOVQ
+1PREFETCHW
+1PREFETCH
+1FEMMS
+1PAVGUSB
+1PMULHRW
+1PFRCPIT2
+1PFMUL
+1PFCMPEQ
+1PFACC
+1PFADD
+1PFSUBR
+1PFSUB
+1PFRSQIT1
+1PFRSQRT
+1PFRCPIT1
+1PFRCP
+1PFMAX
+1PFMIN
+1PFCMPGT
+1PFCMPGE
+1PF2ID
+1PI2FD
+13Dnow:
+1mod0F#
+1PSTD
+1PSTQ
+1PLDD
+1PLDQ
+1MOVQ
+1PSLLQ
+1PSLLD
+1PSLLW
+1PSRAD
+1PSRAW
+1PSRLQ
+1PSRLD
+1PSRLW
+1pshift
+1pxor
+1por
+1pandn
+1pand
+1pmaddwd
+1pmulhw
+1pmullw
+1PADDD
+1PADDW
+1PADDB
+1PADDSW
+1PADDSB
+1PADDUSW
+1PADDUSB
+1PSUBD
+1PSUBW
+1PSUBB
+1PSUBSW
+1PSUBSB
+1PSUBUSW
+1PSUBUSB
+1EMMS
+1PCMPEQD
+1PCMPEQW
+1PCMPEQB
+1PACKSSDW
+1PUNPCKHDQ
+1PUNPCKHWD
+1PUNPCKHBW
+1PACKSSWB
+1PCMPGTD
+1PCMPGTW
+1PCMPGTB
+1PACKUSDW
+1PUNOCKLDQ
+1PUNPCKLWD
+1PUNPCKLBW
+1mmxs
+1MM15
+1MM14
+1MM13
+1MM12
+1MM11
+1MM10
+1MM9
+1MM8
+1MM7
+1MM6
+1MM5
+1MM4
+1MM3
+1MM2
+1MM1
+1MM0
+1cmovnle
+1cmovle
+1cmovnl
+1cmovl
+1cmovpo
+1cmovpe
+1cmovns
+1cmovs
+1cmovnbe
+1cmovbe
+1cmovnz
+1cmovz
+1cmovnb
+1cmovb
+1cmovno
+1cmovo
+1cmovs:
+1cmov:
+1cmovIF
+1FSTP
+1FLD
+1FST
+1fx@!,
+1f@!,
+1FSTSW
+1FCLEX
+1FNCLEX
+1FUCOMPP
+1FUCOM
+1FSTCW
+1FSTENV
+1FLDCW
+1FLDENV
+1FXCH
+1FINIT
+1FRSTOR
+1FSAVE
+1FFREE
+1FBSTP
+1FBLD
+1FCOMPP
+1FDIVR
+1FDIV
+1FSUBR
+1FSUB
+1FCOMP
+1FCOM
+1FMUL
+1FADD
+1FCOS
+1FSIN
+1FSCALE
+1FRNDINT
+1FSINCOS
+1FSQRT
+1FYL2XP1
+1FPREM
+1FINCSTP
+1FDECSTP
+1FPREM1
+1FXTRACT
+1FPATAN
+1FPTAN
+1FYL2X
+1F2XM1
+1FLDZ
+1FLDLN2
+1FLDLG2
+1FLDPI
+1FLDL2E
+1FLDL2T
+1FLD1
+1FXAM
+1FTST
+1FABS
+1FCHS
+1FNOP
+1f@!:
+1fop:
+1.fq
+1.fd
+1.fw
+1.fx
+1.fl
+1.fs
+1fsize
+1D9:
+1DF,
+1DE,
+1DD,
+1DC,
+1DB,
+1DA,
+1D9,
+1D8,
+1rsm
+1wrmsr
+1rdmsr
+1rdtsc
+1cmpchx8b
+1cpuid
+1LGS
+1LFS
+1LSS
+1LDS
+1LES
+1LEA
+1LAR
+1INVLPG
+1LMSW
+1SMSW
+1LIDT
+1LGDT
+1SIDT
+1SGDT
+10F.1:
+1VERW
+1VERR
+1LTR
+1LLDT
+1STR
+1SLDT
+10F.0:
+1INT
+1OUT
+1IN
+1io
+1IMUL
+1XADD
+1BSWAP
+1CMPXCHG8B
+1CMPXCHG
+1WBINVD
+1INVD
+1CLTS
+1BSR
+1BSF
+1mod0F:
+1BOUND
+1ARPL
+1ENTER
+1movzx
+1movsx
+1movx
+1xchg
+1setg
+1setle
+1setge
+1setl
+1setpo
+1setpe
+1setns
+1sets
+1seta
+1setna
+1setne
+1sete
+1setnb
+1setb
+1setno
+1seto
+1sets:
+1set:
+1setIF
+1jnle
+1jle
+1jnl
+1jl
+1jpo
+1jpe
+1jns
+1js
+1jnbe
+1jbe
+1jnz
+1jz
+1jnb
+1jb
+1jno
+1jo
+1jmps
+1jmp:
+1jmpIF
+1nle
+1le
+1nl
+1l
+1po
+1pe
+1ns
+1s
+1nbe
+1be
+1nz
+1z
+1nb
+1b
+1no
+1o
+1>
+1<=
+1>=
+1<
+1pc
+1ps
+10>=
+10<
+1u>
+1u<=
+10<>
+10=
+1u>=
+1u<
+1vc
+1vs
+1cond:
+1next
+1jmpf
+1jmp
+1callf
+1call
+1retf
+1ret
+1(ret
+1JCXZ
+1LOOP
+1LOOPE
+1LOOPNE
+1sb:
+1?brange
+1STD
+1CLD
+1STI
+1CLI
+1STC
+1CLC
+1CMC
+1HLT
+1REPE
+1REP
+1LOCK
+1wait
+1IRET
+1INTO
+1INT3
+1LEAVE
+1LAHF
+1SAHF
+1POPF
+1PUSHF
+1FWAIT
+1CWD
+1CBW
+1NOP
+1POPA
+1PUSHA
+1XLAT
+1SALC
+1AAD
+1AAM
+1aa:
+1AAS
+1AAA
+1DAS
+1DAA
+1pop
+1push
+1pushs
+1btc
+1btr
+1bts
+1bt
+1btx:
+1shrd
+1shld
+1shd
+1test
+1DEC
+1INC
+1inc:
+1IDIV
+1DIV
+1(IMUL
+1MUL
+1NEG
+1NOT
+1test#
+1not:
+1modf:
+1mod0F
+1modfb
+1modf
+1mov
+1?ofax
+1?64off
+1assign#
+1movxr
+1xr>mod
+1scas
+1lods
+1stos
+1cmps
+1movs
+1outs
+1ins
+1sar
+1sal
+1shr
+1shl
+1rcr
+1rcl
+1ror
+1rol
+1shift:
+1cmp
+1xor
+1sub
+1and
+1sbb
+1adc
+1or
+1add
+1ari:
+1reg>mod
+1GS:
+1FS:
+1DS:
+1SS:
+1CS:
+1ES:
+1seg:
+1bc0F:
+1bc.b:
+1bc:
+1seg?
+1rel?
+1?xr
+1xr?
+1?st
+1st?
+1sr?
+1tr?
+1dr?
+1cr?
+1?ax
+1?mem
+1?reg
+1reg?
+1reg=
+1STP
+1<ST
+1ST
+1TR
+1DR
+1CR0
+1CR
+1>mod
+1>>mod
+1LI)
+1L)
+1rel)
+1A#
+1L#
+1#
+1Aseg)
+1A#)
+1A::
+1A:
+1DI)
+1D)
+1)
+1seg)
+1I#)
+1I)
+1*8
+1*4
+1*2
+1R#)
+1#)
+1index
+1osize@
+1asize@
+1.amd64
+1.86
+1.386
+1OP
+1UP
+1RP
+1GS
+1FS
+1DS
+1SS
+1CS
+1ES
+1R15L
+1R14L
+1R13L
+1R12L
+1R11L
+1R10L
+1R9L
+1R8L
+1DIL
+1SIL
+1BPL
+1SPL
+1BH
+1DH
+1CH
+1AH
+1BL
+1DL
+1CL
+1AL
+1R15
+1R14
+1R13
+1R12
+1R11
+1R10
+1R9
+1R8
+1DI
+1SI
+1BP
+1SP
+1BX
+1DX
+1CX
+1AX
+1[BX]
+1[BP]
+1[DI]
+1[SI]
+1[BP+DI]
+1[BP+SI]
+1[BX+DI]
+1[BX+SI]
+1wadr
+1wadr:
+1bregs
+1breg
+1Regs
+1finish0F
+10F,
+1finishb
+1finish
+1opcode,
+1rbytes,
+1bytes,
+1.qa
+1.q
+1.da
+1.d
+1.wa
+1.w
+1.b
+1sclear
+1pre-
+1.arel
+1.64bit
+1.rex
+1.64now
+1.64size
+1.onow
+1.osize
+1.anow
+1.asize
+1seg
+1byte?
+1Adisp?
+1Aimm?
+1imm#
+1imm
+1disp#
+1disp
+1SIB#
+1SIB
+1ModR/M#
+1ModR/M
+1+rel
+1c!
+1allot
+1here
+1,
+1>exec
+1nonrelocate
+1nrc
+1(+rel
+1>codes
+1case?
+1user'
+1[A]
+1[F]
+2[34~
+2[34
+2[33~
+2[33
+2[32~
+2[32
+2[31~
+2[31
+2[29~
+2[29
+2[28~
+2[28
+2[26~
+2[26
+2[25~
+2[25
+2[4~
+2[4
+2[1~
+2[[E
+2[[D
+2[[C
+2[[B
+2[[A
+2[[
+2[24;3~
+2[24;3
+2[23;3~
+2[23;3
+2[21;3~
+2[21;3
+2[20;3~
+2[20;3
+2[19;3~
+2[19;3
+2[18;3~
+2[18;3
+2[17;3~
+2[17;3
+2[15;3~
+2[15;3
+2[1;3S
+2[1;3R
+2[1;3Q
+2[1;3P
+2[24;5~
+2[24;5
+2[23;5~
+2[23;5
+2[21;5~
+2[21;5
+2[20;5~
+2[20;5
+2[19;5~
+2[19;5
+2[18;5~
+2[18;5
+2[17;5~
+2[17;5
+2[15;5~
+2[15;5
+2[1;5S
+2[1;5R
+2[1;5Q
+2[1;5P
+2[24;2~
+2[24;2
+2[24;
+2[23;2~
+2[23;2
+2[23;
+2[21;2~
+2[21;2
+2[21;
+2[20;2~
+2[20;2
+2[20;
+2[19;2~
+2[19;2
+2[19;
+2[18;2~
+2[18;2
+2[18;
+2[17;2~
+2[17;2
+2[17;
+2[15;2~
+2[15;2
+2[15;
+2[1;2S
+2[1;2R
+2[1;2Q
+2[1;2P
+2[24~
+2[24
+2[23~
+2[23
+2[21~
+2[21
+2[20~
+2[20
+2[19~
+2[19
+2[18~
+2[18
+2[17~
+2[17
+2[15~
+2[15
+2OS
+2OR
+2OQ
+2OP
+2O
+2[3;3~
+2[3;3
+2[2;3~
+2[2;3
+2[6;3~
+2[6;3
+2[5;3~
+2[5;3
+2[1;3F
+2[1;3H
+2[1;3B
+2[1;3A
+2[1;3C
+2[1;3D
+2[1;3
+2[3;5~
+2[3;5
+2[2;5~
+2[2;5
+2[6;5~
+2[6;5
+2[5;5~
+2[5;5
+2[1;5F
+2[1;5H
+2[1;5B
+2[1;5A
+2[1;5C
+2[1;5D
+2[1;5
+2[3;2~
+2[3;2
+2[3;
+2[2;2~
+2[2;2
+2[2;
+2[6;2~
+2[6;2
+2[6;
+2[5;2~
+2[5;2
+2[5;
+2[1;2F
+2[1;2H
+2[1;2B
+2[1;2A
+2[1;2C
+2[1;2D
+2[1;2
+2[1;
+2[1
+2[3~
+2[3
+2[2~
+2[2
+2[6~
+2[6
+2[5~
+2[5
+2[F
+2[H
+2[B
+2[A
+2[C
+2[D
+2[
+3--
+3}
+3(
+3\
+3C^
+3C:
+3D^
+3D:
+3F^
+3F:
+3W^
+3W:
+4xvocs
+4xwordlist-words
+4i-t-wl
+4input-trace
+4mov-regv-Iv
+4mov-reg8-Ib
+4xchg-ax
+4jcc-short
+4conditions
+4pop-reg
+4push-reg
+4set-add-likes
+4set-add-like
+4set-noarg
+4rAX,Iz
+4AL,Ib
+4Gv,Ev
+4Gb,Eb
+4Ev,Gv
+4Eb,Gb
+4Iv
+4Jz
+4Iz
+4immz
+4Jb
+4Ib
+4Ev
+4Ed
+4Eb
+4Ext
+4mem-modRM
+4mem-SIB
+4print-base
+4base-regnum
+4masksx
+4displacement-info
+4Ox
+4Gv
+4.width*2
+4.width/2
+4.width
+4.regv
+4Sw
+4Gb
+4Gnum
+4.invalid
+4.sreg
+4.reg64
+4.reg32
+4.reg16
+4.reg8
+4.regn
+4dec.-
+4sreg-names
+4reg16-names
+4reg8-names-norex
+4reg8-names
+4address-size-disasm
+4operand-size-disasm
+4immediate-prefix
+4rex-prefix-disasm
+4repeat-prefix-disasm
+4illegal-inst
+4print-rep
+4disasm
+4disasm-addr
+4disasm-addr1
+4def-opcode1
+4opcode1-table
+4clear-prefixes
+4rex-prefix
+4repeat-prefix
+4address-size
+4operand-size
+4string-table
+4save-mem-here
+4cell-fill
+4th
+4c@+
+4dffield:
+4sffield:
+4ffield:
+42field:
+4field:
+4cfield:
+4end-structure
+4begin-structure
+4+field
+4init-libcc
+4end-c-library
+4c-library
+4c-library-name
+4c-library-incomplete
+4clear-libs
+4c-function
+4c-function-rt
+4c-function-ft
+4link-wrapper-function
+4compile-wrapper-function1
+4compile-wrapper-function
+4.lib-error
+4c-source-file-execute
+4notype-execute
+4c-source-file
+4init-c-source-file
+4lib-handle
+4c-tmp-library-name
+4c-named-library-name
+4c-library-name-create
+4c-library-name-setup
+4open-wrappers
+4prepend-dirname
+4libcc-tmp-dir
+4libcc-named-dir
+4gen-filename
+4basename
+4dirname
+4scan-back
+4gen-wrapper-function
+4wrapper-function-name
+4gen-wrapped-stmt
+4gen-wrapped-types
+4gen-wrapped-func
+4gen-wrapped-r
+4gen-wrapped-d
+4gen-wrapped-a
+4gen-wrapped-n
+4gen-wrapped-void
+4gen-wrapped-call
+4gen-par
+4gen-par-types
+4gen-par-void
+4gen-par-func
+4gen-par-r
+4gen-par-d
+4gen-par-a
+4gen-par-n
+4count-stacks
+4count-stacks-types
+4count-stacks-void
+4count-stacks-func
+4count-stacks-r
+4count-stacks-d
+4count-stacks-a
+4count-stacks-n
+4type-letter
+4parse-function-types
+4parse-libcc-type
+4libcc-types
+4\c
+4save-c-prefix-line
+4print-c-prefix-lines
+4print-c-prefix-line
+4c-prefix-lines-end
+4c-prefix-lines
+4c-prefix%
+4c-prefix-chars
+4c-prefix-count
+4append-l
+4add-lib
+4c-libs
+4c-lib%
+4c-lib-string
+4list-map
+4list-append
+4list-insert
+4list%
+4list-payload
+4list-next
+4append
+4s+
+4front-char
+4front-string
+4const+
+4.nb
+4replace-rpath
+4libcc-path
+4libcc-named-dir-v
+4lib-modulename
+4lib-filename
+4lib-handle-addr
+4c-source-file-id
+4cff%
+4cff-ptypes
+4cff-np
+4cff-rtype
+4cff-lha
+4cff-deferred
+4cff-cfr
+4mkdir-parents
+4disasm-gdb
+4append-extend-string
+4end-code
+4;code
+4(;code)
+4code
+4init-asm
+4assembler
+4break"
+4(break")
+4break:
+4(break:)
+4break:,
+4dbg
+4(debug)
+4(_debug)
+4D-KEY
+4Unnest
+4Nesting
+4nestXT
+4nestXT-checkSpecial
+4Body
+4restore-bp
+4set-bp
+4DT
+4BP
+4breaker
+4breaker-size
+4DebugLoop
+4jump
+4get-next
+4disp-step
+4Leave-D
+4NoFine
+4d.s
+4.n
+4scanword
+4restore-see-flags
+4save-see-flags
+4dbg-ip
+4see-code
+4see-code-range
+4see-code-next-inline
+4simple-see
+4simple-see-range
+4simple-see-word
+4print-backtrace
+4print-bt-entry
+4backtrace-return-stack
+4init-backtrace
+4backtrace-rs-buffer
+4adjust-buffer
+4init-buffer
+4buffer%
+4buffer-maxlength
+4buffer-address
+4buffer-length
+4buffer-descriptor
+4c-extend1
+4c-lp+!#
+4c-laddr#
+4c-f@local#
+4c-flit
+4c-@local#
+4c-branch-lp+!#
+4c-?branch-lp+!#
+4c-loop-lp+!#
+4see
+4name-see
+4(.immediate)
+4(xt-see-xt)
+4xt-see
+4seefield
+4seecol
+4seedoes
+4see-threaded
+4seedefer
+4seevalue
+4seecon
+4seeuser
+4seevar
+4seecode
+4next-prim
+4next-head
+4discode
+4.defname
+4xt-see-xt
+4makepass
+4c-init
+4analyse
+4BranchTo?
+4DoTable
+4c-extender
+4C-Table
+4c-(compile)
+4c-does>
+4c-abort"
+4c-exit
+4c-?do
+4c-do
+4c-loop
+4c-for
+4c-?branch
+4DebugBranch
+4c-branch
+4RepeatCheck
+4Forward?
+4c-string?
+4c-c"
+4.name-without
+4c-lit+
+4c-lit
+4c-callxt
+4c-call
+4.word
+4back?
+4Debug?
+4Display?
+4Scan?
+4DebugMode
+4DisplayMode
+4ScanMode
+4C-Pass
+4NoOutput
+4Branch!
+4Type!
+4,Branch
+4CheckWhile
+4MyBranch
+4CheckEnd
+4MoreBranchAddr?
+4BranchAddr?
+4(BranchAddr?)
+4FirstBranch
+4MaxTable
+4BranchTable
+4SearchPointer
+4BranchPointer
+4Branches
+4C-Stop
+4LeaveCode
+4Disable
+4WhileCode2
+4AheadCode
+4ElseCode
+4UntilCode
+4AgainCode
+4RepeatCode
+4.struc
+4c-\type
+4(.string)
+4.string
+4cemit
+4ctype
+4warp?
+4(nl)
+4nl
+4nlcount
+4uppercase
+4nlflag
+4level-
+4level+
+4Format
+4Level
+4YPos
+4XPos
+4C-Clearline
+4C-Highlight
+4C-Formated
+4C-Output
+4.\"
+4s\"
+4\"-parse
+4\-escape
+4\-escape-table
+4parse-num
+4parse-num-x
+4char/
+4ekey?
+4ekey>fkey
+4ekey>char
+4ekey
+4clear-ekey-buffer
+4esc-sequence
+4esc-prefix
+4ekey-buffered
+4ekey-buffer
+4esc-sequences
+4unkeys
+4unkey
+4char-append-buffer
+4key-buffered
+4key-buffer
+4s-k12
+4s-k11
+4s-k10
+4s-k9
+4s-k8
+4s-k7
+4s-k6
+4s-k5
+4s-k4
+4s-k3
+4s-k2
+4s-k1
+4k12
+4k11
+4k10
+4k9
+4k8
+4k7
+4k6
+4k5
+4k4
+4k3
+4k2
+4k1
+4k-f12
+4k-f11
+4k-f10
+4k-f9
+4k-f8
+4k-f7
+4k-f6
+4k-f5
+4k-f4
+4k-f3
+4k-f2
+4k-f1
+4k-delete
+4k-insert
+4k-next
+4k-prior
+4k-end
+4k-home
+4k-down
+4k-up
+4k-right
+4k-left
+4k-alt-mask
+4k-ctrl-mask
+4k-shift-mask
+4keycode
+4table
+4tablesearch-map
+4table-find
+4savesystem
+4dump-fi
+4update-image-included-files
+4delete-prefix
+4save-mem-dict
+4<compilation
+4compilation>
+4(compilation>1)
+4<interpretation
+4interpretation>
+4(interpretation>1)
+4fix-does-code
+4create-interpret/compile
+4no-interpretation-does-code
+4no-compilation-does-code
+4bye
+4block-included
+4-->
+4+thru
+4+load
+4thru
+4load
+4block-input
+4list
+4updated?
+4scr
+4buffer
+4block
+4get-buffer
+4flush
+4empty-buffers
+4save-buffers
+4empty-buffer
+4save-buffer
+4update
+4block-position
+4get-block-fid
+4use
+4open-blocks
+4flush-blocks
+4block-cold
+4offset
+4block-offset
+4block-fid
+4block-limit
+4buffers
+4last-block
+4block-buffers
+4buffer-struct
+4next-buffer
+4block-buffer
+4buffer-dirty
+4buffer-fid
+4buffer-block
+4)
+4(end-assert)
+4assert(
+4assert3(
+4assert2(
+4assert1(
+4assert0(
+4assertn
+4assert-level
+4~~
+4.debugline-stderr
+4(.debugline)
+4.debugline
+4printdebugdata
+4.sourcepos
+4compile-sourcepos
+4current-sourcepos
+4str>loadfilename#
+4loadfilename#>str
+4vt100-decode
+4tcode
+4trans:
+4transcode
+4translate
+4history-cold
+4get-history
+4xchar-history
+4xtab-expand
+4insert
+4xkill-expand
+4(xenter)
+4xclear-tib
+4xclear-line
+4xend-pos
+4xfirst-pos
+4xeof
+4<xdel>
+4?xdel
+4(xdel)
+4xforw
+4xback
+4(xins)
+4<xins>
+4xretype
+4.all
+4.rest
+4xback-restore
+4xcur-correct
+4at-deltaxy
+4#esc
+4kill-prefix
+4tib-full?
+4search-prefix
+4prefix-string
+4prefix-off
+4search-voc
+4word-lex
+4capscomp
+4sgn
+4prefix-found
+4extract-word
+4(enter)
+4prev-line
+4find-prev-line
+4next-line
+4get-line
+4hist-setpos
+4hist-pos
+4clear-line
+4linew-off
+4screenw
+4linew
+4cur-correct
+4back-restore
+4history-file
+4force-open
+4end^
+4backward^
+4forward^
+4history
+4bindkey
+4>string
+4ctrl
+4ctrl-i
+4utf-8-cold
+4set-encoding-utf-8
+4u8width
+4-u8trailing-garbage
+4u8addrlen
+4u8!+?
+4u8@
+4u8\string-
+4+u8/string
+4u8emit
+4u8key
+4check-xy
+4u8<<
+4u8>>
+4u8!+
+4u8@+
+4u8len
+4max-single-byte
+4UTF-8-err
+4O-PNT@
+4O-DEINIT
+4O-INIT
+4TypeXT
+4EmitXT
+4O-EMIT
+4O-TYPE
+4O-PNT
+4O-Buffer
+4page
+4at-xy
+4ESC[
+4;pn
+4pn
+4WordInfo
+4InfoTable
+4Com#
+4Str#
+4Ali#
+4Use#
+4Col#
+4Def#
+4Doe#
+4Val#
+4Var#
+4Con#
+4Pri#
+4prim?
+4xtprim?
+4colon?
+4defered?
+4does?
+4user?
+4con?
+4var?
+4alias?
+4>head
+4>name
+4threaded>name
+4look
+4prim>name
+4PrimStart
+4threaded>xt
+4search-name
+4xt>threaded
+4base-execute
+4infile-execute
+4outfile-execute
+4l@
+4w@
+4/l
+4/w
+4typewhite
+4what's
+4action-of
+4f.s
+4f.rdp
+4f>str-rdp
+4f>buf-rdp
+4f>buf-rdp-try
+4push-right
+4]]
+4postponer1
+4[[
+4compile-compile-2literal
+4compile-2literal
+4compile-compile-literal
+4compile-literal
+4slurp-fid
+4slurp-file
+4const-does>
+4(const-does>)
+4compile-fliterals
+4compile-literals
+4in-return-stack?
+4]L
+4sh
+4system
+4$?
+4dmax
+4dmin
+4?CSP
+4!CSP
+4CSP
+4needs
+4locals|
+4TO
+4definer!
+4>definer
+4(local)
+4(exit-like)
+4(until-like)
+4(again-like)
+4(begin-like)
+4(then-like)
+4locals-;-hook
+4locals-:-hook
+4endscope
+4adjust-locals-list
+4scope
+4{
+4old-dpp
+4new-locals-wl
+4new-locals-map
+4new-locals-reveal
+4new-locals-find
+4some-wlocal
+4some-flocal
+4some-dlocal
+4some-clocal
+4locals-types
+4lp-offset,
+4lp-offset
+4create-local
+4compile-pushlocal-c
+4compile-pushlocal-d
+4compile-pushlocal-f
+4check-begin
+4set-locals-size-list
+4list-size
+4sub-list?
+4common-list
+4compile-pushlocal-w
+4alignlp-f
+4alignlp-w
+4locals-dp
+4locals-buffer
+4locals
+4adjust-locals-size
+4compile-lp+!
+4compile-f@local
+4compile-@local
+4FMOD
+4FTRUNC
+4f~
+4f~rel
+4f~abs
+41/f
+4f2/
+4f2*
+4pi
+4fvariable
+4sfnumber
+4fs.
+4fe.
+4f.
+4f$
+4-zeros
+4zeros
+4scratch
+4set-precision
+4precision
+4FLiteral
+4fdepth
+4fconstant
+4f,
+4dfloat+
+4sfloat+
+4dfalign
+4sfalign
+4.words
+4hash-cold
+4make-hash
+4(hashsearch-map)
+4hashdouble
+4(rehash)
+4rehashall
+4clearhash
+4addall
+4inithash
+4hash-reveal
+4(reveal
+4lastlink!
+4hash-find
+4bucket
+4NewFix
+4DelFix
+4hash-alloc
+4hashsearch-map
+4HashTable
+4HashPop
+4HashIndex
+4HashPointer
+4revealed
+4insRule
+4hash
+4Hashlen
+4hashbits
+4reserve-mem
+4marker
+4marker!
+4marker,
+4included-files-mark
+4expect
+4span
+4search
+4blank
+4erase
+4convert
+4[compile]
+4C"
+4endcase
+4endof
+4of
+4case
+4m*/
+4d>s
+4.(
+4broken-pipe-error
+4exception
+4next-exception
+4errstring
+4linked
+4include-ffi.h-string
+4libffi-present
+4ffcall-present
+4libtool-flags
+4libtool-cc
+4libtool-command
+4has?
+4$has?
+4e?
+4environment?
+4environment-wordlist
+4environment
+4vocs
+4order
+4.voc
+4.name
+4.id
+4id.
+4seal
+4set-order
+4get-order
+4init-vp
+4update-image-order
+4Only
+4Root
+4Forth
+4vocsearch
+4(localsvocfind)
+4locals-wordlist
+4(vocfind)
+4previous
+4also
+4>order
+4check-maxvp
+4Vocabulary
+4wordlist
+4mappedwordlist
+4slowvoc
+4definitions
+4vp!
+4set-current
+4get-current
+4vp
+4maxvp-limit
+4maxvp
+4%alloc
+4%allocate
+4%allot
+4%align
+4%size
+4%alignment
+4double%
+4sfloat%
+4dfloat%
+4float%
+4char%
+4cell%
+4struct
+4end-struct
+4field
+4create-field
+4field,
+4dozerofield
+4nalign
+4naligned
+4endtry-iferror
+4endtry
+4restore
+4iferror
+4handler-intro,
+4(endtry)
+4try
+4(try)
+4nothrow
+4first-throw
+4store-backtrace
+4dodoes:
+4dofield:
+4dodefer:
+4douser:
+4dovar:
+4docol:
+4dovalue:
+4docon:
+4vlist
+4words
+4wordlist-words
+4cols
+4rows
+4?
+4dump
+4.line
+4.chars
+4.4
+4/dump
+4.s
+4maxdepth-.s
+4[WHILE]
+4[AGAIN]
+4[REPEAT]
+4[UNTIL]
+4[BEGIN]
+4[I]
+4[NEXT]
+4[FOR]
+4[LOOP]
+4[+LOOP]
+4[?DO]
+4[DO]
+4(i)
+4[ENDIF]
+4[THEN]
+4[ELSE]
+4[IFUNDEF]
+4[IFDEF]
+4[IF]
+4[undefined]
+4defined
+4[defined]
+4?if
+4[struct]-voc
+4[struct]-search
+4scanIF
+4>exec
+4dummy
+4countif
+4."
+4S"
+4abort"
+4SLiteral
+4CLiteral
+4?EXIT
+4EXIT
+4exit-like
+4NEXT
+4S+LOOP
+4-LOOP
+4+LOOP
+4LOOP
+4loop-like
+4FOR
+4U-DO
+4-DO
+4U+DO
+4+DO
+4?DO
+4?do-like
+4DO
+4?LEAVE
+4LEAVE
+4DONE
+4leave>
+4>leave
+4clear-leave-stack
+4leave-sp
+4leave-stack
+4leave-stack-size
+4REPEAT
+4WHILE
+4UNTIL
+4until-like
+4AGAIN
+4again-like
+4BEGIN
+4begin-like
+4ELSE
+4ENDIF
+4THEN
+4cs>addr
+4then-like
+4?DUP-0=-IF
+4?DUP-IF
+4IF
+4AHEAD
+4YET
+4BUT
+4<resolve
+4>resolve
+4>mark
+4sys?
+4?struc
+4other-control-flow
+4cs-push-orig
+4cs-push-part
+4CS-ROLL
+4CS-PICK
+4cs-item-size
+4cs-item?
+4non-orig?
+4scope?
+4do-dest?
+4dest?
+4orig?
+4def?
+4scopestart
+4do-dest
+4dest
+4dead-orig
+4live-orig
+4ASSUME-LIVE
+4UNREACHABLE
+4backedge-locals
+4dead-code
+4locals-list
+4.included
+4.strings
+4require
+4include
+4required
+4included
+4included1
+4add-included-file
+4included?
+4init-included-files
+4sourceline#
+4sourcefilename
+4image-included-files
+4included-files
+4open-fpath-file
+4open-path-file
+4check-path
+4open-ofile
+4reworkdir
+4compact-filename
+4skip-..-prefixes
+4preserve-root
+4del-./s
+4del-string
+4expandtopic
+4remove~+
+4extractpath
+4need/
+4pathsep?
+4tfile
+4ofile
+4absolut-path?
+4.fpath
+4.path
+4previous-path
+4next-path
+4path>string
+4fpath=
+4path=
+4fpath+
+4path+
+4only-path
+4clear-path
+4also-path
+4os-cold
+4make-path
+4fpath
+4+place
+4path-allot
+4(
+4write-line
+4bin
+4r/o
+4r/w
+4w/o
+4os-boot
+4(process-args)
+4process-option
+4args-evaluate
+4args-required
+4args-required1
+4os-execute-parsing
+4next-arg
+4shift-args
+4script?
+4argc
+4argv
+4pathdirs
+4pathstring
+4#!
+4arg
+4cstring>sstring
+4set-encoding-fixed-width
+4c-size
+4c!+?
+4string-
+4+string
+4char-
+4xhold
+4x@+/string
+4-trailing-garbage
+4x-width
+4x-size
+4xc-size
+4xc@+
+4xc!+?
+4xc@
+4x\string-
+4+x/string
+4xchar-
+4xchar+
+4xkey
+4xemit
+4license
+4include-file
+4execute-parsing-file
+4execute-parsing-named-file
+4read-loop
+4line-end-hook
+4query
+4clear-tibstack
+4evaluate
+4execute-parsing
+4execute-parsing-wrapper
+4create-input
+4restore-input
+4save-input
+4pop-file
+4push-file
+4expand-tib
+4new-tib
+4file-input
+4read-line
+4evaluate-input
+4terminal-input
+4input-start-line
+4input-lexeme!
+4tib+
+4tib
+4loadfilename
+4#fill-bytes
+4blk
+4loadfile
+4loadline
+4old-input
+4max#tib
+4#tib
+4input-lexeme
+4>in
+4(restore-input)
+4(save-input)
+4source-id
+4refill
+4source
+4input-var
+4input-method
+4accept
+4edit-line
+4decode
+4everyline
+4everychar
+4insert-char
+4ctrlkeys
+4(ret)
+4(bs)
+4(ins)
+4recursive
+4rehash
+4reveal
+4check-shadow
+4(reveal)
+4warnings
+4last?
+4;
+4:noname
+4:
+4(:noname)
+4defstart
+4;-hook
+4:-hook
+4interpret/compile?
+4TO
+4IS
+4[IS]
+4<IS>
+4defer!
+4DOES>
+4Defers
+4defer@
+4Defer
+4defer-default
+4interpret/compile:
+4interpret/compile-struct
+4interpret/compile-comp
+4interpret/compile-int
+4(Field)
+42Constant
+4AValue
+4Value
+4AConstant
+4Constant
+4(Value)
+4(Constant)
+4AUser
+4User
+4uallot
+42Variable
+4AVariable
+4Variable
+4Create
+4Alias
+4compile-only
+4restrict
+4immediate
+4lastflags
+4ctoggle
+4creset
+4cset
+4,"
+4mem,
+4S,
+4]
+4[
+4compiler1
+4recurse
+4POSTPONE
+4postpone,
+4[COMP']
+4COMP'
+4[']
+4[(')]
+4name>comp
+4(compile)
+4dodoes,
+4(does>2)
+4(does>)
+4!does
+4compile-to-prims,
+4peephole-compile,
+4basic-block-end
+4compile,
+4cfa,
+4[char]
+4char
+4char@
+4ALiteral
+42Literal
+4Literal
+4latest
+4lastxt
+4latestxt
+4noname
+4noname-header
+4nextname
+4nextname-header
+4nextname-string
+4input-stream
+4input-stream-header
+4header,
+4longstring,
+4string,
+4header
+4(header)
+4const
+4A,
+4cfalign
+4maxalign
+4falign
+4align
+42,
+4,
+4c,
+4allot
+4bye
+4boot
+4cold
+4'cold
+4process-args
+4bootmessage
+4(bootmessage)
+4quit
+4(DoError)
+4.error-frame
+4.error-line
+4part-type
+4mark-end
+4mark-start
+4umin
+4.error-string
+4dobacktrace
+4DOERROR
+4-trailing
+4hex.
+4dec.r
+4dec.
+4input-error-data
+4>error
+4error>
+4error-stack
+4/error
+4max-errors
+4(quit)
+4prompt
+4.status
+4'quit
+4extend-mem
+4free-mem-var
+4save-mem
+4interpreter1
+4interpret
+4interpret1
+4before-word
+4no.extensions
+4interpreter-notfound1
+4compiler-notfound1
+4name
+4parse-word
+4parse-name
+4parser
+4parser1
+4'
+4(')
+4find
+4sfind
+4/does-handler
+4does-handler!
+4does-code!
+4code-address!
+4flashc!
+4flash!
+4>does-code
+4>code-address
+4body>
+4>body
+4>head-noprim
+4head?
+4???
+4(name>intn)
+4(name>comp)
+4name?int
+4name>int
+4(name>x)
+4((name>))
+4name>string
+4(x>int)
+4(cfa>int)
+4compile-only-error
+4ticking-compile-only-error
+4flag-sign
+4lcount-mask
+4restrict-mask
+4immediate-mask
+4alias-mask
+4find-name
+4search-wordlist
+4(search-wordlist)
+4context
+4voclink
+4current
+4lookup
+4forth-wordlist
+4f83search
+4initvoc
+4f83find
+4wordlist-struct
+4wordlist-extend
+4wordlist-link
+4wordlist-id
+4wordlist-map
+4wordlist-map-struct
+4hash-method
+4rehash-method
+4reveal-method
+4find-method
+4\G
+4\
+4(
+4number
+4number?
+4snumber?
+4s>number
+4s>number?
+4s>unumber?
+4s'>unumber?
+4?dnegate
+4sign?
+4getbase
+4bases
+4name-too-long?
+4name-too-short?
+4(name)
+4parse
+4word
+4sword
+4(word)
+4version-string
+4.error
+4>stderr
+4ErrLink
+4u.
+4.
+4ud.
+4d.
+4u.r
+4.r
+4ud.r
+4d.r
+4#s
+4#
+4sign
+4#>>
+4<<#
+4#>
+4<#
+4hold
+4pad
+4backspaces
+4spaces
+4space
+4cr
+4bell
+4#lf
+4#ff
+4#cr
+4#del
+4#tab
+4#bs
+4#bell
+4#eof
+4(S")
+4(.")
+4key?
+4key
+4emit
+4type
+4(key?)
+4(key)
+4(emit)
+4(type)
+4infile-id
+4outfile-id
+4hex
+4decimal
+4"lit
+4clearstacks
+4clearstack
+4depth
+4?stack
+4abort
+4(abort")
+4c(abort")
+4throw
+4catch
+4lp@
+4ud/mod
+4s>d
+4>number
+4accumulate
+4digit?
+4skip
+4scan
+4bounds
+4place
+4roll
+4dabs
+4off
+4on
+4here
+4dp
+4in-dictionary?
+4unused
+4usable-dictionary-end
+4dictionary-end
+4A!
+4chars
+4cfaligned
+4maxaligned
+4r@
+4NIL
+4str<
+4string-prefix?
+4str=
+4locals-size
+4max-name-length
+4Last
+4LastCFA
+4dpp
+4normal-dp
+4state
+4dpl
+4base
+4includefilename
+4current-input
+4"error
+4errorhandler
+4backtrace-rp0
+4handler
+4lp0
+4fp0
+4rp0
+4sp0
+4save-task
+4prev-task
+4next-task
+4udp
+4main-task
+4def#tib
+4pad-minsize
+4holdend
+4holdptr
+4holdbuf-end
+4holdbuf
+4word-pno-size
+4chars/block
+4l/s
+4c/l
+4/line
+4bl
+4float
+4cell
+4false
+4true
+4forthstart
+4image-header
+4tag-offsets
+4call2
+4set-next-code
+4decompile-prim
+4forget-dyncode
+4finish-code
+4compile-prim1
+4lib-error
+4l!
+4sl@
+4ul@
+4w!
+4sw@
+4uw@
+4wcall
+4lib-sym
+4open-lib
+4fpick
+4f>l
+4>l
+4lp!
+4lp+2
+4lp+
+4lp-
+4lp+!#
+4laddr#
+4f@local1
+4f@local0
+4f@local#
+4@local3
+4@local2
+4@local1
+4@local0
+4@local#
+4faxpy
+4v*
+4dfaligned
+4sfaligned
+4dfloats
+4sfloats
+4fatanh
+4facosh
+4fasinh
+4ftanh
+4fcosh
+4fsinh
+4ftan
+4fsqrt
+4fsincos
+4fsin
+4falog
+4flog
+4flnp1
+4fln
+4fexpm1
+4fexp
+4fcos
+4fatan2
+4fatan
+4fasin
+4facos
+4fabs
+4>float
+4represent
+4fmin
+4fmax
+4fround
+4floor
+4floats
+4float+
+4ftuck
+4fnip
+4frot
+4fover
+4fswap
+4fdup
+4fdrop
+4fnegate
+4f**2
+4fm*/
+4fm/
+4fm*
+4f**
+4f/
+4f*
+4f-
+4f+
+4sf!
+4sf@
+4df!
+4df@
+4f@
+4f!
+4f>s
+4f>d
+4d>f
+4s>f
+4f0>=
+4f0<=
+4f0>
+4f0<
+4f0<>
+4f0=
+4f>=
+4f<=
+4f>
+4f<
+4f<>
+4f=
+4cputime
+4utime
+4newline
+4=mkdir
+4get-dir
+4set-dir
+4filename-match
+4close-dir
+4read-dir
+4open-dir
+4file-eof?
+4file-status
+4flush-file
+4emit-file
+4write-file
+4(read-line)
+4read-file
+4resize-file
+4file-size
+4reposition-file
+4file-position
+4rename-file
+4delete-file
+4create-file
+4open-file
+4close-file
+4call-c
+4strsignal
+4strerror
+4resize
+4free
+4allocate
+4ms
+4time&date
+4close-pipe
+4open-pipe
+4getenv
+4(system)
+4(bye)
+4flush-icache
+4wcwidth
+4form
+4stderr
+4stdout
+4stdin
+4key?-file
+4key-file
+4threading-method
+4faligned
+4aligned
+4(parse-white)
+4(hashkey1)
+4(tablelfind)
+4(hashlfind)
+4(listlfind)
+4count
+4(chars)
+4char+
+4cells
+4cell+
+42@
+42!
+4c!
+4c@
+4+!
+4!
+4lit@
+4@
+42tuck
+42nip
+42rot
+42swap
+42over
+42dup
+42drop
+4pick
+4?dup
+4tuck
+4nip
+4-rot
+4rot
+4dup
+4swap
+4drop
+4over
+42rdrop
+42r@
+42r>
+42>r
+4rdrop
+4r>
+4>r
+4fp!
+4fp@
+4rp!
+4rp@
+4sp!
+4sp@
+4up!
+4useraddr
+4within
+4du>=
+4du<=
+4du>
+4du<
+4du<>
+4du=
+4d0>=
+4d0<=
+4d0>
+4d0<
+4d0<>
+4d0=
+4d>=
+4d<=
+4d>
+4d<
+4d<>
+4d=
+4u>=
+4u<=
+4u>
+4u<
+4u<>
+4u=
+4>=
+4<=
+4>
+4<
+4<>
+4=
+40>=
+40<=
+40>
+40<
+40<>
+40=
+4lshift
+4rshift
+4invert
+4xor
+4or
+4and
+4d2/
+4d2*
+4dnegate
+4d-
+4d+
+4m+
+4um/mod
+4um*
+4m*
+4sm/rem
+4fm/mod
+42/
+42*
+4*/
+4*/mod
+4/mod
+4mod
+4/
+4*
+4abs
+4min
+4max
+41-
+41+
+4negate
+4-
+4under+
+4lit+
+4+
+4lit
+4/string
+4capscompare
+4toupper
+4compare
+4fill
+4cmove>
+4cmove
+4move
+4k
+4j
+4i'
+4i
+4(u-do)
+4(-do)
+4(u+do)
+4(+do)
+4(?do)
+4(do)
+4(for)
+4(s+loop)-lp+!#
+4(s+loop)
+4(-loop)-lp+!#
+4(-loop)
+4(+loop)-lp+!#
+4(+loop)
+4(loop)-lp+!#
+4(loop)
+4(next)-lp+!#
+4(next)
+4?dup-0=-?branch
+4?dup-?branch
+4?branch-lp+!#
+4?branch
+4branch
+4branch-lp+!#
+4does-exec
+4lit-perform
+4unloop
+4;s
+4perform
+4execute
+4call
+4noop	44 fpath= s" include \ \ \ \ \ \ \ \ \ \ \ \ \ Create
+4mach-file here over 1+ allot place 0 [IF] \ debugging: produce a relocation and a symbol table s" rel-table" r/w create-file throw Constant fd-relocation-table \ debuggging: produce a symbol table s" sym-table" r/w create-file throw Constant fd-symbol-table [THEN] bl word find vocabulary nip 0= [IF] \ if search order stuff is missing assume we are compiling on a gforth \ system and include it. \ We want the files taken from our current gforth installation \ so we don't include relatively to this file require ./../startup.fs [THEN] \ include \ \ \ \ \ \ \ \ \ \ \ \ \ \ 0 [IF] ToDo: - Crossdoc destination ./doc/crossdoc.fd makes no sense when cross.fs is used seperately. jaw - Do we need this char translation with >address and in branchoffset? (>body also affected) jaw [THEN] s" included \ \ \ \ \ \ s" environment? [if] 2drop defined str= [else] \ : \G postpone \ ; immediate 0 [then] 0= [if] : str= ( c-addr1 u1 c-addr2 u2 -- f ) \ gforth compare 0= ; : string-prefix? ( c-addr1 u1 c-addr2 u2 -- f ) \ gforth \G Is @var{c-addr2 u2} a prefix of @var{c-addr1 u1}? tuck 2>r min 2r> str= ; : str< ( c-addr1 u1 c-addr2 u2 -- f ) \ gforth compare 0< ; [then] hex \ \ \ \ \ \ \ Vocabulary
+4Cross Vocabulary
+4Target Vocabulary
+4Ghosts Vocabulary
+4Minimal only	 Forth	4 also	44 Target	47 also	477 also	4777 definitions Forth	4774 :
+7T previous Ghosts also Target ; immediate :
+7G Ghosts ; immediate :
+7H previous Forth also Cross ; immediate forth definitions :
+4T previous Ghosts also Target ; immediate :
+4G Ghosts ; immediate :
+4>cross also Cross definitions previous ; :
+4>target also Target definitions previous ; :
+4>minimal also Minimal definitions previous ; H	4746 >CROSS \ \ 0 Constant
+6gforth-cross-indicator \ :
+6defined? bl word find nip ; defined? emit-file defined? toupper and \ [IF] \ :
+6\GFORTH ; immediate :
+6\ANSI postpone \ ; immediate [ELSE] : \GFORTH postpone \ ; immediate : \ANSI ; immediate [THEN] \ANSI \ANSI 0 \ANSI [IF] : \G postpone \ ; immediate : rdrop postpone r> postpone drop ; immediate : name bl word count ; : bounds over + swap ; : scan >r BEGIN dup WHILE over c@ r@ <> WHILE 1 /string REPEAT THEN rdrop ; : linked here over @ , swap ! ; : alias create , DOES> @ EXECUTE ; : defer ['] noop alias ; : is state @ IF ' >body postpone literal postpone ! ELSE ' >body ! THEN ; immediate : 0>= 0< 0= ; : d<> rot <> -rot <> or ; : toupper dup [char] a [char] z 1+ within IF [char] A [char] a - + THEN ; Variable ebuf : emit-file ( c fd -- ior ) swap ebuf c! ebuf 1 chars rot write-file ; 0a Constant #lf 0d Constant #cr [IFUNDEF] Warnings Variable Warnings [THEN] \ \ Number parsing 23feb93py \ number? number 23feb93py Variable dpl hex Create bases 10 , 2 , A , 100 , \ 16 2 10 character \ !! protect BASE saving wrapper against exceptions : getbase ( addr u -- addr' u' ) over c@ [char] $ - dup 4 u< IF cells bases + @ base ! 1 /string ELSE drop THEN ; : sign? ( addr u -- addr u flag ) over c@ [char] - = dup >r IF 1 /string THEN r> ; : s>unumber? ( addr u -- ud flag ) over [char] ' = IF \ a ' alone is rather unusual :-) drop char+ c@ 0 true EXIT THEN base @ >r dpl on getbase 0. 2swap BEGIN ( d addr len ) dup >r >number dup WHILE \ there are characters left dup r> - WHILE \ the last >number parsed something dup 1- dpl ! over c@ [char] . = WHILE \ the current char is '.' 1 /string REPEAT THEN \ there are unparseable characters left 2drop false ELSE rdrop 2drop true THEN r> base ! ; \ ouch, this is complicated; there must be a simpler way - anton : s>number? ( addr len -- d f ) \ converts string addr len into d, flag indicates success sign? >r s>unumber? 0= IF rdrop false ELSE \ no characters left, all ok r> IF dnegate THEN true THEN ; : s>number ( addr len -- d ) \ don't use this, there is no way to tell success s>number? drop ; : snumber? ( c-addr u -- 0 / n -1 / d 0> ) s>number? 0= IF 2drop false EXIT THEN dpl @ dup 0< IF nip ELSE 1+ THEN ; : (number?) ( string -- string 0 / n -1 / d 0> ) dup >r count snumber? dup if rdrop else r> swap then ; : number ( string -- d ) (number?) ?dup 0= abort" ?" 0< IF s>d THEN ; [THEN] [IFUNDEF] (number?) :
+6(number?) number? ; [THEN] \ \GFORTH [IFUNDEF] assert1( \GFORTH also forth definitions require assert.fs previous \GFORTH [THEN] >CROSS hex \ \ \ :
+6KB 400 * ; :
+6>wordlist ( also execute get-order swap >r 1- set-order r> ; :
+6umax 2dup u< IF swap THEN drop ; :
+6umin 2dup u> IF swap THEN drop ; :
+6string, ( \ dup c, here swap chars dup allot move ; :
+6," [char] parse string, ; :
+6SetValue ( \G \G \G save-input bl word >r restore-input throw r> count get-current search-wordlist IF drop >r \ get-order get-order get-current swap 1+ set-order r> ['] to execute set-order ELSE Value THEN ; :
+6DefaultValue ( \G \G save-input bl word >r restore-input throw r> count get-current search-wordlist IF bl word drop 2drop ELSE Value THEN ; hex \ \ \ \ \ :
+6comment? ( 2dup s" str= IF postpone ( ELSE 2dup s" str= IF postpone \ THEN THEN ; :
+6X ( \G \G \G bl word count [ ' target >wordlist ] Literal search-wordlist IF state @ IF compile, ELSE execute THEN ELSE -1 ABORT" THEN ; immediate \ \ 0 [IF] This implements debugflags for the cross compiler and the compiled images. It works identical to the has-flags in the environment. The debugflags are defined in a vocabluary. If the word exists and its value is true, the flag is switched on. [THEN] >CROSS Vocabulary
+6debugflags \ also	47466 debugflags	4746: get-order over Constant
+6debugflags-wl set-order previous	4746 :
+6DebugFlag get-current >r debugflags-wl set-current SetValue r> set-current ; :
+6Debug? ( \G debugflags-wl search-wordlist IF EXECUTE ELSE false THEN ; :
+6D? ( \G \G bl word count debug? ; :
+6[d?] \G \G bl word count debugflags-wl search-wordlist IF compile, ELSE -1 ABORT" \ THEN ; immediate :
+6symentry ( \G \G [ [IFDEF] fd-symbol-table ] base @ swap hex s>d <# 8 0 DO # LOOP #> fd-symbol-table write-file throw base ! s" :" fd-symbol-table write-file throw fd-symbol-table write-line throw [ [ELSE] ] 2drop drop [ [THEN] ] ; \ decimal Variable
+6cross-file-list 0 cross-file-list ! Variable
+6target-file-list 0 target-file-list ! Variable
+6host-file-list 0 host-file-list ! cross-file-list Value
+6file-list 0 Value
+6source-desc \ :
+6>fl-id 1 cells + ; :
+6>fl-name 2 cells + ; Variable
+6filelist 0 filelist ! Create
+6NoFile ," :
+6loadfile ( source-desc ?dup IF >fl-name ELSE NoFile THEN ; :
+6sourcefilename ( loadfile count ; \ANSI \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ [IFUNDEF] +place : +place ( adr len adr ) 2dup >r >r dup c@ char+ + swap move r> r> dup c@ rot + swap c! ; [THEN] [IFUNDEF] place : place ( c-addr1 u c-addr2 ) 2dup c! char+ swap move ; [THEN] \ [IFUNDEF] open-fpath-file create sourcepath 1024 chars , 0 , 1024 chars allot \ !! make this dynamic sourcepath value fpath : also-path ( adr len path^ -- ) >r \ len check r@ cell+ @ over + r@ @ u> ABORT" path buffer too small!" \ copy into tuck r@ cell+ dup @ cell+ + swap cmove \ make delimiter 0 r@ cell+ dup @ cell+ + 2 pick + c! 1 + r> cell+ +! ; : only-path ( adr len path^ -- ) dup 0 swap cell+ ! also-path ; : path+ ( path-addr "dir" -- ) \ gforth \G Add the directory @var{dir} to the search path @var{path-addr}. name rot also-path ; : fpath+ ( "dir" ) \ gforth \G Add directory @var{dir} to the Forth search path. fpath path+ ; : path= ( path-addr "dir1|dir2|dir3" ) \ gforth \G Make a complete new search path; the path separator is |. name 2dup bounds ?DO i c@ [char] | = IF 0 i c! THEN LOOP rot only-path ; : fpath= ( "dir1|dir2|dir3" ) \ gforth \G Make a complete new Forth search path; the path separator is |. fpath path= ; : path>string cell+ dup cell+ swap @ ; : next-path ( adr len -- adr2 len2 ) 2dup 0 scan dup 0= IF 2drop 0 -rot 0 -rot EXIT THEN >r 1+ -rot r@ 1- -rot r> - ; : previous-path ( path^ -- ) dup path>string BEGIN tuck dup WHILE repeat ; : .path ( path-addr -- ) \ gforth \G Display the contents of the search path @var{path-addr}. path>string BEGIN next-path dup WHILE type space REPEAT 2drop 2drop ; : .fpath ( -- ) \ gforth \G Display the contents of the Forth search path. fpath .path ; : absolut-path? ( addr u -- flag ) \ gforth \G A path is absolute if it starts with a / or a ~ (~ expansion), \G or if it is in the form ./*, extended regexp: ^[/~]|./, or if \G it has a colon as second character ("C:..."). Paths simply \G containing a / are not absolute! 2dup 2 u> swap 1+ c@ [char] : = and >r \ dos absoulte: c:/.... over c@ [char] / = >r over c@ [char] ~ = >r \ 2dup S" ../" string-prefix? r> or >r \ not catered for in expandtopic S" ./" string-prefix? r> r> r> or or or ; Create ofile 0 c, 255 chars allot Create tfile 0 c, 255 chars allot : pathsep? dup [char] / = swap [char] \ = or ; : need/ ofile dup c@ + c@ pathsep? 0= IF s" /" ofile +place THEN ; : extractpath ( adr len -- adr len2 ) BEGIN dup WHILE 1- 2dup + c@ pathsep? IF EXIT THEN REPEAT ; : remove~+ ( -- ) ofile count s" ~+/" string-prefix? IF ofile count 3 /string ofile place THEN ; : expandtopic ( -- ) \ stack effect correct? - anton \ expands "./" into an absolute name ofile count s" ./" string-prefix? IF ofile count 1 /string tfile place 0 ofile c! sourcefilename extractpath ofile place ofile c@ IF need/ THEN tfile count over c@ pathsep? IF 1 /string THEN ofile +place THEN ; : compact.. ( adr len -- adr2 len2 ) \ deletes phrases like "xy/.." out of our directory name 2dec97jaw over swap BEGIN dup WHILE dup >r '/ scan 2dup s" /../" string-prefix? IF dup r> - >r 4 /string over r> + 4 - swap 2dup + >r move dup r> over - ELSE rdrop dup 1 min /string THEN REPEAT drop over - ; : reworkdir ( -- ) remove~+ ofile count compact.. nip ofile c! ; : open-ofile ( -- fid ior ) \G opens the file whose name is in ofile expandtopic reworkdir ofile count r/o open-file ; : check-path ( adr1 len1 adr2 len2 -- fd 0 | 0 <>0 ) 0 ofile ! >r >r ofile place need/ r> r> ofile +place open-ofile ; : open-path-file ( addr1 u1 path-addr -- wfileid addr2 u2 0 | ior ) \ gforth \G Look in path @var{path-addr} for the file specified by @var{addr1 u1}. \G If found, the resulting path and an open file descriptor \G are returned. If the file is not found, @var{ior} is non-zero. >r 2dup absolut-path? IF rdrop ofile place open-ofile dup 0= IF >r ofile count r> THEN EXIT ELSE r> path>string BEGIN next-path dup WHILE 5 pick 5 pick check-path 0= IF >r 2drop 2drop r> ofile count 0 EXIT ELSE drop THEN REPEAT 2drop 2drop 2drop -38 THEN ; : open-fpath-file ( addr1 u1 -- wfileid addr2 u2 0 | ior ) \ gforth \G Look in the Forth search path for the file specified by @var{addr1 u1}. \G If found, the resulting path and an open file descriptor \G are returned. If the file is not found, @var{ior} is non-zero. fpath open-path-file ; fpath= ~+ [THEN] \ >CROSS :
+6add-included-file ( dup >fl-name char+ allocate throw >r file-list @ r@ ! r@ file-list ! r@ >fl-name place r> ; :
+6included? ( file-list BEGIN @ dup WHILE >r 2dup r@ >fl-name count str= IF rdrop 2drop true EXIT THEN r> REPEAT 2drop drop false ; false DebugFlag
+:showincludedfiles :
+6included1 ( \ \ \ [d?] IF cr ." 2dup type ." THEN rot close-file throw source-desc >r add-included-file to source-desc sourcefilename ['] included catch r> to source-desc throw ; :
+6included ( cross-file-list to file-list open-fpath-file throw included1 ; :
+6required ( cross-file-list to file-list open-fpath-file throw \ 2dup included? IF 2drop close-file throw ELSE included1 THEN ; :
+6include bl word count included ; :
+6require bl word count required ; 0 [IF] also forth definitions previous : included ( adr len -- ) included ; : required ( adr len -- ) required ; : include include ; : require require ; [THEN] >CROSS hex \ \ also	47466 forth	47464 definitions \ \ false DefaultValue
+4stack-warn \ false DefaultValue
+4create-forward-warn \ previous	4746 >CROSS :
+6.dec base @ decimal swap . base ! ; :
+6.sourcepos cr sourcefilename type ." sourceline# .dec ; :
+6warnhead \G \G .sourcepos ." ; :
+6empty? depth IF .sourcepos ." THEN ; stack-warn [IF] : defempty? empty? ; [ELSE] :
+6defempty? ; immediate \ [THEN] \ >CROSS \ Variable
+6comp-state 0 Constant
+6interpreting 1 Constant
+6compiling 2 Constant
+6resolving 3 Constant
+6assembling :
+6compiling? comp-state @ compiling = ; :
+6pi-undefined -1 ABORT" ; :
+6Plugin ( Create \ \ \ \ ['] pi-undefined , \ ['] pi-undefined , \ 8765 , \ DOES> perform ; Plugin
+6DummyPlugin :
+6'PI ( ' >body dup 2 cells + @ 8765 <> ABORT" ; :
+6plugin-of ( dup 'PI 2! ; :
+6action-of ( 'PI cell+ ! ; :
+6TPA ( \ \ 'PI cell+ POSTPONE literal POSTPONE perform ; immediate Variable
+6ppi-temp 0 ppi-temp ! :
+6pa: \g ppi-temp @ ABORT" 'PI ppi-temp ! :noname ; :
+6;pa \g POSTPONE ; ppi-temp @ ! 0 ppi-temp ! ; immediate Plugin
+6dlit, ( \ Plugin
+6lit, ( Plugin
+6alit, ( Plugin
+6branch, ( \ Plugin
+6?branch, ( \ Plugin
+6branchmark, ( \ Plugin
+6?branchmark, ( \ Plugin
+6?domark, ( \ Plugin
+6branchto, ( \ ' NOOP plugin-of branchto, Plugin
+6branchtoresolve, ( \ Plugin
+6branchtomark, ( \ Plugin
+6colon, ( \ Plugin
+6prim, ( \ Plugin
+6colonmark, ( \ Plugin
+6colon-resolve ( Plugin
+6addr-resolve ( Plugin
+6doer-resolve ( Plugin
+6ncontrols? ( \ Plugin
+6if, ( Plugin
+6else, ( Plugin
+6then, ( Plugin
+6ahead, Plugin
+6begin, Plugin
+6while, Plugin
+6until, Plugin
+6again, Plugin
+6repeat, Plugin
+6cs-swap ( Plugin
+6case, ( Plugin
+6of, ( Plugin
+6endof, ( Plugin
+6endcase, ( Plugin
+6do, ( Plugin
+6?do, ( Plugin
+6for, ( Plugin
+6loop, ( Plugin
+6+loop, ( Plugin
+6next, ( Plugin
+6leave, ( Plugin
+6?leave, ( Plugin
+6ca>native \ \ \ \ \ \ \ \ Plugin
+6doprim, \ Plugin
+6docol, \ Plugin
+6doer, Plugin
+6fini, \ Plugin
+6doeshandler, Plugin
+6dodoes, Plugin
+6colon-start ' noop plugin-of colon-start Plugin
+6colon-end ' noop plugin-of colon-end Plugin
+6]comp \ ' noop plugin-of ]comp Plugin
+6comp[ \ ' noop plugin-of comp[ Plugin
+6t>body \ \ >TARGET :
+7>body t>body ; \ >CROSS hex \ 4711 Constant
+6<fwd> 4712 Constant
+6<res> 4713 Constant
+6<imm> 4714 Constant
+6<do:> 4715 Constant
+6<skip> \ 1 Constant
+6<unique> 2 Constant
+6<primitive> \ :
+6set-flag ( over @ or swap ! ; :
+6reset-flag ( invert over @ and swap ! ; :
+6get-flag ( swap @ and 0<> ; Struct \ cell% field
+6>next-ghost \ cell% field
+6>magic \ \ cell% field
+6>link \ cell% field
+6>exec \ \ \ \ cell% field
+6>comp \ \ \ \ \ cell% field
+6>exec-compile \ \ \ cell% field
+6>exec2 cell% field
+6>created \ cell% field
+6>ghost-xt \ \ cell% field
+6>asm-name \ \ cell% field
+6>asm-dummyaddr \ \ \ cell% field
+6>do:ghost cell% field
+6>ghost-flags cell% field
+6>ghost-name End-Struct
+6ghost-struct Variable
+6ghost-list 0 ghost-list ! Variable
+6executed-ghost \ \ Variable
+6last-header-ghost \ \ \ \ \ \ \ \ Variable
+6cross-space-dp Create
+6cross-space 250000 allot here 100 allot align Constant
+6cross-space-end cross-space cross-space-dp ! Variable
+6cross-space-dp-orig :
+6cross-space-used cross-space-dp @ cross-space - ; :
+6>space ( dp @ cross-space-dp-orig ! cross-space-dp @ dp ! ; :
+6space> ( dp @ dup cross-space-dp ! cross-space-end u> ABORT" cross-space-dp-orig @ dp ! ; \ :
+6execute-exec execute ; :
+6execute-exec2 execute ; :
+6execute-exec-compile execute ; :
+6NoExec executed-ghost @ >exec2 @ ?dup IF execute-exec2 ELSE true ABORT" THEN ; Defer
+6is-forward :
+6(ghostheader) ( ghost-list linked <fwd> , 0 , ['] NoExec , ['] is-forward , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , ; :
+6ghostheader ( (ghostheader) 0 , ; ' Ghosts >wordlist Constant
+6ghosts-wordlist \ ghosts-wordlist Value
+6current-ghosts :
+6Make-Ghost ( >space \ get-current >r current-ghosts set-current >in @ Create >in ! \ \ \ r> set-current here (ghostheader) bl word count string, align space> \ dup >ghost-name count current-ghosts search-wordlist 0= ABORT" over >ghost-xt ! DOES> dup executed-ghost ! >exec @ execute-exec ; \ \ Defer
+6search-ghosts :
+6(search-ghosts) ( current-ghosts search-wordlist ; ' (search-ghosts) IS search-ghosts :
+6gsearch ( search-ghosts dup IF swap >body swap THEN ; :
+6gfind ( \ \ dup >r count gsearch dup IF rdrop ELSE r> swap THEN ; :
+6gdiscover ( >r ghost-list BEGIN @ dup WHILE dup >magic @ <fwd> <> IF dup >link @ r@ = IF rdrop true EXIT THEN THEN REPEAT drop r> false ; :
+6xt>ghost ( gdiscover 0= ABORT" ; :
+6Ghost ( >in @ bl word gfind IF nip EXIT THEN drop >in ! Make-Ghost ; :
+6>ghostname ( >ghost-name count ; :
+6forward? ( >magic @ <fwd> = ; :
+6undefined? ( >magic @ dup <fwd> = swap <skip> = or ; :
+6immediate? ( >magic @ <imm> = ; Variable
+6TWarnings TWarnings on Variable
+6Exists-Warnings Exists-Warnings on :
+6exists-warning ( TWarnings @ Exists-Warnings @ and IF dup >ghostname warnhead type ." THEN ; \ Variable
+6reuse-ghosts reuse-ghosts off :
+6HeaderGhost ( >in @ bl word count \ current-ghosts search-wordlist IF >body dup undefined? reuse-ghosts @ or IF nip EXIT ELSE exists-warning THEN drop >in ! ELSE >in ! THEN \ \ \ Make-Ghost ; :
+6.ghost ( >ghostname type ; \ :
+6findghost ( bl word gfind 0= ABORT" ; :
+6[G'] ( \G findghost state @ IF postpone literal THEN ; immediate :
+6g>xt ( \G dup undefined? ABORT" >link @ ; :
+6g>body ( \G \G g>xt X ; 1 Constant
+6<label> Struct \ cell% field
+6addr-type \ cell% field
+6addr-xt-ghost \ \ cell% field
+6addr-refs End-Struct
+6addr-struct :
+6%allocerase ( dup >r %alloc dup r> erase ; \ :
+6define-addr-struct ( dup @ ?dup IF nip EXIT THEN addr-struct %allocerase tuck swap ! ; >cross \ Ghost
+8- drop \ Ghost
+80= drop Ghost
+8branch Ghost
+8?branch 2drop Ghost
+8unloop Ghost
+8;S 2drop Ghost
+8lit Ghost
+8! 2drop Ghost
+8noop drop Ghost
+8over Ghost
+8= Ghost
+8drop 2drop drop Ghost
+82drop drop Ghost
+82dup drop Ghost
+8call drop Ghost
+8@ drop Ghost
+8useraddr drop Ghost
+8execute drop Ghost
+8+ drop Ghost
+8decimal drop Ghost
+8hex drop Ghost
+8lit@ drop Ghost
+8lit-perform drop Ghost
+8lit+ drop Ghost
+8does-exec drop Ghost
+8:docol Ghost
+8:doesjump Ghost
+8:dodoes 2drop drop Ghost
+8:dovar drop \ \ wordlist Constant
+6target-environment \ Variable
+6env-current :
+6>ENVIRON get-current env-current ! target-environment set-current ; :
+6ENVIRON> env-current @ set-current ; >TARGET :
+7environment? ( \G \G target-environment search-wordlist IF EXECUTE true ELSE false THEN ; :
+7$has? ( \G \G T	4787 environment? H	4746 dup IF drop THEN ; :
+7e? ( \G \G bl word count T	4787 environment? H	4746 0= ABORT" ; :
+7has? ( \G \G bl word count T	4787 $has? H	4746 ; >ENVIRON get-order get-current swap 1+ set-order	4746; true SetValue
+;compiler true SetValue
+;cross true SetValue
+;standard-threading >TARGET previous	4746 0 [IFDEF] mach-file drop mach-file count 1 [THEN] [IFDEF] machine-file drop machine-file 1 [THEN] [IF] included \ \ \ \ \ \ \ \ \ \ \ \ \ 2 Constant
+7cell 1 Constant
+7cell<< 4 Constant
+7cell>bit 8 Constant
+7bits/char 8 Constant
+7float 8 Constant
+7/maxalign true Constant
+7bigendian ( \ include \ \ \ \ \ \ \ \ \ \ \ \ \ \ true DefaultValue
+7NIL \ >ENVIRON false DefaultValue
+;ec T	4787 has? H	4746 0= [IF] true DefaultValue
+;file \ \ true DefaultValue
+;OS \ true DefaultValue
+;prims \ true DefaultValue
+;floating \ true DefaultValue
+;glocals \ \ true DefaultValue
+;dcomps \ true DefaultValue
+;hash \ true DefaultValue
+;xconds \ \ \ true DefaultValue
+;header \ true DefaultValue
+;backtrace \ true DefaultValue
+;new-input \ true DefaultValue
+;peephole \ true DefaultValue
+;primcentric \ true DefaultValue
+;abranch \ false DefaultValue
+;control-rack \ false DefaultValue
+;crlf $100 DefaultValue
+;kernel-start cell 2 = [IF] &32 KB [ELSE] $100000 cells [THEN] DefaultValue
+;kernel-size &16 KB DefaultValue
+;stack-size &16 KB DefaultValue
+;fstack-size &15 KB DefaultValue
+;rstack-size &14 KB &512 + DefaultValue
+;lstack-size [ELSE] false DefaultValue file \ controls the presence of the \ file access wordset false DefaultValue OS \ flag to indicate a operating system true SetValue relocate false DefaultValue ffcall \ Foreign Function Calls false DefaultValue libffi \ Foreign Function Calls false DefaultValue oldcall \ old Foreign Function Calls true DefaultValue prims \ true: primitives are c-code false DefaultValue floating \ floating point wordset is present false DefaultValue glocals \ gforth locals are present \ will be loaded true DefaultValue dcomps \ double number comparisons false DefaultValue hash \ hashing primitives are loaded/present false DefaultValue xconds \ used together with glocals, \ special conditionals supporting gforths' \ local variables true DefaultValue header \ save a header information false DefaultValue backtrace \ enables backtrace code false DefaultValue new-input \ enables object oriented input false DefaultValue peephole \ enables peephole optimizer true DefaultValue primcentric \ enables primcentric code true DefaultValue f83headerstring true DefaultValue abranch \ enables absolute branches true DefaultValue control-rack \ disable return stack use for control flow false DefaultValue crlf true DefaultValue flash $0 DefaultValue kernel-start \ no artificial offset &48 KB DefaultValue kernel-size &1 KB DefaultValue stack-size &0 KB DefaultValue fstack-size &1 KB DefaultValue rstack-size &1 KB DefaultValue lstack-size [THEN] hex [ELSE] cr ." No machine description!" ABORT [THEN] >ENVIRON T	4787 has? H	4746 [IF] false DefaultValue relocate false DefaultValue file false DefaultValue OS false DefaultValue prims false DefaultValue floating false DefaultValue glocals false DefaultValue dcomps false DefaultValue hash false DefaultValue xconds false DefaultValue header false DefaultValue backtrace false DefaultValue new-input false DefaultValue peephole false DefaultValue primcentric false DefaultValue abranch true DefaultValue f83headerstring true DefaultValue control-rack [THEN] true DefaultValue
+;gforthcross true DefaultValue
+;interpreter true DefaultValue
+;ITC false DefaultValue
+;rom false DefaultValue
+;flash true DefaultValue
+;standardthreading \ 8 DefaultValue
+;ADDRESS-UNIT-BITS 255 DefaultValue
+;MAX-CHAR 255 DefaultValue
+;/COUNTED-STRING >TARGET s" T	4787 environment? H	4746 \ [IF] drop \ SetValue NIL [ELSE] >ENVIRON X SetValue
+;relocate [THEN] >TARGET 0 Constant
+7NIL >CROSS \ \ \ \ :
+6check-address-unit-bits ( \ \ \ \ \ ; check-address-unit-bits 8 Constant
+6bits/byte \ 1 bits/byte lshift Constant
+6maxbyte \ T	4787 NIL Constant
+6TNIL cell Constant
+6tcell cell<< Constant
+6tcell<< cell>bit Constant
+6tcell>bit bits/char Constant
+6tbits/char bits/char H	4746 bits/byte T	4787 / Constant
+6tchar float Constant
+6tfloat 1 bits/char lshift Constant
+6tmaxchar [IFUNDEF] bits/byte 8 Constant
+6tbits/byte [ELSE] bits/byte Constant tbits/byte [THEN] H	4746 tbits/char bits/byte / Constant
+6tbyte :
+6>signed ( 1 tbits/char tcell * 1- lshift 2dup and IF negate or ELSE drop THEN ; \ Variable
+6(tlast) (tlast) Value
+6tlast TNIL tlast ! \ Variable
+6tlastcfa \ \ Variable
+6headers-named 0 headers-named ! Variable
+6user-vars 0 user-vars ! :
+6target>bitmask-size ( 1- tcell>bit rshift 1+ ; :
+6allocatetarget ( dup allocate ABORT" swap over swap erase ; \ Variable
+6last-defined-region \ Variable
+6region-link \ Variable
+6mirrored-link \ 0 dup mirrored-link ! region-link ! :
+6>rname 9 cells + ; :
+6>rtouch 8 cells + ; \ :
+6>rbm 4 cells + ; \ :
+6>rmem 5 cells + ; :
+6>rtype 6 cells + ; \ :
+6>rrom 7 cells + ; \ :
+6>rlink 3 cells + ; :
+6>rdp 2 cells + ; :
+6>rlen cell+ ; :
+6>rstart ; :
+6(region) ( \G >r r@ last-defined-region ! r@ >rlen ! dup r@ >rstart ! r> >rdp ! ; :
+6uninitialized -1 ABORT" ; :
+6region ( \G \ save-input bl word find >r >r restore-input throw r> r> 0= IF \ drop save-input create restore-input throw here last-defined-region ! over ( , ( , ( , region-link linked 0 , 0 , 0 , 0 , ['] uninitialized , bl word count string, ELSE \ bl word drop >body (region) THEN ; :
+6borders ( \G dup >rstart @ swap >rlen @ over + ; :
+6extent ( \G dup >rstart @ swap >rdp @ over - ; :
+6area ( \G dup >rstart @ swap >rlen @ ; :
+6dp@ ( >rdp @ ; :
+6mirrored ( \G mirrored-link align linked last-defined-region @ , ; :
+6writeprotected \G -1 last-defined-region @ >rrom ! ; :
+6.addr ( \G base @ >r hex tcell 2 u> IF s>d <# # # # # [char] hold # # # # #> type ELSE s>d <# # # # # # #> type THEN r> base ! space ; :
+6.regions \G \ \ 0 region-link @ BEGIN dup WHILE dup @ REPEAT drop BEGIN dup WHILE cr 0 >rlink - >r r@ >rname count tuck type 12 swap - 0 max spaces space ." r@ >rstart @ dup .addr space ." r@ >rlen @ + .addr space ." r> >rdp @ .addr REPEAT drop s" T	4787 $has? H	4746 0= ?EXIT cr ." mirrored-link @ BEGIN dup WHILE space dup cell+ @ >rname count type @ REPEAT drop cr ; \ 0 0 region address-space
+6address-space \ 0 0 region user-region
+6user-region \ \ 0 0 region dictionary
+6dictionary \ T	4787 has? H	4746 [IF] 0 0 region ram-dictionary mirrored \ ram area for the compiler [ELSE] ' dictionary ALIAS
+6ram-dictionary [THEN] 0 0 region return-stack
+6return-stack 0 0 region data-stack
+6data-stack 0 0 region tib-region
+6tib-region ' dictionary ALIAS
+6rom-dictionary :
+6setup-region ( >r \ r@ >rlen @ allocatetarget r@ >rmem ! r@ >rlen @ target>bitmask-size allocatetarget r@ >rbm ! r@ >rlen @ tcell / 1+ cells allocatetarget r@ >rtype ! ['] noop r@ >rtouch ! rdrop ; :
+6setup-target ( \G s" T	4787 $has? H	4746 IF \ \ ram-dictionary area nip 0<> rom-dictionary area nip 0<> and 0= ABORT" THEN address-space area nip IF address-space area ELSE dictionary area THEN nip 0= ABORT" \ region-link BEGIN @ dup WHILE dup 0 >rlink - >r r@ >rlen @ IF r@ setup-region THEN rdrop REPEAT drop ; \ :
+6makekernel ( \G \G dictionary (region) setup-target ; >MINIMAL :
+9makekernel makekernel ; >CROSS \ \ \ \ variable
+6tempdp 0 , \ variable
+6tempdp-save 0 [IF] variable romdp 0 , \ Dictionary-Pointer for ramarea variable ramdp 0 , \ Dictionary-Pointer for romarea \ variable sramdp \ start of ram-area for forth variable sromdp \ start of rom-area for forth [THEN] 0 Value
+6current-region 0 Value
+6tdp Variable
+6fixed \ \ \ \ \ \ \ \ \ variable
+6constflag constflag off :
+6activate ( \G dup to current-region >rdp to tdp ; :
+6(switchram) fixed @ ?EXIT s" T	4787 $has? H	4746 0= ?EXIT ram-dictionary activate ; :
+6switchram constflag @ IF constflag off ELSE (switchram) THEN ; :
+6switchrom fixed @ ?EXIT rom-dictionary activate ; :
+6>tempdp ( tdp tempdp-save ! tempdp to tdp tdp ! ; :
+6tempdp> ( tempdp-save @ to tdp ; :
+6>ram fixed off (switchram) fixed on ; :
+6>rom fixed off switchrom fixed on ; :
+6>auto fixed off switchrom ; \ \ \ \ >auto :
+6there tdp @ ; >TARGET \ \ :
+7cell+ tcell + ; :
+7cells tcell<< lshift ; :
+7chars tchar * ; :
+7char+ tchar + ; :
+7floats tfloat * ; >CROSS :
+6cell/ tcell<< rshift ; >TARGET 20 CONSTANT
+7bl \ >CROSS bigendian [IF] :
+6DS! ( tcell bounds swap 1- DO maxbyte ud/mod rot I c! -1 +LOOP 2drop ; :
+6DS@ ( >r 0 0 r> tcell bounds DO maxbyte * swap maxbyte um* rot + swap I c@ + swap LOOP ; :
+6Sc! ( >r s>d r> tchar bounds swap 1- DO maxbyte ud/mod rot I c! -1 +LOOP 2drop ; :
+6Sc@ ( >r 0 0 r> tchar bounds DO maxbyte * swap maxbyte um* rot + swap I c@ + swap LOOP d>s ; [ELSE] : DS! ( d addr -- ) tcell bounds DO maxbyte ud/mod rot I c! LOOP 2drop ; : DS@ ( addr -- n ) >r 0 0 r> tcell bounds swap 1- DO maxbyte * swap maxbyte um* rot + swap I c@ + swap -1 +LOOP ; : Sc! ( n addr -- ) >r s>d r> tchar bounds DO maxbyte ud/mod rot I c! LOOP 2drop ; : Sc@ ( addr -- n ) >r 0 0 r> tchar bounds swap 1- DO maxbyte * swap maxbyte um* rot + swap I c@ + swap -1 +LOOP d>s ; [THEN] :
+6S! ( >r s>d r> DS! ; :
+6S@ ( DS@ d>s ; :
+6taddr>region ( \G \G region-link BEGIN @ dup WHILE dup >r 0 >rlink - >r r@ >rlen @ IF dup r@ borders within IF r> r> drop nip dup >rtouch @ EXECUTE EXIT THEN THEN r> drop r> REPEAT 2drop 0 ; :
+6taddr>region-abort ( \G \G dup taddr>region dup 0= IF drop cr ." .addr -1 ABORT" THEN nip ; :
+6(>regionimage) ( dup \ taddr>region-abort >r \ r@ >rstart @ - \ r> >rmem @ + ; :
+6(>regionramimage) ( \G dup \ taddr>region-abort >r r@ >rrom @ ABORT" \ r@ >rstart @ - \ r> >rmem @ + ; :
+6(>regionbm) ( dup \ taddr>region-abort >r \ r@ >rstart @ - \ r> >rbm @ ; :
+6(>regiontype) ( dup \ taddr>region-abort >r \ r@ >rstart @ - tcell / cells \ r> >rtype @ + ; \ \ CREATE
+6Bittable 80 c, 40 c, 20 c, 10 c, 8 c, 4 c, 2 c, 1 c, :
+6bits ( chars Bittable + c@ ; :
+6>bit ( 8 /mod rot + swap bits ; :
+6+bit ( >bit over c@ or swap c! ; :
+6-bit ( >bit invert over c@ and swap c! ; :
+6@relbit ( (>regionbm) swap cell/ >bit swap c@ and ; :
+6(relon) ( [ [IFDEF] fd-relocation-table ] s" +" fd-relocation-table write-file throw dup s>d <# #s #> fd-relocation-table write-line throw [ [THEN] ] (>regionbm) swap cell/ +bit ; :
+6(reloff) ( [ [IFDEF] fd-relocation-table ] s" -" fd-relocation-table write-file throw dup s>d <# #s #> fd-relocation-table write-line throw [ [THEN] ] (>regionbm) swap cell/ -bit ; DEFER
+6>image DEFER
+6>ramimage DEFER
+6relon DEFER
+6reloff DEFER
+6correcter T	4787 has? H	4746 [IF] ' (relon) IS relon ' (reloff) IS reloff ' (>regionimage) IS >image ' (>regionimage) IS >ramimage [ELSE] ' drop IS relon ' drop IS reloff ' (>regionimage) IS >image ' (>regionimage) IS >ramimage [THEN] :
+6enforce-writeprotection ( ['] (>regionramimage) IS >ramimage ; :
+6relax-writeprotection ( ['] (>regionimage) IS >ramimage ; :
+6writeprotection-relaxed? ( ['] >ramimage >body @ ['] (>regionimage) = ; \ :
+6align+ ( tcell tuck 1- and - [ tcell 1- ] Literal and ; :
+6cfalign+ ( \ /maxalign tuck 1- and - [ /maxalign 1- ] Literal and ; >TARGET :
+7aligned ( dup align+ + ; \ :
+7cfaligned ( \ dup cfalign+ + ; :
+7@ ( >image S@ ; :
+7! ( >ramimage S! ; :
+7c@ ( >image Sc@ ; :
+7c! ( >ramimage Sc! ; :
+72@ ( T	4787 dup cell+ @ swap @ H	4746 ; :
+72! ( T	4787 tuck ! cell+ ! H	4746 ; \ \ :
+7here ( there ; :
+7allot ( tdp +! ; :
+7, ( T	4787 here H	4746 tcell T	4787 allot ! H	4746 ; :
+7c, ( T	4787 here H	4746 tchar T	4787 allot c! H	4746 ; :
+7align ( T	4787 here H	4746 align+ 0 ?DO bl T	4787 c, H	4746 tchar +LOOP ; :
+7cfalign ( T	4787 here H	4746 cfalign+ 0 ?DO bl T	4787 c, H	4746 tchar +LOOP ; :
+7>address dup 0>= IF tbyte / THEN ; \ :
+7A! swap >address swap dup relon T	4787 ! H	4746 ; :
+7A, ( >address T	4787 here H	4746 relon T	4787 , H	4746 ; \ >CROSS Ghost
+8(do) Ghost
+8(?do) 2drop Ghost
+8(for) drop Ghost
+8(loop) Ghost
+8(+loop) 2drop Ghost
+8(next) drop Ghost
+8(does>) Ghost
+8(does>1) Ghost
+8(does>2) 2drop drop Ghost
+8compile, drop Ghost
+8(.") Ghost
+8(S") Ghost
+8(ABORT") 2drop drop Ghost
+8(C") Ghost
+8c(abort") Ghost
+8type 2drop drop Ghost
+8' drop \ Ghost
+8state drop \ >CROSS :
+6TD! >image DS! ; :
+6TD@ >image DS@ ; :
+6th-count ( \G assert1( tbyte 1 = ) dup X swap X >image swap ; :
+6ht-move ( \G \G swap -rot bounds ?DO I c@ over X X LOOP drop ; 2Variable
+6last-string X [IF] $60 [ELSE] $00 [THEN] Constant
+6header-masks :
+6ht-header, ( dup there swap last-string 2! dup header-masks or T	4787 c, H	4746 bounds ?DO I c@ T	4787 c, H	4746 LOOP ; :
+6ht-string, ( dup there swap last-string 2! dup T	4787 c, H	4746 bounds ?DO I c@ T	4787 c, H	4746 LOOP ; :
+6ht-mem, ( bounds ?DO I c@ T	4787 c, H	4746 LOOP ; >TARGET :
+7count dup X swap X swap ; :
+7on >r -1 -1 r> TD! ; :
+7off T	4787 0 swap ! H	4746 ; :
+7tcmove ( \G tchar * bounds ?DO dup T	4787 c@ H	4746 I T	4787 c! H	4746 1+ tchar +LOOP drop ; :
+7tcallot ( 0 ?DO dup T	4787 c, H	4746 tchar +LOOP drop ; :
+7td, ( \G there tcell X TD! ; \ >TARGET H also	47466 Forth	47464 definitions \ \ \ [IFDEF] asm-include asm-include [THEN] hex previous	4746 >CROSS :
+6(cc) T	4787 a, H	4746 ; ' (cc) plugin-of colon, :
+6(prim) T	4787 a, H	4746 ; ' (prim) plugin-of prim, :
+6(cr) >tempdp colon, tempdp> ; ' (cr) plugin-of colon-resolve :
+6(ar) T	4787 ! H	4746 ; ' (ar) plugin-of addr-resolve :
+6(dr) ( >tempdp drop over dup >magic @ <do:> = IF doer, ELSE dodoes, THEN tempdp> ; ' (dr) plugin-of doer-resolve :
+6(cm) ( there -1 colon, ; ' (cm) plugin-of colonmark, >TARGET :
+7compile, ( dup xt>ghost >comp @ EXECUTE ; >CROSS \ :
+6>next ; \ :
+6>tag cell+ ; \ :
+6>taddr cell+ cell+ ; :
+6>ghost 3 cells + ; :
+6>file 4 cells + ; :
+6>line 5 cells + ; :
+6(refered) ( \G >space rot >link linked ( , ( , last-header-ghost @ , loadfile , sourceline# , space> ; :
+6refered ( \G T	4787 here aligned H	4746 swap (refered) ; :
+6killref ( \G \G dup >magic @ <fwd> <> IF 2drop EXIT THEN swap >r >link BEGIN dup @ dup ( WHILE dup >taddr @ r@ = IF @ over ! ELSE nip THEN REPEAT rdrop 2drop ; Defer
+6resolve-warning :
+6reswarn-test ( over cr ." .ghost dup ." >ghost @ .ghost ; :
+6reswarn-forward ( over warnhead .ghost dup ." >ghost @ .ghost ; \ \ :
+6resolve-loop ( >r BEGIN dup WHILE \ resolve-warning r@ over >taddr @ 2 pick >tag @ CASE 0 OF colon-resolve ENDOF 1 OF addr-resolve ENDOF 2 OF doer-resolve ENDOF ENDCASE @ \ REPEAT 2drop rdrop ; \ \ \ \ :
+6exists ( \G swap exists-warning >link ! ; :
+6colon-resolved ( \ \ >link @ colon, ; :
+6prim-resolved ( \ >link @ prim, ; :
+6(is-forward) ( colonmark, 0 (refered) ; \ ' (is-forward) IS is-forward 0 Value
+6resolved :
+6resolve-forward-references ( \ comp-state @ >r Resolving comp-state ! over >link @ resolve-loop r> comp-state ! ['] noop IS resolve-warning ; :
+6(resolve) ( \ \ dup taddr>region 0<> IF \ 2dup (>regiontype) define-addr-struct addr-xt-ghost \ \ \ \ dup @ 0= IF ! ELSE 2drop THEN THEN swap >r r@ to resolved \ \ \ \ \ r@ >comp @ ['] is-forward = IF ['] colon-resolved r@ >comp ! THEN r@ >link @ swap \ \ r@ >link ! <res> r@ >magic ! r> swap ; :
+6resolve ( \G \ \ over undefined? 0= IF exists EXIT THEN (resolve) ( resolve-forward-references ; :
+6resolve-noforwards ( \G \G \ \ over undefined? 0= IF exists EXIT THEN (resolve) IF cr ." .ghost cr -1 ABORT" THEN drop ; \ :
+6(gexecute) ( dup >comp @ EXECUTE ; :
+6gexecute ( dup >magic @ <imm> = ABORT" (gexecute) ; :
+6addr, ( dup forward? IF 1 refered 0 T	4787 a, H	4746 ELSE >link @ T	4787 a, H	4746 THEN ; \ variable
+6ResolveFlag \ :
+6?touched ( dup forward? swap >link @ 0 <> and ; :
+6.forwarddefs ( ." >link BEGIN @ dup WHILE cr 5 spaces dup >ghost @ .ghost ." dup >file @ ?dup IF count type ELSE ." THEN ." dup >line @ .dec REPEAT drop ; :
+6?resolved ( dup ?touched IF ResolveFlag on dup cr .ghost .forwarddefs ELSE drop THEN ; :
+6.unresolved ( ResolveFlag off cr ." ghost-list BEGIN @ dup WHILE dup ?resolved REPEAT drop ResolveFlag @ IF -1 abort" ELSE ." THEN cr ; :
+6.stats base @ >r decimal cr ." headers-named @ . r> base ! ; >MINIMAL :
+9.unresolved .unresolved ; >CROSS \ \ X bigendian or [IF] 0 [ELSE] tcell 1- [THEN] Constant
+6flag+ :
+6flag! ( tlast @ flag+ + dup >r T	4787 c@ xor r> c! H	4746 ; VARIABLE
+6^imm \ $80 constant
+6alias-mask $40 constant
+6immediate-mask $20 constant
+6restrict-mask >TARGET :
+7immediate immediate-mask flag! ^imm @ @ dup <imm> = IF drop EXIT THEN <res> <> ABORT" <imm> ^imm @ ! ; :
+7restrict restrict-mask flag! ; :
+7isdoer \G \G <do:> last-header-ghost @ >magic ! ; >CROSS \ :
+6ht-lstring, ( dup T	4787 , H	4746 bounds ?DO I c@ T	4787 c, H	4746 LOOP ; >TARGET X [IF] : name, ( "name" -- ) bl word count ht-header, X cfalign ; [ELSE] :
+7name, ( bl word count ht-lstring, X ; [THEN] :
+7view, ( ( ; >CROSS \ s" r/w create-file throw value
+6doc-file-id \ :
+6T-\G ( source >in @ /string doc-file-id write-line throw postpone \ ; Variable
+6to-doc to-doc on :
+6cross-doc-entry ( to-doc @ tlast @ 0<> and \ IF s" doc-file-id write-line throw s" doc-file-id write-file throw Last-Header-Ghost @ >ghostname doc-file-id write-file throw >in @ [char] parse 2drop [char] parse doc-file-id write-file throw s" doc-file-id write-file throw [char] parse 2drop T-\G >in ! THEN ; \ s" r/w create-file throw value
+6tag-file-id s" r/w create-file throw value
+6vi-tag-file-id \ Create
+6tag-beg 1 c, 7F c, Create
+6tag-end 1 c, 01 c, Create
+6tag-bof 1 c, 0C c, Create
+6tag-tab 1 c, 09 c, 2variable
+6last-loadfilename 0 0 last-loadfilename 2! :
+6put-load-file-name ( sourcefilename last-loadfilename 2@ d<> IF tag-bof count tag-file-id write-line throw sourcefilename 2dup tag-file-id write-file throw last-loadfilename 2! s" tag-file-id write-line throw THEN ; :
+6cross-gnu-tag-entry ( tlast @ 0<> \ IF put-load-file-name source >in @ min tag-file-id write-file throw tag-beg count tag-file-id write-file throw Last-Header-Ghost @ >ghostname tag-file-id write-file throw tag-end count tag-file-id write-file throw base @ decimal sourceline# 0 <# #s #> tag-file-id write-file throw \ s" tag-file-id write-line throw base ! THEN ; :
+6cross-vi-tag-entry ( tlast @ 0<> \ IF sourcefilename vi-tag-file-id write-file throw tag-tab count vi-tag-file-id write-file throw Last-Header-Ghost @ >ghostname vi-tag-file-id write-file throw tag-tab count vi-tag-file-id write-file throw s" vi-tag-file-id write-file throw source vi-tag-file-id write-file throw s" vi-tag-file-id write-line throw THEN ; :
+6cross-tag-entry ( cross-gnu-tag-entry cross-vi-tag-entry ; \ Defer
+6skip? ' false IS skip? :
+6skipdef ( \G \G Ghost dup forward? IF >magic <skip> swap ! ELSE drop THEN ; :
+6tdefined? ( Ghost undefined? 0= ; :
+6defined2? ( \G \G Ghost forward? 0= ; :
+6forced? ( \G Ghost >magic @ <skip> = ; :
+6needed? ( \ \G \G \G \G bl word gfind IF dup undefined? nip 0= ELSE drop true THEN ; :
+6doer? ( \ Ghost dup >magic @ <do:> = IF >link @ ELSE drop 0 THEN ; :
+6skip-defs ( BEGIN refill WHILE source -trailing nip 0= UNTIL THEN ; \ Variable
+6NoHeaderFlag NoHeaderFlag off :
+60.r ( base @ >r hex 0 swap <# 0 ?DO # LOOP #> type r> base ! ; :
+6.sym ( \G bounds DO I c@ dup CASE [char] OF drop ." ENDOF [char] OF drop ." ENDOF dup OF emit ENDOF ENDCASE LOOP ; Defer
+6setup-execution-semantics ' noop IS setup-execution-semantics 0 Value
+6lastghost :
+6(THeader ( \ \ switchrom \ NoHeaderFlag @ IF NoHeaderFlag off ELSE T	4787 align H	4746 view, tlast @ dup 0> IF tcell - THEN T	4787 A, H	4746 there tlast ! 1 headers-named +! \ >in @ T	4787 name, H	4746 >in ! THEN T	4787 cfalign here H	4746 tlastcfa ! \ \ HeaderGhost \ dup >ghostname there symentry dup Last-Header-Ghost ! dup to lastghost dup >magic ^imm ! \ alias-mask flag! cross-doc-entry cross-tag-entry setup-execution-semantics ; \ \ Variable
+6;Resolve 1 cells allot :
+6hereresolve ( there resolve 0 ;Resolve ! ; :
+6Theader ( (THeader dup hereresolve ; Variable
+6aprim-nr -20 aprim-nr ! :
+6copy-execution-semantics ( >r dup >exec @ r@ >exec ! dup >comp @ r@ >comp ! dup >exec2 @ r@ >exec2 ! dup >exec-compile @ r@ >exec-compile ! dup >ghost-xt @ r@ >ghost-xt ! dup >created @ r@ >created ! rdrop drop ; >TARGET :
+7Alias ( \ >in @ skip? IF 2drop EXIT THEN >in ! (THeader ( 2dup swap xt>ghost swap copy-execution-semantics over resolve T	4787 A, H	4746 alias-mask flag! ; Variable
+7last-prim-ghost 0 last-prim-ghost ! :
+7asmprimname, ( dup last-prim-ghost ! >r here bl word count string, r@ >asm-name ! aprim-nr @ r> >asm-dummyaddr ! ; Defer
+7setup-prim-semantics :
+7mapprim ( THeader -1 aprim-nr +! aprim-nr @ T	4787 A, H	4746 asmprimname, setup-prim-semantics ; :
+7mapprim: ( -1 aprim-nr +! aprim-nr @ Ghost tuck swap resolve-noforwards <do:> swap tuck >magic ! asmprimname, ; :
+7Doer: ( \ >in @ skip? IF 2drop EXIT THEN >in ! dup 0< s" T	4787 $has? H	4746 0= and IF .sourcepos ." >in @ bl word count type >in ! cr THEN Ghost tuck swap resolve-noforwards <do:> swap >magic ! ; Variable
+7prim# :
+7first-primitive ( prim# ! ; :
+7group 0 word drop prim# @ 1- -$200 and prim# ! ; :
+7groupadd ( drop ; :
+7Primitive ( \ >in @ skip? IF drop EXIT THEN >in ! s" T	4787 $has? H	4746 0= IF .sourcepos ." >in @ bl word count type >in ! cr THEN prim# @ (THeader ( ['] prim-resolved over >comp ! dup >ghost-flags <primitive> set-flag s" T	4787 $has? H	4746 0= IF over resolve-noforwards T	4787 A, H	4746 alias-mask flag! ELSE T	4787 here H	4746 resolve-noforwards T	4787 A, H	4746 THEN -1 prim# +! ; >CROSS \ \G \G Variable
+6cond-xt-old :
+6cond-target ( \G cond-xt-old @ compile, ; immediate restrict :
+6;Cond postpone ; swap ! ; immediate :
+6Cond: ( \g \g \g Ghost >exec-compile dup @ cond-xt-old ! :NONAME ; :
+6Comment ( >in @ Ghost swap >in ! ' swap 2dup >exec-compile ! >exec ! ; Comment
+8( ( Comment
+8\ \ \ :
+6compile ( \ findghost dup >exec-compile @ ?dup IF nip compile, ELSE postpone literal postpone gexecute THEN ; immediate restrict >TARGET :
+7' ( \G bl word gfind 0= ABORT" g>xt ; \ \ :
+7comp' X 0 ; Cond:
+8['] T	4787 ' H	4746 alit, ;Cond >CROSS :
+6[T'] \ postpone [G'] state @ IF postpone g>xt ELSE g>xt THEN ; immediate \ \ T	4787 2 cells H	4746 Value
+6xt>body :
+6(>body) ( xt>body + ; ' (>body) plugin-of t>body :
+6fillcfa ( T	4787 cells H	4746 xt>body swap - assert1( dup 0 >= ) 0 ?DO 0 X tchar +LOOP ; :
+6(doer,) ( addr, 1 fillcfa ; ' (doer,) plugin-of doer, :
+6(docol,) ( [G'] (doer,) ; ' (docol,) plugin-of docol, ' NOOP plugin-of ca>native :
+6(doprim,) ( there xt>body + ca>native T	4787 a, H	4746 1 fillcfa ; ' (doprim,) plugin-of doprim, :
+6(doeshandler,) ( T	4787 cfalign H	4746 [G'] addr, T	4787 0 , H	4746 ; ' (doeshandler,) plugin-of doeshandler, :
+6(dodoes,) ( ]comp [G'] addr, comp[ addr, \ \ [ T	4787 e? H	4746 0= [IF] ] T	4787 here H	4746 tcell - reloff [ [THEN] ] 2 fillcfa ; ' (dodoes,) plugin-of dodoes, :
+6(dlit,) ( compile td, ; ' (dlit,) plugin-of dlit, :
+6(lit,) ( s>d dlit, ; ' (lit,) plugin-of lit, \ \ \ T	4787 has? H	4746 [IF] :
+6(alit,) ( compile T	4787 a, H	4746 ; ' (alit,) plugin-of alit, [ELSE] : (alit,) ( n -- ) lit, ; ' (alit,) plugin-of alit, [THEN] :
+6(fini,) compile ; ' (fini,) plugin-of fini, [IFUNDEF] (code) Defer
+6(code) Defer
+6(end-code) [THEN] >TARGET :
+7Code defempty? (THeader ( ['] prim-resolved over >comp ! there resolve-noforwards [ T	4787 e? H	4746 0= [IF] T e? ITC H [ELSE] true [THEN] ] [IF] doprim, [THEN] depth (code) ; \ :
+7Code: defempty? Ghost >r r@ >ghostname there symentry r@ there ca>native resolve-noforwards <do:> r@ >magic ! r> drop depth (code) ; :
+7end-code (end-code) depth ?dup IF 1- <> ABORT" ELSE true ABORT" THEN ; >CROSS \ >TARGET Cond:
+8\G T-\G ;Cond Cond:
+8Literal ( lit, ;Cond Cond:
+8ALiteral ( alit, ;Cond :
+7Char ( bl word char+ c@ ; Cond:
+8[Char] ( Char lit, ;Cond :
+7(x#) ( base @ >r base ! 0 0 name >number 2drop drop r> base ! ; :
+7d# $0a (x#) ; :
+7h# $010 (x#) ; Cond:
+8d# $0a (x#) lit, ;Cond Cond:
+8h# $010 (x#) lit, ;Cond tchar 1 = [IF] Cond:
+8chars ;Cond [THEN] \ Cond:
+8MAXU -1 s>d dlit, ;Cond tcell 2 = tcell 4 = or tcell 8 = or 0= [IF] .( Warning: MINI and MAXI may not work with this host) cr [THEN] Cond:
+8MINI tcell 2 = IF $8000 ELSE $80000000 THEN 0 tcell 8 = IF swap THEN dlit, ;Cond Cond:
+8MAXI tcell 2 = IF $7fff ELSE $7fffffff THEN 0 tcell 8 = IF drop -1 swap THEN dlit, ;Cond >CROSS \ \ \ \ :
+6discard 0 ?DO drop LOOP ; \ :
+6tcom ( \ gfind IF >r ( discard r> dup >exec-compile @ ?dup IF nip execute-exec-compile ELSE gexecute THEN EXIT THEN (number?) dup IF 0> IF swap lit, THEN lit, discard ELSE 2drop restore-input throw Ghost gexecute THEN ; \ \ >CROSS :
+6compiling-state ( \G Compiling comp-state ! \ [G'] dup undefined? 0= IF >ghost-xt @ execute X ELSE drop THEN ; :
+6interpreting-state ( \G \ [G'] dup undefined? 0= IF >ghost-xt @ execute X ELSE drop THEN Interpreting comp-state ! ; >TARGET :
+7] compiling-state BEGIN BEGIN save-input bl word dup c@ 0= WHILE drop discard refill 0= ABORT" REPEAT tcom compiling? 0= UNTIL ; \ \ :
+7(:) ( \ ;Resolve ! there ;Resolve cell+ ! docol, ]comp colon-start depth T	4787 ] H	4746 ; :
+7: ( \ defempty? constflag off \ \ >in @ skip? IF drop skip-defs EXIT THEN >in ! (THeader (:) ; :
+7:noname ( switchrom X there \ here ghostheader dup last-header-ghost ! dup to lastghost (:) ; Cond:
+8EXIT ( compile ;Cond Cond:
+8?EXIT ( 1 abort" ;Cond >CROSS :
+6LastXT ;Resolve @ 0= abort" ;Resolve cell+ @ ; >TARGET Cond:
+8recurse ( Last-Header-Ghost @ gexecute ;Cond Cond:
+8; ( depth ?dup IF 1- <> ABORT" ELSE true ABORT" THEN colon-end fini, comp[ ;Resolve @ IF ['] colon-resolved ;Resolve @ >comp ! ;Resolve @ ;Resolve cell+ @ resolve THEN interpreting-state ;Cond Cond:
+8[ ( interpreting-state ;Cond >CROSS 0 Value
+6created :
+6!does ( tlastcfa @ [G'] killref >space here >r ghostheader space> ['] colon-resolved r@ >comp ! r@ created >do:ghost ! r@ swap resolve r> tlastcfa @ >tempdp dodoes, tempdp> ; Defer
+6instant-interpret-does>-hook ' noop IS instant-interpret-does>-hook T	4787 has? H	4746 [IF] :
+6does-resolved ( compile g>xt T	4787 a, H	4746 ; [ELSE] : does-resolved ( ghost -- ) g>xt T a, H ; [THEN] :
+6resolve-does>-part ( \ Last-Header-Ghost @ >do:ghost @ ?dup IF there resolve THEN ; >TARGET Cond:
+8DOES> T	4787 here H	4746 [ T	4787 has? H	4746 [IF] ] 5 [ [ELSE] ] 4 [ [THEN] ] T	4787 cells H	4746 + alit, compile compile doeshandler, resolve-does>-part ;Cond :
+7DOES> ['] does-resolved created >comp ! switchrom doeshandler, T	4787 here H	4746 !does instant-interpret-does>-hook depth T	4787 ] H	4746 ; >CROSS \ \ 0 Value
+6built :
+6Builder ( \ \ \ \ ghost to built built >created @ 0= IF built >created on THEN ; :
+6gdoes, ( \ >do:ghost @ dup undefined? 0= IF dup >magic @ <do:> = IF doer, ELSE dodoes, THEN EXIT THEN \ \ 2 refered 0 fillcfa ; :
+6takeover-x-semantics ( \g swap >do:ghost @ 2dup swap >do:ghost ! \ \ \ \ 2dup >exec @ swap >exec2 ! >comp @ swap >comp ! ; 0 Value
+6createhere :
+6create-resolve ( created createhere resolve 0 ;Resolve ! ; :
+6create-resolve-immediate ( create-resolve T	4787 immediate H	4746 ; :
+6TCreate ( create-forward-warn IF ['] reswarn-forward IS resolve-warning THEN executed-ghost @ (Theader dup >created on dup to created 2dup takeover-x-semantics there to createhere drop gdoes, ; :
+6RTCreate ( \ create-forward-warn IF ['] reswarn-forward IS resolve-warning THEN \ executed-ghost @ (THeader dup >created on dup to created 2dup takeover-x-semantics there 0 T	4787 a, H	4746 alias-mask flag! \ switchram T	4787 cfalign H	4746 there swap T	4787 ! H	4746 there tlastcfa ! there to createhere drop gdoes, ; :
+6Build: ( :noname postpone TCreate ; :
+6BuildSmart: ( :noname [ T	4787 has? H	4746 [IF] ] postpone RTCreate [ [ELSE] ] postpone TCreate [ [THEN] ] ; :
+6;Build postpone create-resolve postpone ; built >exec ! ; immediate :
+6;Build-immediate postpone create-resolve-immediate postpone ; built >exec ! ; immediate :
+6gdoes> ( executed-ghost @ g>body ; \ :
+6do:ghost! ( built >do:ghost ! ; :
+6doexec! ( built >do:ghost @ >exec ! ; :
+6DO: ( here ghostheader do:ghost! :noname postpone gdoes> ; :
+6by: ( \ Ghost do:ghost! :noname postpone gdoes> ; :
+6;DO ( postpone ; doexec! ; immediate :
+6by ( \ Ghost >do:ghost @ do:ghost! ; :
+6compile: ( \G \G :noname ; :
+6;compile ( postpone ; built >do:ghost @ >comp ! ; immediate \ Builder
+8(Constant) Build: ( ;Build by:
+8:docon ( T	4787 @ H	4746 ;DO Builder
+8Constant Build: ( T	4787 , H	4746 ;Build by Builder
+8AConstant Build: ( T	4787 A, H	4746 ;Build by Builder
+82Constant Build: ( T	4787 , , H	4746 ;Build DO: ( T	4787 dup cell+ @ swap @ H	4746 ;DO Builder
+8Create BuildSmart: ;Build by: ( ;DO Builder
+8Variable T	4787 has? H	4746 [IF] Build: ( -- ) T here 0 A, H switchram T align here swap ! 0 , H ( switchrom ) ;Build by (Constant) [ELSE] Build: T	4787 0 , H	4746 ;Build by [THEN] Builder
+82Variable T	4787 has? H	4746 [IF] Build: ( -- ) T here 0 A, H switchram T align here swap ! 0 , 0 , H ( switchrom ) ;Build by (Constant) [ELSE] Build: T	4787 0 , 0 , H	4746 ;Build by [THEN] Builder
+8AVariable T	4787 has? H	4746 [IF] Build: ( -- ) T here 0 A, H switchram T align here swap ! 0 A, H ( switchrom ) ;Build by (Constant) [ELSE] Build: T	4787 0 A, H	4746 ;Build by [THEN] \ :
+6tup@ user-region >rstart @ ; \ \ :
+6u, ( current-region >r user-region activate X swap X tup@ - r> activate ; :
+6au, ( current-region >r user-region activate X swap X tup@ - r> activate ; T	4787 has? H	4746 [IF] : buildby ghost >exec @ built >exec ! ; Builder User buildby Variable by Variable Builder 2User buildby 2Variable by 2Variable Builder AUser buildby AVariable by AVariable [ELSE] Builder
+8User Build: 0 u, X ;Build by:
+8:douser ( X tup@ + ;DO Builder
+82User Build: 0 u, X 0 u, drop ;Build by Builder
+8AUser Build: 0 au, X ;Build by [THEN] T	4787 has? H	4746 [IF] Builder (Value) Build: ( n -- ) ;Build by: :dovalue ( target-body-addr -- n ) T @ @ H ;DO Builder Value Build: T here 0 A, H switchram T align here swap ! , H ;Build by (Value) Builder AValue Build: T here 0 A, H switchram T align here swap ! A, H ;Build by (Value) [ELSE] Builder
+8(Value) Build: ( ;Build by:
+8:dovalue ( T	4787 @ H	4746 ;DO Builder
+8Value BuildSmart: T	4787 , H	4746 ;Build by Builder
+8AValue BuildSmart: T	4787 A, H	4746 ;Build by [THEN] Defer
+6texecute Builder
+8Defer T	4787 has? H	4746 [IF] Build: ( -- ) T here 0 A, H switchram T align here swap ! H [T'] noop T A, H ( switchrom ) ;Build by: :dodefer ( ghost -- ) X @ X @ texecute ;DO [ELSE] BuildSmart: ( [T'] T	4787 A, H	4746 ;Build by:
+8:dodefer ( X texecute ;DO [THEN] Builder
+8interpret/compile: Build: ( swap T	4787 A, A, H	4746 ;Build-immediate DO: ( ABORT" ;DO \ :
+6nalign ( \ 1- tuck + swap invert and ; Builder
+8(Field) Build: ;Build by:
+8:dofield T	4787 @ H	4746 + ;DO Builder
+8Field Build: ( rot dup T	4787 , H	4746 ( + >r nalign r> ;Build by >TARGET :
+7struct T	4787 1 chars 0 H	4746 ; :
+7end-struct T	4787 2Constant H	4746 ; :
+7cell% ( T	4787 1 cells H	4746 dup ; >CROSS \ Builder
+8input-method Build: ( dup T	4787 , cell+ H	4746 ;Build DO: abort" ;DO Builder
+8input-var Build: ( over T	4787 , H	4746 + ;Build DO: abort" ;DO \ \ \ \ \ \ \ \ \ T	4787 has? H	4746 [IF] \ >CROSS :
+6(callc) compile T	4787 >body a, H	4746 ; ' (callc) plugin-of colon, :
+6(callcm) T	4787 here 0 a, 0 a, H	4746 ; ' (callcm) plugin-of colonmark, :
+6(call-res) >tempdp resolved gexecute tempdp> drop ; ' (call-res) plugin-of colon-resolve T	4787 has? H	4746 [IF] : (pprim) T @ H >signed dup 0< IF $4000 - ELSE cr ." wrong usage of (prim) " dup gdiscover IF .ghost ELSE . THEN cr -1 throw THEN T a, H ; ' (pprim) plugin-of prim, [ELSE] :
+6(pprim) dup 0< IF $4000 - ELSE cr ." dup gdiscover IF .ghost ELSE . THEN cr -1 throw THEN T	4787 a, H	4746 ; ' (pprim) plugin-of prim, [THEN] \ \ \ \ Builder compile: g>body compile T	4787 a, H	4746 ;compile Builder compile: g>body compile T	4787 a, H	4746 ;compile \ Builder compile: g>body alit, ;compile Builder compile: g>body compile T	4787 @ , H	4746 ;compile Builder compile: g>body compile T	4787 A, H	4746 ;compile Builder compile: g>body T	4787 @ H	4746 compile T	4787 here H	4746 reloff T	4787 , H	4746 ;compile Builder compile: does-resolved ;compile Builder compile: does-resolved ;compile Builder compile: does-resolved ;compile [THEN] \ >CROSS :
+6(ncontrols?) ( \g depth over u<= ABORT" 0 ?DO I pick 0= ABORT" LOOP ; ' (ncontrols?) plugin-of ncontrols? \ \ :
+6>mark ( T	4787 here ( dup ." hex. ) 0 , H	4746 ; X [IF] :
+6branchoffset ( drop ; :
+6offset, ( X ; [ELSE] : branchoffset ( src dest -- ) - tchar / ; \ ?? jaw : offset, ( n -- ) X , ; [THEN] :noname compile X branchoffset offset, ; IS branch, ( :noname compile X branchoffset offset, ; IS ?branch, ( :noname compile T	4787 here 0 H	4746 offset, ; IS branchmark, ( :noname compile T	4787 here 0 H	4746 offset, ; IS ?branchmark, ( :noname T	4787 here 0 H	4746 offset, ; IS ?domark, ( :noname dup X ?struc X over branchoffset swap X ; IS branchtoresolve, ( :noname branchto, X ; IS branchtomark, ( >TARGET \ \ \ >CROSS Variable
+6tleavings 0 tleavings ! :
+6(done) ( \G \G \G tleavings @ BEGIN dup WHILE >r dup r@ cell+ @ \ u> 0= \ WHILE r@ 2 cells + @ \ branchtoresolve, r@ @ r> free throw REPEAT r> THEN tleavings ! drop ; >TARGET \ >CROSS :
+6(leave) ( 3 cells allocate throw >r T	4787 here H	4746 r@ cell+ ! r@ 2 cells + ! tleavings @ r@ ! r> tleavings ! ; >TARGET :
+7(leave,) ( branchmark, (leave) ; ' (leave,) plugin-of leave, :
+7(?leave,) ( compile ?branchmark, (leave) ; ' (?leave,) plugin-of ?leave, Cond:
+8LEAVE leave, ;Cond Cond:
+8?LEAVE ?leave, ;Cond >CROSS \ :
+6to1 ( \G dup dup 1+ cells allocate throw dup >r swap 1+ 0 DO tuck ! cell+ LOOP drop r> ; :
+61to ( \G dup @ swap over cells + swap 0 DO dup @ swap 1 cells - LOOP free throw ; :
+6loop] ( branchto, dup X branchoffset offset, tcell - (done) ; :
+6skiploop] ?dup IF branchto, branchtoresolve, THEN ; >TARGET \ :
+7(cs-swap) ( swap ; ' (cs-swap) plugin-of cs-swap :
+7(ahead,) branchmark, ; ' (ahead,) plugin-of ahead, :
+7(if,) ?branchmark, ; ' (if,) plugin-of if, :
+7(then,) branchto, branchtoresolve, ; ' (then,) plugin-of then, :
+7(else,) ( branchmark, swap ( branchto, branchtoresolve, ; ' (else,) plugin-of else, :
+7(begin,) branchtomark, ; ' (begin,) plugin-of begin, :
+7(while,) ( ?branchmark, swap ; ' (while,) plugin-of while, :
+7(again,) branch, ; ' (again,) plugin-of again, :
+7(until,) ?branch, ; ' (until,) plugin-of until, :
+7(repeat,) ( branch, ( branchto, branchtoresolve, ; ' (repeat,) plugin-of repeat, :
+7(case,) ( 0 ; ' (case,) plugin-of case, :
+7(of,) ( 1+ >r compile compile if, compile r> ; ' (of,) plugin-of of, :
+7(endof,) ( >r 1 ncontrols? else, r> ; ' (endof,) plugin-of endof, :
+7(endcase,) ( compile 0 ?DO 1 ncontrols? then, LOOP ; ' (endcase,) plugin-of endcase, >TARGET Cond:
+8AHEAD ahead, ;Cond Cond:
+8IF if, ;Cond Cond:
+8THEN 1 ncontrols? then, ;Cond Cond:
+8ENDIF 1 ncontrols? then, ;Cond Cond:
+8ELSE 1 ncontrols? else, ;Cond Cond:
+8BEGIN begin, ;Cond Cond:
+8WHILE 1 ncontrols? while, ;Cond Cond:
+8AGAIN 1 ncontrols? again, ;Cond Cond:
+8UNTIL 1 ncontrols? until, ;Cond Cond:
+8REPEAT 2 ncontrols? repeat, ;Cond Cond:
+8CASE case, ;Cond Cond:
+8OF of, ;Cond Cond:
+8ENDOF endof, ;Cond Cond:
+8ENDCASE endcase, ;Cond \ :
+7(do,) ( \ 0 compile branchtomark, 2 to1 ; ' (do,) plugin-of do, \ \ \ \ \ :
+7(?do,) ( 0 compile ?domark, (leave) branchtomark, 2 to1 ; ' (?do,) plugin-of ?do, :
+7(for,) ( compile branchtomark, ; ' (for,) plugin-of for, :
+7(loop,) ( 1to compile loop] compile skiploop] ; ' (loop,) plugin-of loop, :
+7(+loop,) ( 1to compile loop] compile skiploop] ; ' (+loop,) plugin-of +loop, :
+7(next,) compile loop] compile ; ' (next,) plugin-of next, Cond:
+8DO do, ;Cond Cond:
+8?DO ?do, ;Cond Cond:
+8FOR for, ;Cond Cond:
+8LOOP 1 ncontrols? loop, ;Cond Cond:
+8+LOOP 1 ncontrols? +loop, ;Cond Cond:
+8NEXT 1 ncontrols? next, ;Cond \ :
+7," [char] parse ht-string, X ; X [IF] Cond: ." compile (.") T ," H ;Cond Cond: S" compile (S") T ," H ;Cond Cond: C" compile (C") T ," H ;Cond Cond: ABORT" compile (ABORT") T ," H ;Cond [ELSE] Cond:
+8." '" parse tuck 2>r ahead, there 2r> ht-mem, X >r then, r> compile compile compile ;Cond Cond:
+8S" '" parse tuck 2>r ahead, there 2r> ht-mem, X >r then, r> compile compile ;Cond Cond:
+8C" ahead, there [char] parse ht-string, X >r then, r> compile ;Cond Cond:
+8ABORT" if, ahead, there [char] parse ht-string, X >r then, r> compile compile then, ;Cond [THEN] X [IF] Cond: IS T ' >body @ H compile ALiteral compile ! ;Cond : IS T >address ' >body @ ! H ; Cond: TO T ' >body @ H compile ALiteral compile ! ;Cond : TO T ' >body @ ! H ; Cond: CTO T ' >body H compile ALiteral compile ! ;Cond : CTO T ' >body ! H ; [ELSE] Cond:
+8IS T	4787 ' >body H	4746 compile compile ;Cond :
+7IS T	4787 >address ' >body ! H	4746 ; Cond:
+8TO T	4787 ' >body H	4746 compile compile ;Cond :
+7TO T	4787 ' >body ! H	4746 ; [THEN] Cond:
+8defers T	4787 ' >body @ compile, H	4746 ;Cond \ \ :
+7linked X over X X swap X ; :
+7chained T	4787 linked A, H	4746 ; :
+7err" s" evaluate T	4787 , H	4746 [char] parse ht-string, X ; :
+7env" [char] parse s" evaluate ht-string, X X ; :
+72env" [char] parse s" evaluate here >r ht-string, X X X r> dup T	4787 c@ H	4746 80 and swap T	4787 c! H	4746 ; \ Cond:
+8[compile] ( \ \g bl word gfind 0= ABORT" (gexecute) ;Cond Cond:
+8postpone ( \ bl word gfind 0= ABORT" dup >magic @ <fwd> = ABORT" dup >magic @ <imm> = IF (gexecute) ELSE >link @ alit, compile THEN ;Cond \ hex >CROSS Create
+6magic s" here over allot swap move bigendian 1+ \ tcell 1 = 0 and or tcell 2 = 2 and or tcell 4 = 4 and or tcell 8 = 6 and or tchar 1 = 00 and or tchar 2 = 28 and or tchar 4 = 50 and or tchar 8 = 78 and or magic 7 + c! :
+6save-cross ( .regions \ bl parse ." 2dup type cr w/o bin create-file throw >r s" X IF s" r@ write-file throw bl parse r@ write-file throw s" r@ write-file throw #lf r@ emit-file throw r@ dup file-position throw drop 8 mod 8 swap ( ?do bl over emit-file throw loop drop magic 8 r@ write-file throw \ ELSE bl parse 2drop THEN >rom dictionary >rmem @ there s" X IF dictionary >rstart @ - THEN r@ write-file throw \ s" X IF dictionary >rbm @ there 1- tcell>bit rshift 1+ r@ write-file throw \ THEN r> close-file throw ; :
+6save-region ( bl parse w/o bin create-file throw >r swap >image swap r@ write-file throw r> close-file throw ; \ Variable
+6name-ptr Create
+6name-buf 200 chars allot :
+6init-name-buf name-buf name-ptr ! ; :
+6nb, name-ptr @ c! 1 chars name-ptr +! ; :
+6$nb, ( bounds ?DO I c@ nb, LOOP ; :
+6@nb name-ptr @ name-buf tuck - ; \ \ :
+6name-char, ( dup 'a 'z 1+ within IF nb, EXIT THEN dup 'A 'Z 1+ within IF $20 + nb, EXIT THEN dup '0 '9 1+ within IF nb, EXIT THEN CASE '+ OF s" $nb, ENDOF '- OF s" $nb, ENDOF '* OF s" $nb, ENDOF '/ OF s" $nb, ENDOF '' OF s" $nb, ENDOF '( OF s" $nb, ENDOF ') OF s" $nb, ENDOF '[ OF s" $nb, ENDOF '] OF s" $nb, ENDOF '! OF s" $nb, ENDOF '@ OF s" $nb, ENDOF '> OF s" $nb, ENDOF '< OF s" $nb, ENDOF '= OF s" $nb, ENDOF '# OF s" $nb, ENDOF '? OF s" $nb, ENDOF ': OF s" $nb, ENDOF '; OF s" $nb, ENDOF ', OF s" $nb, ENDOF '. OF s" $nb, ENDOF '" OF s" $nb, ENDOF dup base @ >r hex s>d <# #s 'X hold '_ hold #> $nb, r> base ! ENDCASE ; :
+6label-from-ghostname ( dup >ghostname init-name-buf 'L nb, bounds ?DO I c@ name-char, LOOP \ \ \ \ \ dup >ghost-flags @ <unique> and 0= IF s" $nb, >link @ base @ >r hex 0 <# #s 'L hold #> r> base ! $nb, ELSE drop THEN @nb ; \ :
+6label-from-ghostnameXX ( \ dup >asm-name @ ?dup IF nip count EXIT THEN \ align here >r string, align r> r> >asm-name ! ; :
+6primghostdiscover ( dup 0= IF false EXIT THEN >r last-prim-ghost BEGIN @ dup WHILE dup >asm-dummyaddr @ r@ = IF rdrop true EXIT THEN REPEAT drop r> false ; :
+6gdiscover2 ( dup taddr>region 0= IF false EXIT THEN dup (>regiontype) @ dup 0= IF drop false EXIT THEN addr-xt-ghost @ dup 0= IF drop false EXIT THEN nip true ; \ \ :
+6generate-label-name ( gdiscover2 IF dup >magic @ <do:> = IF >asm-name @ count EXIT THEN label-from-ghostname ELSE primghostdiscover IF >asm-name @ count ELSE base @ >r hex 0 <# #s 'L hold #> r> base ! THEN THEN ; Variable
+6outfile-fd :
+6$out ( outfile-fd @ write-file throw ; :
+6nlout newline $out ; :
+6.ux ( base @ hex swap 0 <# #S #> $out base ! ; :
+6save-asm-region-part-aligned ( dup cell/ 0 ?DO nlout s" $out over @relbit IF over X generate-label-name $out ELSE over X s" $out .ux THEN tcell /string LOOP ; :
+6print-bytes ( over min dup 0> IF nlout s" $out 0 ?DO I 0> IF s" $out THEN over X s" $out .ux 1 /string LOOP THEN ; :
+6save-asm-region-part ( over dup X swap - ?dup IF print-bytes THEN save-asm-region-part-aligned dup dup X swap - ?dup IF 2 pick @relbit ABORT" print-bytes THEN 2drop ; :
+6print-label ( nlout generate-label-name $out s" $out ; :
+6snl-calc ( tuck over - ; :
+6skip-nolables ( \G \G \G \G \G \G \G \G \G dup 1+ dup (>regiontype) ( dup @ dup IF addr-refs @ THEN swap >r over align+ tuck tcell swap - rshift swap 0 ?DO dup 1 and IF drop rdrop snl-calc UNLOOP EXIT THEN 2/ swap 1+ swap LOOP drop r> cell+ ( dup BEGIN dup @ dup IF addr-refs @ THEN 0= WHILE cell+ REPEAT dup >r swap - 1 cells / tcell * + r> ( @ addr-refs @ 1 tcell lshift or BEGIN dup 1 and 0= WHILE swap 1+ swap 2/ REPEAT drop ( snl-calc ; :
+6insert-label ( dup 0= IF drop EXIT THEN \ \ dup taddr>region 0= IF drop EXIT THEN dup >r (>regiontype) define-addr-struct addr-refs dup @ r> tcell 1- and 1 swap lshift or swap ! ; \ \ :
+6generate-label-list-region ( BEGIN over @relbit IF over X insert-label THEN tcell /string dup 0< UNTIL 2drop ; :
+6generate-label-list ( region-link BEGIN @ dup WHILE dup 0 >rlink - extent ?dup IF generate-label-list-region ELSE drop THEN REPEAT drop ; :
+6create-outfile ( w/o bin create-file throw outfile-fd ! ; :
+6close-outfile ( outfile-fd @ close-file throw ; :
+6(save-asm-region) ( \ generate-label-list \ extent ( over insert-label 2dup + dup insert-label >r ( ( drop BEGIN dup print-label dup r@ <> WHILE skip-nolables save-asm-region-part REPEAT drop rdrop ; :
+6lineout ( outfile-fd @ write-line throw ; :
+6save-asm-region ( create-outfile (save-asm-region) close-outfile ; \ >MINIMAL also	47466 minimal	47469 \ :
+9KB 400 * ; \ \ \ \ \ Create
+9parsed 20 chars allot \ :
+9upcase parsed count bounds ?DO I c@ toupper I c! LOOP ; :
+9[ELSE] 1 BEGIN BEGIN bl word count dup WHILE comment? 20 umin parsed place upcase parsed count 2dup s" str= >r 2dup s" str= >r 2dup s" str= r> or r> or IF 2drop 1+ ELSE 2dup s" str= IF 2drop 1- dup IF 1+ THEN ELSE 2dup s" str= >r s" str= r> or IF 1- THEN THEN THEN ?dup 0= ?EXIT REPEAT 2drop refill 0= UNTIL drop ; immediate :
+9[THEN] ( ; immediate :
+9[ENDIF] ( ; immediate :
+9[IF] ( 0= IF postpone [ELSE] THEN ; immediate Cond:
+8[IF] postpone [IF] ;Cond Cond:
+8[THEN] postpone [THEN] ;Cond Cond:
+8[ELSE] postpone [ELSE] ;Cond \ :
+9defined? tdefined? ; :
+9needed? needed? ; :
+9doer? doer? ; \ :
+9directive? bl word count [ ' target >wordlist ] literal search-wordlist dup IF nip THEN ; :
+9[IFDEF] >in @ directive? swap >in ! 0= IF tdefined? ELSE name 2drop true THEN postpone [IF] ; :
+9[IFUNDEF] tdefined? 0= postpone [IF] ; Cond:
+8[IFDEF] postpone [IFDEF] ;Cond Cond:
+8[IFUNDEF] postpone [IFUNDEF] ;Cond \ :
+9C: >in @ tdefined? 0= IF >in ! X ELSE drop BEGIN bl word dup c@ IF count comment? s" str= ?EXIT ELSE refill 0= ABORT" THEN AGAIN THEN ; :
+9d? d? ; :
+9\D ( \G D? 0= IF postpone \ THEN ; :
+9\- ( \G tdefined? IF postpone \ THEN ; :
+9\+ ( \G tdefined? 0= IF postpone \ THEN ; :
+9\? ( \G X 0= IF postpone \ THEN ; Cond:
+8\- \- ;Cond Cond:
+8\+ \+ ;Cond Cond:
+8\D \D ;Cond Cond:
+8\? \? ;Cond :
+9?? bl word find IF execute ELSE drop 0 THEN ; :
+9needed: \G BEGIN >in @ bl word c@ WHILE >in ! Ghost drop REPEAT drop ; \ create
+9s-buffer 50 chars allot bigendian Constant
+9bigendian :
+9here there ; :
+9equ constant ; :
+9mark there constant ; \ :
+9>ram >ram ; :
+9>rom >rom ; :
+9>auto >auto ; :
+9>tempdp >tempdp ; :
+9tempdp> tempdp> ; :
+9const constflag on ; :
+9Redefinitions-start \G \G \G twarnings off warnings off reuse-ghosts on ; :
+9Redefinitions-end \G twarnings on warnings on reuse-ghosts off ; :
+9warnings name 3 = IF twarnings off warnings off ELSE twarnings on warnings on THEN drop ; :
+9| ; \ :
+9save-cross save-cross ; :
+9save-region save-region ; :
+9tdump swap >image swap dump ; also	474699 forth	474694 [IFDEF] Label : Label defempty? Label ; [THEN] [IFDEF] start-macros : start-macros defempty? start-macros ; [THEN] \ previous	47469 :
+9s" [char] parse s-buffer place s-buffer count ; \ :
+9+ + ; :
+91+ 1 + ; :
+92+ 2 + ; :
+91- 1- ; :
+9- - ; :
+9and and ; :
+9or or ; :
+92* 2* ; :
+9* * ; :
+9/ / ; :
+9dup dup ; :
+9?dup ?dup ; :
+9over over ; :
+9swap swap ; :
+9rot rot ; :
+9drop drop ; :
+92drop 2drop ; :
+9= = ; :
+9<> <> ; :
+90= 0= ; :
+9lshift lshift ; :
+92/ 2/ ; :
+9hex. base @ $10 base ! swap . base ! ; :
+9invert invert ; :
+9linkstring ( X over X X swap X X ht-string, X ; \ :
+9all-words ['] forced? IS skip? ; :
+9needed-words ['] needed? IS skip? ; :
+9undef-words ['] defined2? IS skip? ; :
+9skipdef skipdef ; :
+9\ postpone \ ; immediate :
+9\G T-\G ; immediate :
+9( postpone ( ; immediate :
+9include bl word count included ; :
+9included swap >image swap included ; :
+9require require ; :
+9needs require ; :
+9.( [char] parse type ; :
+9ERROR" [char] parse rot IF cr ." type ." -1 ABORT" ELSE 2drop THEN ; :
+9." [char] parse type ; :
+9cr cr ; :
+9times 0 ?DO dup X LOOP drop ; \ \ \ :
+9decimal decimal [g'] >exec2 @ ?dup IF EXECUTE THEN ; :
+9hex hex [g'] >exec2 @ ?dup IF EXECUTE THEN ; \ \ :
+9doc-off false to-doc ! ; :
+9doc-on true to-doc ! ; :
+9declareunique ( \ \ \ \ \ \ Ghost >ghost-flags dup @ <unique> or swap ! ; \ \ \ :
+9horder order ; :
+9hwords words ; \ \ :
+9.s .s ; :
+9depth depth ; :
+9bye bye ; \ \ :
+9H forth ; immediate :
+9T minimal ; immediate :
+9G ghosts ; immediate \ :
+9unlock previous forth also cross ; \ >cross :
+6turnkey ghosts-wordlist 1 set-order also target definitions also Minimal also ; >minimal :
+9[[+++ turnkey unlock ; unlock	47446 definitions also	474466 minimal	474469 :
+6lock turnkey ; Defer
+6+++]]-hook :
+6+++]] +++]]-hook lock ; LOCK	8799 \ UNLOCK	8746 >CROSS [IFDEF] extend-cross extend-cross [THEN] LOCK	8799 \ decimal has? 0= [IF] has? has? makekernel [THEN] \ has? [IF] here 1802 over A, \ 0 , \ 0 , \ has? , \ has? , \ has? , \ has? , \ has? , \ 0 A, \ 0 A, \ has? , \ 0 , \ 0 , \ 0 , \ 0 , \ 0 , \ [THEN] doc-off has? [IF] include \ \ \ \ \ \ \ \ \ \ \ \ \ -2 Doer: -3 Doer: -4 Doer: -5 Doer: -6 Doer: -7 Doer: -8 Doer: -9 Doer: -&10 Doer: -&2 first-primitive \ \ 0 [if] 9 groupadd group Primitive Primitive Primitive Primitive
+8perform Primitive Primitive Primitive Primitive 8 groupadd has? [IF] Primitive
+8branch-lp+!# 1 groupadd [THEN] Primitive Primitive 2 groupadd has? [IF] Primitive
+8?branch-lp+!# 1 groupadd [THEN] 0 groupadd has? [IF] Primitive
+8?dup-?branch Primitive
+8?dup-0=-?branch 2 groupadd [THEN] has? 0= [IF] Primitive 1 groupadd has? [IF] Primitive
+8(next)-lp+!# 1 groupadd [THEN] Primitive 1 groupadd has? [IF] Primitive
+8(loop)-lp+!# 1 groupadd [THEN] Primitive 1 groupadd has? [IF] Primitive
+8(+loop)-lp+!# 1 groupadd [THEN] 0 groupadd has? [IF] Primitive
+8(-loop) 1 groupadd has? [IF] Primitive
+8(-loop)-lp+!# 1 groupadd [THEN] Primitive
+8(s+loop) 1 groupadd has? [IF] Primitive
+8(s+loop)-lp+!# 1 groupadd [THEN] 0 groupadd [THEN] Primitive Primitive Primitive 3 groupadd has? [IF] Primitive
+8(+do) Primitive
+8(u+do) Primitive
+8(-do) Primitive
+8(u-do) 4 groupadd [THEN] Primitive
+8i Primitive
+8i' Primitive
+8j Primitive
+8k [THEN] 4 groupadd group Primitive
+8move Primitive
+8cmove Primitive
+8cmove> Primitive
+8fill Primitive
+8compare Primitive
+8toupper Primitive
+8capscompare Primitive
+8/string 8 groupadd group Primitive Primitive Primitive Primitive
+8under+ Primitive Primitive
+8negate Primitive
+81+ Primitive
+81- Primitive
+8max Primitive
+8min Primitive
+8abs Primitive
+8* Primitive
+8/ Primitive
+8mod Primitive
+8/mod Primitive
+8*/mod Primitive
+8*/ Primitive
+82* Primitive
+82/ Primitive
+8fm/mod Primitive
+8sm/rem Primitive
+8m* Primitive
+8um* Primitive
+8um/mod Primitive
+8m+ Primitive
+8d+ Primitive
+8d- Primitive
+8dnegate Primitive
+8d2* Primitive
+8d2/ Primitive
+8and Primitive
+8or Primitive
+8xor Primitive
+8invert Primitive
+8rshift Primitive
+8lshift 36 groupadd group Primitive Primitive
+80<> Primitive
+80< Primitive
+80> Primitive
+80<= Primitive
+80>= Primitive Primitive
+8<> Primitive
+8< Primitive
+8> Primitive
+8<= Primitive
+8>= Primitive
+8u= Primitive
+8u<> Primitive
+8u< Primitive
+8u> Primitive
+8u<= Primitive
+8u>= 18 groupadd has? [IF] Primitive
+8d= Primitive
+8d<> Primitive
+8d< Primitive
+8d> Primitive
+8d<= Primitive
+8d>= Primitive
+8d0= Primitive
+8d0<> Primitive
+8d0< Primitive
+8d0> Primitive
+8d0<= Primitive
+8d0>= Primitive
+8du= Primitive
+8du<> Primitive
+8du< Primitive
+8du> Primitive
+8du<= Primitive
+8du>= 18 groupadd [THEN] Primitive
+8within 1 groupadd group Primitive Primitive
+8up! Primitive
+8sp@ Primitive
+8sp! Primitive
+8rp@ Primitive
+8rp! 6 groupadd has? [IF] Primitive
+8fp@ Primitive
+8fp! 2 groupadd [THEN] Primitive
+8>r Primitive
+8r> Primitive
+8rdrop Primitive
+82>r Primitive
+82r> Primitive
+82r@ Primitive
+82rdrop Primitive Primitive Primitive
+8swap Primitive
+8dup Primitive
+8rot Primitive
+8-rot Primitive
+8nip Primitive
+8tuck Primitive
+8?dup Primitive
+8pick Primitive Primitive Primitive
+82over Primitive
+82swap Primitive
+82rot Primitive
+82nip Primitive
+82tuck 24 groupadd group Primitive Primitive Primitive Primitive
+8+! Primitive
+8c@ Primitive
+8c! Primitive
+82! Primitive
+82@ Primitive
+8cell+ Primitive
+8cells Primitive
+8char+ Primitive
+8(chars) Primitive
+8count 13 groupadd group 0 groupadd has? [IF] Primitive
+8(listlfind) 1 groupadd has? [IF] Primitive
+8(hashlfind) Primitive
+8(tablelfind) Primitive
+8(hashkey1) 3 groupadd [THEN] 0 groupadd [THEN] Primitive
+8(parse-white) Primitive
+8aligned Primitive
+8faligned has? has? and [IF] Primitive
+8threading-method [THEN] 4 groupadd group Primitive
+8key-file Primitive
+8key?-file Primitive
+8stdin Primitive
+8stdout Primitive
+8stderr 5 groupadd has? [IF] Primitive
+8form Primitive
+8wcwidth Primitive
+8flush-icache Primitive
+8(bye) Primitive
+8(system) Primitive
+8getenv Primitive
+8open-pipe Primitive
+8close-pipe Primitive
+8time&date Primitive
+8ms Primitive
+8allocate Primitive
+8free Primitive
+8resize Primitive
+8strerror Primitive
+8strsignal Primitive
+8call-c 16 groupadd [THEN] 0 groupadd has? [IF] Primitive
+8close-file Primitive
+8open-file Primitive
+8create-file Primitive
+8delete-file Primitive
+8rename-file Primitive
+8file-position Primitive
+8reposition-file Primitive
+8file-size Primitive
+8resize-file Primitive
+8read-file Primitive
+8(read-line) 11 groupadd [THEN] Primitive
+8write-file Primitive
+8emit-file 2 groupadd has? [IF] Primitive
+8flush-file Primitive
+8file-status Primitive
+8file-eof? Primitive
+8open-dir Primitive
+8read-dir Primitive
+8close-dir Primitive
+8filename-match Primitive
+8set-dir Primitive
+8get-dir Primitive
+8=mkdir 10 groupadd [THEN] Primitive
+8newline 1 groupadd has? [IF] Primitive
+8utime Primitive
+8cputime 2 groupadd [THEN] 0 groupadd has? [IF] 0 groupadd group Primitive
+8f= Primitive
+8f<> Primitive
+8f< Primitive
+8f> Primitive
+8f<= Primitive
+8f>= Primitive
+8f0= Primitive
+8f0<> Primitive
+8f0< Primitive
+8f0> Primitive
+8f0<= Primitive
+8f0>= Primitive
+8s>f Primitive
+8d>f Primitive
+8f>d Primitive
+8f>s Primitive
+8f! Primitive
+8f@ Primitive
+8df@ Primitive
+8df! Primitive
+8sf@ Primitive
+8sf! Primitive
+8f+ Primitive
+8f- Primitive
+8f* Primitive
+8f/ Primitive
+8f** Primitive
+8fm* Primitive
+8fm/ Primitive
+8fm*/ Primitive
+8f**2 Primitive
+8fnegate Primitive
+8fdrop Primitive
+8fdup Primitive
+8fswap Primitive
+8fover Primitive
+8frot Primitive
+8fnip Primitive
+8ftuck Primitive
+8float+ Primitive
+8floats Primitive
+8floor Primitive
+8fround Primitive
+8fmax Primitive
+8fmin Primitive
+8represent Primitive
+8>float Primitive
+8fabs Primitive
+8facos Primitive
+8fasin Primitive
+8fatan Primitive
+8fatan2 Primitive
+8fcos Primitive
+8fexp Primitive
+8fexpm1 Primitive
+8fln Primitive
+8flnp1 Primitive
+8flog Primitive
+8falog Primitive
+8fsin Primitive
+8fsincos Primitive
+8fsqrt Primitive
+8ftan Primitive
+8fsinh Primitive
+8fcosh Primitive
+8ftanh Primitive
+8fasinh Primitive
+8facosh Primitive
+8fatanh Primitive
+8sfloats Primitive
+8dfloats Primitive
+8sfaligned Primitive
+8dfaligned Primitive
+8v* Primitive
+8faxpy 75 groupadd [THEN] 0 groupadd has? [IF] 0 groupadd group Primitive
+8@local# Primitive
+8@local0 Primitive
+8@local1 Primitive
+8@local2 Primitive
+8@local3 5 groupadd has? [IF] Primitive
+8f@local# Primitive
+8f@local0 Primitive
+8f@local1 3 groupadd [THEN] Primitive
+8laddr# Primitive
+8lp+!# Primitive
+8lp- Primitive
+8lp+ Primitive
+8lp+2 Primitive
+8lp! Primitive
+8>l 7 groupadd has? [IF] Primitive
+8f>l Primitive
+8fpick 2 groupadd [THEN] 0 groupadd [THEN] 0 groupadd has? [IF] 0 groupadd group Primitive
+8open-lib Primitive
+8lib-sym Primitive
+8wcall Primitive
+8uw@ Primitive
+8sw@ Primitive
+8w! Primitive
+8ul@ Primitive
+8sl@ Primitive
+8l! Primitive
+8lib-error 10 groupadd [THEN] 0 groupadd group 0 groupadd has? [IF] Primitive
+8compile-prim1 Primitive
+8finish-code Primitive
+8forget-dyncode Primitive
+8decompile-prim Primitive
+8set-next-code Primitive
+8call2 Primitive
+8tag-offsets 7 groupadd [THEN] 0 groupadd group 0 groupadd group \ [ELSE] doc-on has? [IF] 1802 <> [IF] AConstant
+8image-header :
+8forthstart [THEN] \ \ \ include \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ has? [IF] include \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ require \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ require \ \ \ \ \ \ \ \ \ \ \ \ \ hex \ \ \ \ \ -1 Constant
+8true ( \ \G \ 0 Constant
+8false ( \ \G [IFUNDEF]
+8cell 1 cells Constant ( \ \G [THEN] has? [IF] 1 floats Constant
+8float ( \ \G [THEN] 20 Constant
+8bl ( \ \G \ has? [IF] FF [THEN] Constant
+8/line has? [IF] 40 Constant
+8c/l 10 Constant
+8l/s 400 Constant
+8chars/block [THEN] 20 8 2* cells + 2 + cell+ constant
+8word-pno-size ( has? 0= [IF] create
+8holdbuf word-pno-size chars allot holdbuf word-pno-size chars + aconstant
+8holdbuf-end avariable
+8holdptr holdbuf-end holdptr a! avariable
+8holdend holdbuf-end holdend a! [THEN] 84 constant
+8pad-minsize ( $400 Value
+8def#tib \G \ \ \ has? 0= [IF] Create
+8main-task has? [IF] 100 [ELSE] cells dup allot \ main-task UNLOCK	8746 swap region user-region user-region setup-region LOCK	8799 Variable
+8udp ( \ \G AUser
+8next-task main-task next-task ! AUser
+8prev-task main-task prev-task ! AUser
+8save-task 0 save-task ! [THEN] AUser
+8sp0 ( \ \G \ \ \G AUser
+8rp0 ( \ \G \ \G has? [IF] AUser
+8fp0 ( \ \G \ [THEN] has? [IF] AUser
+8lp0 ( \ \G \ \G [THEN] AUser
+8handler \ has? [IF] AUser
+8backtrace-rp0 \ [THEN] \ \ AUser
+8errorhandler AUser
+8"error 0 "error ! has? [IF] User
+8current-input [ELSE] 2user
+8includefilename 0 0 includefilename 2! \ User
+8base ( \ \G \G \G \G A base ! User
+8dpl ( \ \G \G \G \G \G -1 dpl ! User ( \ \G \G \G \G \G \G \G \G \ \ \ \ 0 state ! AUser
+8normal-dp \ AUser
+8dpp normal-dp dpp ! \ \ \ AUser
+8LastCFA AUser
+8Last has? [IF] User
+8max-name-length \ 32 max-name-length ! \ \ \ has? [IF] User
+8locals-size \ \ [THEN] require \ \ \ \ \ \ s" environment? [if] \ 0 [then] 0= [if] :
+8str= :
+8string-prefix? :
+8str< [then] hex \ \-
+8NIL NIL AConstant \ \ [IFUNDEF]
+8r@ ' Alias ( \ [THEN] \ :
+8maxaligned /maxalign 1 - ] 0 /maxalign - ] \ \G ' Alias
+8cfaligned ( \ \G \G : immediate \ \ \ \ ' alias
+8A! ( \ \ has? [IF] has? [IF] :
+8dictionary-end 3 cells image-header + ] [ELSE] [THEN] :
+8usable-dictionary-end word-pno-size pad-minsize + ] :
+8unused
+8here has? [IF] :
+8in-dictionary? [THEN] \ :
+8dp : \ \ :
+8on :
+8off \ :
+8dabs :
+8roll \ :
+8place :
+8bounds \ :
+8scan :
+8skip \ :
+8digit? char char 1 + - ] :
+8accumulate :
+8>number \ :
+8s>d :
+8ud/mod \ has? [IF] :
+8lp@ 0 , ] [THEN] has? 0= [IF] defer
+8catch ( \ \G \G \G \G \G :noname is defer
+8throw ( \ \G \G \G :noname has? [IF] here image-header 9 cells + ! [THEN] ]
+8cr
+8DoError has? [IF] ]
+8script?
+8quit [ELSE] ] is [THEN] \ : :
+8"lit :
+8abort \ :
+8?stack has? [IF] ] [THEN] ] \ \ :
+8depth :
+8clearstack :
+8clearstacks has? [IF] ] [THEN] ] \ : \ : : \ require \ \ \ \ \ \ \ \ \ \ \ \ \ require \ has? [IF] 0 Value
+8outfile-id ( \ 0 Value
+8infile-id ( \ :
+8(type) :
+8(emit) :
+8(key) :
+8(key?) [THEN] undef-words Defer ( \ \G \G [IFDEF] : [IFDEF] ' IS [THEN] Defer
+8emit ( \ \G : [IFDEF] ' IS [THEN] Defer
+8key ( \ \G : [IFDEF] ' IS [THEN] Defer
+8key? ( \ \G \G \G \G \G : [IFDEF] ' IS [THEN] all-words : : \ 04 constant
+8#eof ( \ 07 constant
+8#bell ( \ 08 constant
+8#bs ( \ 09 constant
+8#tab ( \ 7F constant
+8#del ( \ 0D constant
+8#cr ( \ \ 0C constant
+8#ff ( \ 0A constant
+8#lf ( \ :
+8bell has? [IF] ] [THEN] ] : :
+8space has? 0= [IF] \ decimal Create
+8spaces ( \ \G bl 80 times \ DOES> Create
+8backspaces 08 80 times \ DOES> hex [THEN] \ require \ \ \ \ \ \ \ \ \ \ \ \ \ require :
+8pad has? [IF] ] [THEN] ] \ has? [IF] :
+8hold :
+8<# :
+8#> :
+8<<# :
+8#>> [THEN] :
+8sign :
+8# char char - 1- ] :
+8#s \ :
+8d.r :
+8ud.r :
+8.r :
+8u.r :
+8d. :
+8ud. :
+8. :
+8u. \ require \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ require require AVariable
+8ErrLink \ NIL ErrLink ! decimal \ \ \ \ \ has? [IF] :
+8>stderr
+8>exec [THEN] :
+8.error has? [IF] ] [THEN] ] has? [IF] ] [THEN] ]
+8dec. \ require :
+8version-string \ has? 0= [IF] :
+8(word) \ \ \ :
+8sword
+8source
+8>in has? [IF] ]
+8input-lexeme! [THEN] ] :
+8word :
+8parse has? [IF] ] [THEN] ] \ [IFUNDEF]
+8(name) \ : has? [IF] ] [THEN] ] \ [THEN] :
+8name-too-short? :
+8name-too-long?
+8lcount-mask \ \ hex const Create
+8bases 0A , 10 , 2 , 0A , \ \ :
+8getbase :
+8sign? :
+8?dnegate has? 0= [IF] :
+8s'>unumber?
+8x@+/string :
+8s>unumber? \ :
+8s>number? :
+8s>number :
+8snumber? :
+8number? :
+8number \ : immediate : has? [IF] ]
+8blk [THEN] ] immediate : immediate has? [IF] \ \ struct cell% field
+8find-method \ cell% field
+8reveal-method \ cell% field
+8rehash-method \ cell% field
+8hash-method \ \ end-struct
+8wordlist-map-struct struct cell% field
+8wordlist-map \ cell% field
+8wordlist-id \ cell% field
+8wordlist-link \ cell% field
+8wordlist-extend \ end-struct
+8wordlist-struct has? [IF] :
+8f83find [THEN] :
+8initvoc \ Create
+8f83search ( ' A, ' A, ' A, ' A, here G	8798 f83search T	8799 A, NIL A, NIL A, NIL A, AValue
+8forth-wordlist \ AVariable
+8lookup forth-wordlist lookup ! \ AVariable
+8current ( \ \G AVariable
+8voclink forth-wordlist wordlist-link voclink ! \ Defer
+8context ( \ \G \G ' is forth-wordlist current ! :
+8(search-wordlist) :
+8search-wordlist
+8(name>intn) :
+8find-name [THEN] \ \ \ has? [IF] $80000000 constant
+8alias-mask 1 bits/char 1 - lshift -1 cells allot bigendian [IF] c, 0 1 cells 1- times [ELSE] $40000000 constant
+8immediate-mask 1 bits/char 2 - lshift -1 cells allot bigendian [IF] c, 0 1 cells 1- times [ELSE] $20000000 constant
+8restrict-mask 1 bits/char 3 - lshift -1 cells allot bigendian [IF] c, 0 1 cells 1- times [ELSE] $1fffffff constant 1 bits/char 3 - lshift 1 - -1 cells allot bigendian [IF] c, -1 1 cells 1- times [ELSE] [THEN] \ :
+8flag-sign :
+8ticking-compile-only-error :
+8compile-only-error :
+8(cfa>int) has? [IF] ]
+8interpret/compile?
+8interpret/compile-int [THEN] ] :
+8(x>int) has? [IF] ] has? [IF] :
+8name>string :
+8((name>)) :
+8(name>x) [THEN] :
+8name>int :
+8name?int has? [IF] ] :
+8(name>comp) has? [IF] ]
+8interpret/compile-comp [THEN] ] has? [IF] ] : has? [IF] ] const Create
+8??? 0 , 3 , char c, char c, char c, \ [IFDEF] \ \ :
+8head? :
+8>head-noprim has? [IF] ] [THEN] ] alias-mask lcount-mask or ] 1 bits/char 3 - lshift 1 - 1 bits/char 1 - lshift or -1 cells allot bigendian [IF] c, -1 1 cells 1- times [ELSE] ] [ELSE] cell% 2* 0 0 field
+8>body ( \ \G \G drop drop cell% -2 * 0 0 field
+8body> ( drop drop has? has? and [IF] ' alias
+8>code-address ( \ \G :
+8>does-code
+8dodoes: has? [IF] :
+8flash! :
+8flashc! [THEN] has? [IF] ' [THEN] alias
+8code-address! ( \ \G :
+8does-code! has? [IF] ] [THEN] ] ' alias
+8does-handler! ( \ \G \G 2 cells constant
+8/does-handler ( \ \G [THEN] :
+8sfind :
+8find \ :
+8(')
+8parse-name : has? 0= [IF] \ \ Defer
+8parser1 ( \ :
+8parser has? [IF] Defer ( \ \G ' IS ' alias
+8parse-word ( \ \G ' alias
+8name ( \ \G Defer
+8compiler-notfound1 ( Defer
+8interpreter-notfound1 ( :
+8no.extensions ' IS ' IS Defer
+8before-word ( \ \ ' IS [THEN] has? [IF] :
+8interpret1 has? 0= [IF] ] [THEN] ] :
+8interpret [ELSE] \ \ :
+8interpreter1 ' IS \ has? 0= [IF] has? 0= [IF] [THEN] has? 0= [IF] \ has? [IF] :
+8save-mem :
+8free-mem-var :
+8extend-mem [THEN] \ has? 0= has? 0= and [IF] has? 0= [IF] \ Defer
+8'quit has? [IF] Defer
+8.status [ELSE] :
+8prompt :
+8(quit) has? [IF] ] has? [IF] ] [THEN] ] [THEN] ]
+8refill
+8bye ' IS \ has? [IF] 8 Constant
+8max-errors 5 has? 2 and + Constant
+8/error Variable
+8error-stack 0 error-stack ! max-errors /error * cells allot \ \ \ \ \ :
+8error> :
+8>error :
+8input-error-data
+8input-lexeme
+8sourceline# has? [IF] ]
+8sourcefilename [THEN] ] : :
+8dec.r :
+8hex. :
+8-trailing DEFER has? [IF] Defer
+8dobacktrace ( ' IS [THEN] :
+8.error-string :
+8umin Defer
+8mark-start Defer
+8mark-end :noname IS :noname IS :
+8part-type :
+8.error-line :
+8.error-frame has? [IF] ] [THEN] ] has? [IF] ] [THEN] ] :
+3(DoError) has? [IF] ] [THEN] ] has? [IF] ] [THEN] ] ' IS [ELSE] :
+3clear-tibstack has? 0= [IF] ] has? [IF] ] [THEN] ] has? [IF] ] [ELSE] ] has? [IF] ] [ELSE] ] \ :
+3(bootmessage) has? [IF] ] [THEN] ] defer
+3bootmessage ( \ \G \G \G has? [IF] defer
+3process-args [THEN] ' IS has? [IF] Defer
+3'cold ( \ \G \G \G ' IS [THEN] :
+3cold has? [IF] ] [THEN] ] has? [IF] ]
+3os-cold [THEN] ] has? [IF] ]
+3set-encoding-fixed-width [THEN] ] has? [IF] ]
+3loadline [THEN] ] has? 0= [IF] :
+3boot has? 0= [IF] ] [THEN] ] has? [IF] ]
+3os-boot [THEN] ] has? [IF] ] has? [IF] ] [THEN] ] has? [IF] ] [THEN] ] has? [IF] ] [THEN] ] has? [IF] ] [ELSE] ] has? [IF] ] [THEN] ] has? [IF] : has? [IF] ] [ELSE] ] [THEN] \ \ \ \ has? [IF] include \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ [IFUNDEF]
+3allot [IFUNDEF] [THEN] \ [IFUNDEF] : [THEN] :
+3c, has? [IF] ] [THEN] ] :
+3, has? [IF] ] [THEN] ] :
+32, has? [IF] ] [THEN] ] \ \ :
+3align \ \ :
+3falign :
+3maxalign \ ' Alias
+3cfalign ( \ \G \G ' alias
+3A, ( \ ' ALIAS
+3const \ \ \ \ defer
+3(header) defer
+3header ( \ ' IS :
+3string, has? [IF] ] [THEN] ] has? [IF] ] [THEN] ] :
+3longstring, :
+3header, has? [IF] ] [THEN] ] has? [IF] ]
+3lastflags
+3cset [THEN] ] :
+3input-stream-header :
+3input-stream ' IS 2variable
+3nextname-string has? [IF] :
+3nextname-header [THEN] \ has? [IF] :
+3nextname [THEN] :
+3noname-header :
+3noname :
+3latestxt ' alias
+3lastxt \ \G :
+3latest \ : [IFDEF]
+3lit, ] [THEN] ] immediate restrict :
+32Literal immediate restrict : [IFDEF]
+3alit, ] [THEN] ] immediate restrict Defer
+3char@ ( :noname IS :
+3char : immediate restrict \ :
+3cfa, has? [IF] ] [THEN] ] [IFUNDEF] defer ( \ \G \G ' is [THEN] has? 0= [IF] defer
+3basic-block-end ( :noname is [THEN] has? [IF] \ :
+3peephole-compile, :
+3compile-to-prims,
+3dovalue:
+3docon:
+3docol:
+3dovar:
+3douser:
+3dodefer:
+3dofield: ' IS [ELSE] :
+3!does \ : \ : :
+3dodoes, :
+3(compile) \ :
+3name>comp :
+3[(')] immediate restrict : immediate restrict :
+3COMP' :
+3[COMP'] immediate restrict :
+3postpone, : immediate \ : immediate restrict \ :
+3compiler1 : immediate :
+3] \ :
+3S, has? [IF] ] [THEN] ] :
+3mem, has? [IF] ] [THEN] ] :
+3," \ \ has? [IF] : :
+3creset :
+3ctoggle [THEN] : :
+3immediate has? [IF] ] [THEN] ] :
+3restrict has? [IF] ] [THEN] ] ' alias
+3compile-only ( \ \G \ :
+3Alias
+3reveal doer? [IF] : [ELSE] has? [IF] : : : [THEN] has? 0= [IF] :
+3uallot doer? [IF] : : [ELSE] [THEN] doer? [IF] : [ELSE] doer? [IF] : [ELSE] : : has? [IF] : : [THEN] : doer? [IF] : [ELSE] \ struct >body cell% field cell% field end-struct
+3interpret/compile-struct : \ \ defer
+3defer-default ( ' is \ doer? [IF] : has? [IF] ] [THEN] ] [ELSE] :
+3defer@ has? [IF] ] : immediate :noname
+3defstart
+3:-hook :noname
+3;-hook
+3?struc has? [IF] ]
+3exit-like [THEN] ] has? [IF] ] [ELSE] ] has? [IF] ] [THEN] ] interpret/compile: ( \ :
+3defer! has? [IF] ] :
+3<IS> :
+3[IS] immediate restrict ' ' interpret/compile: ( \ \G \G ' ' interpret/compile: ( \ : \ defer ( defer ( 0 Constant [IFDEF]
+3docol, :
+3(:noname) :
+3: :
+3:noname [IFDEF]
+3fini, : has? [IF] ] [THEN] ] immediate restrict [THEN] \ :
+3last? Variable
+3warnings ( \ G	3423 -1 warnings T	3422 ! has? [IF] :
+3(reveal) \ ' f83search reveal-method ! :
+3check-shadow : :
+3rehash [THEN] ' alias
+3recursive ( \ \g \g immediate restrict [THEN] [THEN] has? [IF] include \ \ \ \ \ \ \ \ \ \ \ \ \ :
+3(ins) :
+3(bs) :
+3(ret) Create
+3ctrlkeys ' a, ' a, ' a, ' a, ' a, ' a, ' a, ' a, ' a, ' a, ' a, ' a, ' a, ' a, ' a, ' a, ' a, ' a, ' a, ' a, ' a, ' a, ' a, ' a, ' a, ' a, ' a, ' a, ' a, ' a, ' a, ' a, defer
+3insert-char ' IS defer
+3everychar ' IS defer
+3everyline ' IS :
+3decode :
+3edit-line
+3xkey :
+3accept include \ \ \ \ \ \ \ \ \ \ \ \ \ \ | : | : 0 input-method ( \ \G \G input-method ( \ \G \G \G \G \G \G \G \G \G \G \G \G \G input-method
+3source-id ( \ \G \G \G \G | input-method
+3(save-input) ( \ | input-method
+3(restore-input) ( \ drop cell \ cell input-var ( \ \G \G \G 2 cells input-var ( \ \G \G \G \G cell input-var
+3#tib ( \ \G \G \G \G cell input-var
+3max#tib ( \ \G \G cell input-var
+3old-input ( \ \G \G cell input-var ( \ \G \G has? [IF] cell input-var
+3loadfile ( \ \G \G cell input-var ( \ \G \G cell input-var
+3#fill-bytes ( \ \G \G 2 cells input-var
+3loadfilename ( \ \G \G [THEN] 0 input-var
+3tib ( \ Constant
+3tib+ \ : :
+3input-start-line \ :noname \ :noname \ ' \ :noname has? [IF] ] [THEN] ] \ :noname \ | Create
+3terminal-input A, A, A, A, A, :noname \ | Create
+3evaluate-input A, \ ' A, \ ' A, \ terminal-input 3 cells + @ A, \ terminal-input 4 cells + @ A, \ \ has? [IF] :
+3read-line :noname \ :noname \ :noname \ :noname
+3expand-tib \ terminal-input @ \ | Create
+3file-input A, A, A, A, A, [THEN] \ :
+3new-tib : has? [IF] :
+3push-file [THEN] :
+3pop-file \ :
+3save-input :
+3restore-input \ :
+3create-input \ :
+3execute-parsing-wrapper has? [IF] ] [ELSE] ] :
+3execute-parsing :
+3evaluate \ : :
+3query \ has? [IF] defer
+3line-end-hook ( \ \G \ ' is :
+3read-loop :
+3execute-parsing-named-file :
+3execute-parsing-file :
+3include-file [THEN] [ELSE] has? [IF] include \ \ \ \ \ \ \ \ \ \ \ \ \ :
+3license include \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ Defer
+3xemit ( \ \G Defer ( \ \G \G Defer
+3xchar+ ( \ \G \G Defer
+3xchar- ( \ \G \G \G Defer
+3+x/string ( \ \G \G \G \G Defer
+3x\string- ( \ \G \G \G \G \G Defer
+3xc@ ( \ \G Defer
+3xc!+? ( \ \G \G \G \G \G \G \G Defer
+3xc@+ ( \ \G \G Defer
+3xc-size ( \ \G Defer
+3x-size ( \ \G \G Defer
+3x-width ( \ \G \G \G \G \G Defer
+3-trailing-garbage ( \ \G \G \G \G \ : :
+3xhold \ :
+3char- 1 chars ] :
+3+string :
+3string- :
+3c!+? :
+3c-size : [THEN] \ \ \ include \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ has? 0= [IF] has? [IF] include \ \ \ \ \ \ \ \ \ \ \ \ \ :
+3cstring>sstring :
+3arg
+3argc
+3argv :
+3#! immediate Create
+3pathstring 2 cells allot \ Create
+3pathdirs 2 cells allot \ Variable ( \ \g \g \g \g Variable ( \ \g \g 0 Value ( :
+3shift-args :
+3next-arg \ \ :
+3os-execute-parsing :
+3args-required1
+3required :
+3args-required :
+3args-evaluate \ :
+3process-option :
+3(process-args) : ' IS include \ \ \ \ \ \ \ \ \ \ \ \ \ 4 Constant
+3w/o ( \ 2 Constant
+3r/w ( \ 0 Constant
+3r/o ( \ :
+3bin \ :
+3write-line \ has? 0= [IF] \ Redefinitions-start : immediate Redefinitions-end \ include \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ :
+3path-allot [IFUNDEF]
+3+place : [THEN] [IFUNDEF] \ 0 avalue
+3fpath ( \ :
+3make-path :
+3only-path
+3init-included-files \ :
+3also-path :
+3clear-path : :
+3path+ :
+3fpath+ :
+3path= :
+3fpath= :
+3path>string :
+3next-path :
+3previous-path :
+3.path :
+3.fpath :
+3absolut-path? Create
+3ofile 0 c, 255 chars allot Create
+3tfile 0 c, 255 chars allot :
+3pathsep? :
+3need/ :
+3extractpath :
+3remove~+ :
+3expandtopic :
+3del-string :
+3del-./s :
+3preserve-root :
+3skip-..-prefixes :
+3compact-filename \ \ \ \ :
+3reworkdir :
+3open-ofile :
+3check-path \ :
+3open-path-file :
+3open-fpath-file include \ \ \ \ \ \ \ \ \ \ \ \ \ \ create
+3included-files 0 , 0 , ( \ \ here ," dup c@ swap 1 + swap , A, here 2 cells - create
+3image-included-files 1 , A, ( \ \ : : : :
+3included? :
+3add-included-file :
+3included1 :
+3included : \ :
+3include :
+3require \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ :
+3.strings :
+3.included [THEN] has? [IF] has? [IF] include \ \ \ \ \ \ \ \ \ \ \ \ \ here 0 , \ AConstant
+3locals-list \ \ variable
+3dead-code \ variable
+3backedge-locals \ \ \ :
+3UNREACHABLE immediate :
+3ASSUME-LIVE
+3orig? immediate \ \ \ \ \ \ [IFUNDEF] 1 constant
+3live-orig 2 constant
+3dead-orig 3 constant
+3dest \ 4 constant
+3do-dest 5 constant
+3scopestart :
+3def? : :
+3dest? :
+3do-dest? :
+3scope? :
+3non-orig? :
+3cs-item? 3 constant
+3cs-item-size :
+3CS-PICK :
+3CS-ROLL :
+3cs-push-part :
+3cs-push-orig \ defer
+3other-control-flow ( \ : :
+3sys? :
+3>mark :
+3>resolve :
+3<resolve :
+3BUT immediate restrict :
+3YET immediate restrict \ : immediate restrict : immediate restrict :
+3?DUP-IF immediate restrict :
+3?DUP-0=-IF immediate restrict Defer
+3then-like ( :
+3cs>addr ' IS : immediate restrict ' alias ( \ immediate restrict \ \ \ : immediate restrict Defer
+3begin-like ( ' IS : immediate restrict Defer
+3again-like ( ' IS : immediate restrict Defer
+3until-like ( :noname IS : immediate restrict : immediate restrict : immediate restrict \ \ \ \ \ \ \ 20 constant
+3leave-stack-size create
+3leave-stack 60 cells allot Avariable
+3leave-sp leave-stack 3 cells + leave-sp ! :
+3clear-leave-stack \ \ :
+3>leave leave-stack 60 cells + ] :
+3leave> :
+3DONE immediate restrict : immediate restrict : immediate restrict : immediate restrict :
+3?do-like : immediate restrict :
+3+DO immediate restrict :
+3U+DO immediate restrict :
+3-DO immediate restrict :
+3U-DO immediate restrict : immediate restrict \ :
+3loop-like : immediate restrict : immediate restrict \ :
+3-LOOP immediate restrict \ \ \ \ :
+3S+LOOP immediate restrict : immediate restrict \ Defer ( ' IS : immediate restrict : immediate restrict \ [ELSE] \ \ has? [IF] [THEN] include \ \ \ \ \ \ \ \ \ \ \ \ \ \ require :
+3CLiteral immediate restrict :
+3SLiteral immediate restrict \ : immediate restrict \ has? 0= [IF] :noname has? [IF] ] [THEN] ] \ \ has? [IF] :noname interpret/compile: ( \ \G \G \G \G \G \G \G \G \G \G \G [THEN] :noname :noname interpret/compile: ( \ \G \G \G \G \G has? 0= [IF] include \ \ \ \ \ \ \ \ \ \ \ \ Warnings Variable
+3countif :
+3dummy immediate : restrict ( :
+3scanIF Create
+3[struct]-search ' A, ' A, ' A, ' A, Create
+3[struct]-voc [struct]-search A, NIL A, NIL A, NIL A, :
+3?if [struct]-voc 3 cells + ] UNLOCK	34;5 Tlast @ TNIL Tlast ! LOCK	3422 \ : immediate : immediate : immediate ' Alias immediate ' Alias immediate ' Alias
+3[ENDIF] immediate ' Alias
+3[BEGIN] immediate ' Alias
+3[WHILE] immediate ' Alias
+3[UNTIL] immediate ' Alias
+3[AGAIN] immediate ' Alias
+3[DO] immediate ' Alias
+3[?DO] immediate ' Alias
+3[LOOP] immediate ' Alias
+3[+LOOP] immediate :
+3[REPEAT] immediate \ \ \ \ \ UNLOCK	34;5 Tlast @ swap Tlast ! LOCK	3422 \ 1 cells - [struct]-voc cell+ ! \ :
+3[defined] immediate \G ' alias
+3defined immediate :
+3[undefined] immediate \G :
+3[IF] [struct]-voc 3 cells + ] immediate :
+3[IFDEF] immediate :
+3[IFUNDEF] immediate :
+3[ELSE] immediate :
+3[THEN] immediate :
+3[ENDIF] immediate \ User
+3(i) :
+3[DO] immediate :
+3[?DO] immediate :
+3[+LOOP] immediate :
+3[LOOP] immediate :
+3[FOR] immediate :
+3[NEXT] immediate :noname :noname interpret/compile:
+3[I] ( \ :
+3[BEGIN] immediate ' Alias
+3[UNTIL] ( \ immediate :
+3[REPEAT] immediate ' Alias
+3[AGAIN] ( \ immediate :
+3[WHILE] immediate \ [THEN] include \ \ \ \ \ \ \ \ \ \ \ \ \ \ require \ require \ require \ hex \ variable
+3maxdepth-.s ( \ \G \G 9 maxdepth-.s ! :
+3.s \ \ Variable
+3/dump :
+3.4 :
+3.chars :
+3.line :
+3dump \ :
+3? \ include \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ [IFUNDEF] [IFUNDEF]
+3rows : :
+3cols [THEN] :
+3wordlist-words has? 0= [IF] ] [THEN] ] :
+3words has? 0= [IF] ] [ELSE] ] ' alias
+3vlist ( \ \g \ include \ \ \ \ \ \ \ \ \ \ \ \ \ doer? [IF] : [THEN] doer? [IF] : [THEN] : \ doer? [IF] : [THEN] doer? [IF] : [THEN] doer? [IF] : [THEN] doer? [IF] : [THEN] true [IF] \ : [THEN] \ include \ \ \ \ \ \ \ \ \ \ \ \ \ \ >ram here normal-dp ! \ has? 0= [IF] UNLOCK	34;5 user-region extent nip LOCK	3422 udp ! [THEN] \ \ UNLOCK	34;5 tlast @ LOCK	3422 1 cells - dup forth-wordlist has? 0= [IF] wordlist-id [THEN] ! Last ! \ has? [IF] \ here image-header 2 cells + ! \ ' >body image-header 8 cells + A! [ELSE] .unresolved \ bye
