@@ -12,17 +12,17 @@ REMOTE = 'git@github.com:steff7/ep.git'
 EXPECTED = '1ae56547f8865909'
 EXPECTED_KEYS = [
     'tag',
-     'L1-dcache-load-misses_percent',
-     'L1-dcache-load-misses',
-     'cycles:u_percent',
-     'L1-dcache-loads_percent',
-     'instructions:u_percent',
-     'seconds',
-     'branch-misses:u',
-     'instructions:u',
+     'instructions',
+     'instructions_percent',
+     'cycles',
+     'cycles_percent',
+     'branch-misses',
+     'branch-misses_percent',
      'L1-dcache-loads',
-     'cycles:u',
-     'branch-misses:u_percent']
+     'L1-dcache-loads_percent',
+     'L1-dcache-load-misses',
+     'L1-dcache-load-misses_percent',
+     'seconds']
 ITERATIONS = 5
 PIPEARGS = {'stdout': subprocess.PIPE, 'stderr': subprocess.PIPE}
 
@@ -35,7 +35,7 @@ def setup():
     tagp = subprocess.Popen(['git', 'tag', '-l'], **PIPEARGS)
     (tagstring, err) = tagp.communicate()
 
-    if err is not '':
+    if len(err) > 0:
         print 'Encountered error while getting tag list, aborting.'
         print 'git error message:'
         print err
@@ -109,11 +109,13 @@ def benchmark_tag(wd, tag, count, sudo):
         benchd = {'tag': tag}
         errl = err.strip().split('\n')
         for l in errl:
-            m = re.match(r"^(\d+(,\d+)*){1}\s*([\w:-]+).*?\((\d+\.\d+%)\)$",
+            m = re.match(r"^(\d+(,\d+)*){1}\s*([\w-]+).*?\(?(\d+\.\d+%)?\)?$",
                          l.strip())
             if m is not None:
                 (count, name, percent) = m.group(1, 3, 4)
                 benchd[name] = count.replace(',', '')
+                if percent == None:
+		    percent = ''
                 benchd[name + '_percent'] = percent.strip('%')
 
             m = re.match(r"^(\d+(\.\d+))\s+seconds\s+time\s+elapsed$",
@@ -154,7 +156,7 @@ for t in tags:
                     output += ';' + result[k]
                 resf.write(output + '\n')
             else:
-                print 'Discarding results from run #' + i + ', wrong format.'
+                print 'Discarding results from run #' + str(i) + ', wrong format.'
                 print result
         print 'Results saved'
 
