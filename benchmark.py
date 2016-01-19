@@ -48,7 +48,8 @@ def setup():
         print 'Empty tag list, aborting'
         quit()
 
-    tagp = subprocess.Popen(['git', 'status', '-uno', '-z'], **PIPEARGS)
+    tagpargs = ['git', 'status', '-uno', '--porcelain', '-z']
+    tagp = subprocess.Popen(tagpargs, **PIPEARGS)
     (tagstring, err) = tagp.communicate()
 
     if len(err) > 0:
@@ -177,7 +178,7 @@ try:
                 if set(result.keys()) == set(EXPECTED_KEYS):
                     output = str(start) + ';' + str(i) + ';'
                     for k in EXPECTED_KEYS:
-                        if k != 'tag':
+                        if k != 'tag' and len(result[k]) > 0:
                             if isinstance(result[k], numbers.Integral):
                                 sums[k] += long(result[k])
                             else:
@@ -199,6 +200,9 @@ except:
     print ''
     print '!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!'
     print 'Exception encountered, cleaning up..'
+    exctype, value = sys.exc_info()[:2]
+    print exctype
+    print value
     print '!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!'
     print ''
     cleanup(wd)
@@ -213,16 +217,36 @@ print '----------'
 print 'Check ' + resfilename + ' for detailled results.'
 print ''
 
+last_tag = None
 for t in avgs.keys():
-    print "Tag '" + t + "'"
-    if t == 'HEAD':
-        last_tag = max(avgs.keys())
-        for k in avgs[t].keys():
-            diff = round(avgs[t][k]*100/avgs[last_tag][k], 2)
-            print '\t' + k + ': ' + str(avgs[t][k]) + ' (' + str(diff) + '%)'
+    keys = avgs[t].keys()
+    keys.sort()
+    for k in keys:
+        if k.endswith('percent'):
+            del avgs[t][k]
+            keys.remove(k)
+    if last_tag is not None:
+        print "Tag '" + t + "' (compared to '" + last_tag + "')"
+        for k in keys:
+            if abs(avgs[t][k]) < 5:
+                valuestr = str(avgs[t][k])
+            else:
+                valuestr = str(round(avgs[t][k], 2))
+            if avgs[last_tag][k] != 0:
+                diff = round(avgs[t][k]*100/avgs[last_tag][k], 2)
+                print '\t' + k + ': ' + valuestr + ' (' + str(diff) + '%)'
+            elif avgs[t][k] != 0:
+                print '\t' + k + ': ' + valuestr
     else:
-        for k in avgs[t].keys():
-            print '\t' + k + ': ' + str(avgs[t][k])
+        print "Tag '" + t + "'"
+        for k in keys:
+            if avgs[t][k] != 0:
+                if abs(avgs[t][k]) < 5:
+                    valuestr = str(avgs[t][k])
+                else:
+                    valuestr = str(round(avgs[t][k], 2))
+                print '\t' + k + ': ' + valuestr
+    last_tag = t
 
 print ''
 print 'Total duration for whole benchmark: ' + str(end - start)
