@@ -22,7 +22,6 @@
 #include <sys/types.h>
 #include <sys/stat.h>
 #include <fcntl.h>
-#include <unistd.h>
 #include <stdio.h>
 #include <sys/mman.h>
 #include <string.h>
@@ -131,7 +130,6 @@ unsigned long process(unsigned char *s) {
       exit(1);
     }
   }
-  return 0;
 }
 
 int main(int argc, char* argv[]) {
