@@ -48,7 +48,8 @@ def setup():
         print 'Empty tag list, aborting'
         quit()
 
-    tagp = subprocess.Popen(['git', 'status', '-uno', '-z'], **PIPEARGS)
+    tagpargs = ['git', 'status', '-uno', '--porcelain', '-z']
+    tagp = subprocess.Popen(tagpargs, **PIPEARGS)
     (tagstring, err) = tagp.communicate()
 
     if len(err) > 0:
@@ -177,7 +178,7 @@ try:
                 if set(result.keys()) == set(EXPECTED_KEYS):
                     output = str(start) + ';' + str(i) + ';'
                     for k in EXPECTED_KEYS:
-                        if k != 'tag':
+                        if k != 'tag' and len(result[k]) > 0:
                             if isinstance(result[k], numbers.Integral):
                                 sums[k] += long(result[k])
                             else:
@@ -199,6 +200,9 @@ except:
     print ''
     print '!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!'
     print 'Exception encountered, cleaning up..'
+    exctype, value = sys.exc_info()[:2]
+    print exctype
+    print value
     print '!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!'
     print ''
     cleanup(wd)
@@ -218,8 +222,11 @@ for t in avgs.keys():
     if t == 'HEAD':
         last_tag = max(avgs.keys())
         for k in avgs[t].keys():
-            diff = round(avgs[t][k]*100/avgs[last_tag][k], 2)
-            print '\t' + k + ': ' + str(avgs[t][k]) + ' (' + str(diff) + '%)'
+            if avgs[last_tag][k] != 0:
+                diff = round(avgs[t][k]*100/avgs[last_tag][k], 2)
+                print '\t' + k + ': ' + str(avgs[t][k]) + ' (' + str(diff) + '%)'
+            else:
+                print '\t' + k + ': ' + str(avgs[t][k])
     else:
         for k in avgs[t].keys():
             print '\t' + k + ': ' + str(avgs[t][k])
