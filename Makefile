@@ -1,7 +1,7 @@
 all: perf
 
 perf: ep15
-	perf stat -e cycles:u -e instructions:u -e branch-misses:u -e L1-dcache-load-misses -e L1-dcache-loads ./ep15.out ./cross.input
+	perf stat -e branches:u -e cycles:u -e instructions:u -e branch-misses:u -e L1-dcache-load-misses -e L1-dcache-loads ./ep15.out ./cross.input
 
 ep15: ep15.c
 	gcc -O3 -Wall -o ep15.out ep15.c

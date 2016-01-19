@@ -17,6 +17,8 @@ EXPECTED_KEYS = [
      'instructions_percent',
      'cycles',
      'cycles_percent',
+     'branches',
+     'branches_percent',
      'branch-misses',
      'branch-misses_percent',
      'L1-dcache-loads',
@@ -101,10 +103,11 @@ def benchmark_tag(wd, tag, count, sudo):
     print 'Compiling using Makefile'
     subprocess.check_call(['make', 'clean', 'ep15'], **PIPEARGS)
 
-    perfargs = ['make', 'perf']
+    perfargs = ['perf', 'stat', '-e', 'branches:u', '-e', 'cycles:u', '-e', 'instructions:u', '-e', 'branch-misses:u', '-e', 'L1-dcache-load-misses', '-e', 'L1-dcache-loads', './ep15.out', './cross.input']
     if sudo:
         perfargs = ['sudo'] + perfargs
 
+    print "CMD: '" + ' '.join(perfargs) + "'"
     res = {}
     for i in range(count):
 
@@ -114,11 +117,10 @@ def benchmark_tag(wd, tag, count, sudo):
 
         outl = out.strip().split('\n')
 
-        if len(outl) != 3 or outl[2] != EXPECTED:
+        if EXPECTED not in outl:
             print 'Unexpected output, aborting.'
             print 'EXPECTED: ' + EXPECTED
-            if len(outl) == 3:
-                print 'ACTUAL: ' + outl[2]
+            print 'ACTUAL: ' + '\n'.join(outl)
             cleanup(wd)
 
         benchd = {'tag': tag}
