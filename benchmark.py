@@ -7,11 +7,12 @@ import os
 import sys
 import re
 import datetime
+import numbers
 
 REMOTE = 'git@github.com:steff7/ep.git'
 EXPECTED = '1ae56547f8865909'
 EXPECTED_KEYS = [
-    'tag',
+     'tag',
      'instructions',
      'instructions_percent',
      'cycles',
@@ -46,6 +47,19 @@ def setup():
     if len(tags) == 0:
         print 'Empty tag list, aborting'
         quit()
+
+    tagp = subprocess.Popen(['git', 'status', '-uno', '-z'], **PIPEARGS)
+    (tagstring, err) = tagp.communicate()
+
+    if len(err) > 0:
+        print 'Encountered error while checking for modified master, aborting.'
+        print 'git error message:'
+        print err
+        quit()
+
+    if '\0' in tagstring:
+        print 'Adding HEAD to tag list because working dir is unclean'
+        tags += ['HEAD']
 
     if len(sys.argv) > 1:
         rfilename = sys.argv[1]
@@ -84,7 +98,7 @@ def benchmark_tag(wd, tag, count, sudo):
     subprocess.check_call(['git', 'checkout', tag], **PIPEARGS)
 
     print 'Compiling using Makefile'
-    subprocess.check_call(['make', 'ep15'], **PIPEARGS)
+    subprocess.check_call(['make', 'clean', 'ep15'], **PIPEARGS)
 
     perfargs = ['make', 'perf']
     if sudo:
@@ -114,8 +128,8 @@ def benchmark_tag(wd, tag, count, sudo):
             if m is not None:
                 (count, name, percent) = m.group(1, 3, 4)
                 benchd[name] = count.replace(',', '')
-                if percent == None:
-		    percent = ''
+                if percent is None:
+                    percent = ''
                 benchd[name + '_percent'] = percent.strip('%')
 
             m = re.match(r"^(\d+(\.\d+))\s+seconds\s+time\s+elapsed$",
@@ -130,37 +144,65 @@ def benchmark_tag(wd, tag, count, sudo):
     print ''
     return res
 
-start = datetime.datetime.utcnow()
+try:
+    start = datetime.datetime.utcnow()
+    curdir = os.getcwd()
 
-(wd, (resf, resfilename), tags) = setup()
+    (wd, (resf, resfilename), tags) = setup()
 
-if len(sys.argv) > 2:
-    count = int(sys.argv[2])
-else:
-    count = ITERATIONS
+    if len(sys.argv) > 2:
+        count = int(sys.argv[2])
+    else:
+        count = ITERATIONS
 
-sudo = False
-if len(sys.argv) > 3:
-    print 'Running benchmarks using sudo because argc > 3'
-    sudo = True
+    sudo = False
+    if len(sys.argv) > 3:
+        print 'Running benchmarks using sudo because argc > 3'
+        sudo = True
 
-resf.write('time;i;' + ';'.join(EXPECTED_KEYS) + '\n')
+    resf.write('time;i;' + ';'.join(EXPECTED_KEYS) + '\n')
 
-for t in tags:
-        results = benchmark_tag(wd, t, count, sudo)
-        for i in results.keys():
-            result = results[i]
-            if set(result.keys()) == set(EXPECTED_KEYS):
-                output = str(start) + ';' + str(i) + ';'
-                for k in EXPECTED_KEYS:
-                    output += ';' + result[k]
-                resf.write(output + '\n')
-            else:
-                print 'Discarding results from run #' + str(i) + ', wrong format.'
-                print result
-        print 'Results saved'
+    avgs = {}
 
-resf.close()
+    for t in tags:
+            if t == 'HEAD':
+                os.chdir(curdir)
+            results = benchmark_tag(wd, t, count, sudo)
+            sums = {}
+            for k in EXPECTED_KEYS:
+                if k != 'tag':
+                    sums[k] = 0
+            for i in results.keys():
+                result = results[i]
+                if set(result.keys()) == set(EXPECTED_KEYS):
+                    output = str(start) + ';' + str(i) + ';'
+                    for k in EXPECTED_KEYS:
+                        if k != 'tag':
+                            if isinstance(result[k], numbers.Integral):
+                                sums[k] += long(result[k])
+                            else:
+                                sums[k] += float(result[k])
+                        output += ';' + result[k]
+                    resf.write(output + '\n')
+                else:
+                    print 'Discarding results from run #' + str(i) + ', wrong format'
+                    print result
+            for k in sums.keys():
+                sums[k] = sums[k] / len(results.keys())
+            avgs[t] = sums
+            print 'Results saved'
+
+    resf.close()
+
+except:
+    print ''
+    print ''
+    print '!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!'
+    print 'Exception encountered, cleaning up..'
+    print '!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!'
+    print ''
+    cleanup(wd)
+
 cleanup(wd, False)
 
 end = datetime.datetime.utcnow()
@@ -168,5 +210,13 @@ end = datetime.datetime.utcnow()
 print '----------'
 print '  RESULT  '
 print '----------'
-print 'Check ' + resfilename + ' for results.'
+print 'Check ' + resfilename + ' for detailled results.'
+print ''
+
+for t in avgs.keys():
+    print "Tag '" + t + "'"
+    for k in avgs[t].keys():
+        print '\t' + k + ': ' + str(avgs[t][k])
+
+print ''
 print 'Total duration for whole benchmark: ' + str(end - start)
