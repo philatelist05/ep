@@ -215,8 +215,14 @@ print ''
 
 for t in avgs.keys():
     print "Tag '" + t + "'"
-    for k in avgs[t].keys():
-        print '\t' + k + ': ' + str(avgs[t][k])
+    if t == 'HEAD':
+        last_tag = max(avgs.keys())
+        for k in avgs[t].keys():
+            diff = round(avgs[t][k]*100/avgs[last_tag][k], 2)
+            print '\t' + k + ': ' + str(avgs[t][k]) + ' (' + str(diff) + '%)'
+    else:
+        for k in avgs[t].keys():
+            print '\t' + k + ': ' + str(avgs[t][k])
 
 print ''
 print 'Total duration for whole benchmark: ' + str(end - start)
