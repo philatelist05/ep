@@ -31,7 +31,6 @@
 typedef struct list_entry {
   struct list_entry *next;
   unsigned char *name;
-  size_t name_len;
   unsigned long serialno;
 } list_entry;
 
@@ -54,8 +53,8 @@ unsigned char *create(unsigned char *s, unsigned long serialno) {
   for (i=0; s[i]>' '; i++)
     ;
   new->next = wordlists[w];
-  new->name = s;
-  new->name_len = i;
+  new->name = malloc(i + 1);
+  strncpy((char*)new->name, (const char *)s, i);
   new->serialno = serialno;
   wordlists[w] = new;
   return s+i;
@@ -76,7 +75,7 @@ unsigned char *set_order(unsigned char *s) {
    otherwise 0 */
 void search_wordlist(unsigned char *s, size_t s_len, list_entry *wl, unsigned long *foundp) {
   for (; wl != NULL; wl = wl->next) {
-    if (s_len == wl->name_len && memcmp(s,wl->name,s_len)==0) {
+    if (s_len == strlen((const char *) wl->name) && memcmp(s, wl->name, s_len) == 0) {
       *foundp = wl->serialno;
       return;
     }
@@ -116,9 +115,7 @@ unsigned long process(unsigned char *s) {
     case '\t': s=set_order(s); break;
     case ' ' : 
       { 
-        /* unsigned char *s1=s; */
         s=find(s,&found);
-        /* fwrite(s1,1,s-s1,stdout); printf(" = %ld\n",found);} */
         if (found!=0) {
           hash=(hash^found)*k0;
           hash^= (hash>>41);
