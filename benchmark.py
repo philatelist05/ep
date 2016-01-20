@@ -178,7 +178,7 @@ try:
             for i in results.keys():
                 result = results[i]
                 if set(result.keys()) == set(EXPECTED_KEYS):
-                    output = str(start) + ';' + str(i) + ';'
+                    output = str(start) + ';' + str(i)
                     for k in EXPECTED_KEYS:
                         if k != 'tag' and len(result[k]) > 0:
                             if isinstance(result[k], numbers.Integral):
