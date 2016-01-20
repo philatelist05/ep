@@ -220,7 +220,7 @@ print 'Check ' + resfilename + ' for detailled results.'
 print ''
 
 last_tag = None
-for t in avgs.keys():
+for t in tags:
     keys = avgs[t].keys()
     keys.sort()
     for k in keys:
