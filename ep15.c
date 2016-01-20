@@ -38,6 +38,7 @@ typedef struct list_entry {
 /* each wordlist is identified by a character, used as indexes into
    the following array */
 list_entry *wordlists[256];
+list_entry sentinel;
 
 /* the search order is a sequence of characters, starting with the
    bottom, represented with the pointer and length here */
@@ -75,14 +76,12 @@ unsigned char *set_order(unsigned char *s) {
    wl; if successfull, store the serialno of the word in foundp,
    otherwise 0 */
 void search_wordlist(unsigned char *s, size_t s_len, list_entry *wl, unsigned long *foundp) {
-  for (; wl != NULL; wl = wl->next) {
+  for (; ; wl = wl->next) {
     if (s_len == wl->name_len && memcmp(s,wl->name,s_len)==0) {
       *foundp = wl->serialno;
       return;
     }
   }
-  *foundp = 0;
-  return;
 }
 
 /* look up the name starting at s and ending at the next char <=' ' in
@@ -94,6 +93,8 @@ unsigned char *find(unsigned char *s, unsigned long *foundp) {
   signed long j;
   for (i=0; s[i]>' '; i++)
     ;
+  sentinel.name_len = i;
+  sentinel.name = s;
   for (j=order_len-1; j>=0; j--) {
     search_wordlist(s,i,wordlists[order[j]],foundp);
     if (*foundp != 0)
@@ -149,6 +150,11 @@ int main(int argc, char* argv[]) {
   }
   s = mmap(NULL, buf.st_size+1, PROT_READ|PROT_WRITE, MAP_PRIVATE, fd, 0);
   s[buf.st_size] = '\0';
+  wordlists[0] = &sentinel;
+  unsigned short offset = 1, count = 1, ptr_size = sizeof(void *);// sizeof(void *);
+  for ( ; offset + count <= 256; offset += count, count *= 2)
+    memcpy(wordlists + offset, wordlists, ptr_size*count);
+  sentinel.serialno = 0;
   printf("%lx\n",process(s));
   return 0;
 }
