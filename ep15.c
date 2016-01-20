@@ -49,7 +49,7 @@ size_t order_len;
 /* insert name starting at s+1 (and ending at the next char <=' ')
    into the wordlist given at *s, associate serialno with it; return
    the first character after the name */
-unsigned char *create(unsigned char *s, uint_fast32_t serialno) {
+unsigned char *create(unsigned char *s, unsigned long serialno) {
   unsigned char w=*s++;
   size_t i;
   list_entry *new = malloc(sizeof(list_entry));
@@ -76,7 +76,7 @@ unsigned char *set_order(unsigned char *s) {
 /* look up the name starting at s with length s_len in the wordlist
    wl; if successfull, store the serialno of the word in foundp,
    otherwise 0 */
-void search_wordlist(unsigned char *s, size_t s_len, list_entry *wl, uint_fast32_t *foundp) {
+void search_wordlist(unsigned char *s, size_t s_len, list_entry *wl, unsigned long *foundp) {
   for (; ; wl = wl->next) {
     if (s_len == wl->name_len && memcmp(s,wl->name,s_len)==0) {
       *foundp = wl->serialno;
@@ -89,9 +89,9 @@ void search_wordlist(unsigned char *s, size_t s_len, list_entry *wl, uint_fast32
    the search order, storing the serialno of the word in foundp if
    successful, otherwise 0; return the first character after the
    name */
-unsigned char *find(unsigned char *s, uint_fast32_t *foundp) {
+unsigned char *find(unsigned char *s, unsigned long *foundp) {
   size_t i;
-  int_fast8_t j;
+  signed long j;
   for (i=0; s[i]>' '; i++)
     ;
   sentinel.name_len = i;
@@ -107,10 +107,10 @@ unsigned char *find(unsigned char *s, uint_fast32_t *foundp) {
 
 /* process the input starting at s and ending at the first '\0' */
 unsigned long process(unsigned char *s) {
-  uint_fast32_t hash = 0;
-  uint_fast32_t serialno = 1;
-  uint_fast32_t found;
-  uint_fast32_t k0=0xb64d532aaaaaaad5;
+  unsigned long hash = 0;
+  unsigned long serialno = 1;
+  unsigned long found;
+  unsigned long k0=0xb64d532aaaaaaad5;
   while (1) {
     switch (*s++) {
     case '\0': return hash;
