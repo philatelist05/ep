@@ -25,7 +25,6 @@
 #include <stdio.h>
 #include <sys/mman.h>
 #include <string.h>
-#include <stdint.h>
 
 /* a wordlist is organized as a linked list, so you can reorganize it
    as you see fit */
@@ -105,37 +104,14 @@ unsigned char *find(unsigned char *s, unsigned long *foundp) {
   return s+i;
 }
 
-/* process the input starting at s and ending at the first '\0' */
-unsigned long process(unsigned char *s) {
-  unsigned long hash = 0;
-  unsigned long serialno = 1;
-  unsigned long found;
-  unsigned long k0=0xb64d532aaaaaaad5;
-  while (1) {
-    switch (*s++) {
-    case '\0': return hash;
-    case '\n': s=create(s,serialno++); break;
-    case '\t': s=set_order(s); break;
-    case ' ' : 
-      { 
-        s=find(s,&found);
-        if (found!=0) {
-          hash=(hash^found)*k0;
-          hash^= (hash>>41);
-        }
-      }
-      break;
-    default:
-      fprintf(stderr,"invalid input");
-      exit(1);
-    }
-  }
-}
-
 int main(int argc, char* argv[]) {
   int fd;
   struct stat buf;
   unsigned char *s;
+  unsigned long hash = 0;
+  unsigned long serialno = 1;
+  unsigned long found;
+  unsigned long k0=0xb64d532aaaaaaad5;
   if (argc!=2) {
     fprintf(stderr,"Usage: %s <file>\n",argv[0]);
     exit(1);
@@ -156,7 +132,27 @@ int main(int argc, char* argv[]) {
   for ( ; offset + count <= 256; offset += count, count *= 2)
     memcpy(wordlists + offset, wordlists, ptr_size*count);
   sentinel.serialno = 0;
-  printf("%lx\n",process(s));
+
+  while (*s != '\0') {
+    switch (*s++) {
+    case '\n': s=create(s,serialno++); break;
+    case '\t': s=set_order(s); break;
+    case ' ' : 
+      { 
+        s=find(s,&found);
+        if (found!=0) {
+          hash=(hash^found)*k0;
+          hash^= (hash>>41);
+        }
+      }
+      break;
+    default:
+      fprintf(stderr,"invalid input");
+      exit(1);
+    }
+  }
+
+  printf("%lx\n",hash);
   return 0;
 }
 
