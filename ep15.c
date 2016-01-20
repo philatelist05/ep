@@ -38,7 +38,7 @@ typedef struct list_entry {
 
 /* each wordlist is identified by a character, used as indexes into
    the following array */
-list_entry *wordlists[256];
+list_entry *wordlists[256*256];
 list_entry sentinel;
 
 /* the search order is a sequence of characters, starting with the
@@ -55,11 +55,11 @@ unsigned char *create(unsigned char *s, unsigned long serialno) {
   list_entry *new = malloc(sizeof(list_entry));
   for (i=0; s[i]>' '; i++)
     ;
-  new->next = wordlists[w];
+  new->next = wordlists[w*s[0]];
   new->name = s;
   new->name_len = i;
   new->serialno = serialno;
-  wordlists[w] = new;
+  wordlists[w*s[0]] = new;
   return s+i;
 }
 
@@ -97,7 +97,7 @@ unsigned char *find(unsigned char *s, unsigned long *foundp) {
   sentinel.name_len = i;
   sentinel.name = s;
   for (j=order_len-1; j>=0; j--) {
-    search_wordlist(s,i,wordlists[order[j]],foundp);
+    search_wordlist(s,i,wordlists[order[j]*s[0]],foundp);
     if (*foundp != 0)
       return s+i;
   }
@@ -152,8 +152,8 @@ int main(int argc, char* argv[]) {
   s = mmap(NULL, buf.st_size+1, PROT_READ|PROT_WRITE, MAP_PRIVATE, fd, 0);
   s[buf.st_size] = '\0';
   wordlists[0] = &sentinel;
-  unsigned short offset = 1, count = 1, ptr_size = sizeof(void *);// sizeof(void *);
-  for ( ; offset + count <= 256; offset += count, count *= 2)
+  unsigned int offset = 1, count = 1, ptr_size = sizeof(void *);// sizeof(void *);
+  for ( ; offset + count <= 256*256; offset += count, count *= 2)
     memcpy(wordlists + offset, wordlists, ptr_size*count);
   sentinel.serialno = 0;
   printf("%lx\n",process(s));
