@@ -35,7 +35,7 @@ def setup():
     print '   SETUP   '
     print '-----------'
 
-    tagp = subprocess.Popen(['git', 'tag', '-l', '--sort', 'v:refname'], **PIPEARGS)
+    tagp = subprocess.Popen('git tag -l | sort -V', shell=True, **PIPEARGS)
     (tagstring, err) = tagp.communicate()
 
     if len(err) > 0:
