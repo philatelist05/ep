@@ -76,12 +76,9 @@ unsigned char *set_order(unsigned char *s) {
    wl; if successfull, store the serialno of the word in foundp,
    otherwise 0 */
 void search_wordlist(unsigned char *s, size_t s_len, list_entry *wl, unsigned long *foundp) {
-  for (; ; wl = wl->next) {
-    if (s_len == wl->name_len && memcmp(s,wl->name,s_len)==0) {
-      *foundp = wl->serialno;
-      return;
-    }
-  }
+  for (; s_len != wl->name_len || memcmp(s,wl->name,s_len)!=0; wl = wl->next);
+  *foundp = wl->serialno;
+  return;
 }
 
 /* look up the name starting at s and ending at the next char <=' ' in
