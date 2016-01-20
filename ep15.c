@@ -26,6 +26,9 @@
 #include <sys/mman.h>
 #include <string.h>
 
+#define SECOND_LEVEL 32
+#define THIRD_LEVEL 8
+
 /* a wordlist is organized as a linked list, so you can reorganize it
    as you see fit */
 typedef struct list_entry {
@@ -37,7 +40,7 @@ typedef struct list_entry {
 
 /* each wordlist is identified by a character, used as indexes into
    the following array */
-list_entry *wordlists[256*256];
+list_entry *wordlists[256*SECOND_LEVEL*THIRD_LEVEL];
 list_entry sentinel;
 
 /* the search order is a sequence of characters, starting with the
@@ -54,11 +57,12 @@ unsigned char *create(unsigned char *s, unsigned long serialno) {
   list_entry *new = malloc(sizeof(list_entry));
   for (i=0; s[i]>' '; i++)
     ;
-  new->next = wordlists[w*s[0]];
+  unsigned int index = w * (1 + (s[0]) % SECOND_LEVEL) * (i > 1 ? 1 + (s[1]) % THIRD_LEVEL : 1);
+  new->next = wordlists[index];
   new->name = s;
   new->name_len = i;
   new->serialno = serialno;
-  wordlists[w*s[0]] = new;
+  wordlists[index] = new;
   return s+i;
 }
 
@@ -92,8 +96,9 @@ unsigned char *find(unsigned char *s, unsigned long *foundp) {
     ;
   sentinel.name_len = i;
   sentinel.name = s;
+  unsigned int index = (1 + (s[0]) % SECOND_LEVEL) * (i > 1 ? 1 + (s[1]) % THIRD_LEVEL : 1);
   for (j=order_len-1; j>=0; j--) {
-    search_wordlist(s,i,wordlists[order[j]*s[0]],foundp);
+    search_wordlist(s,i,wordlists[order[j]*index],foundp);
     if (*foundp != 0)
       return s+i;
   }
@@ -125,8 +130,8 @@ int main(int argc, char* argv[]) {
   s = mmap(NULL, buf.st_size+1, PROT_READ|PROT_WRITE, MAP_PRIVATE, fd, 0);
   s[buf.st_size] = '\0';
   wordlists[0] = &sentinel;
-  unsigned int offset = 1, count = 1, ptr_size = sizeof(void *);// sizeof(void *);
-  for ( ; offset + count <= 256*256; offset += count, count *= 2)
+  unsigned long offset = 1, count = 1, ptr_size = sizeof(void *);// sizeof(void *);
+  for ( ; offset + count <= 256*SECOND_LEVEL*THIRD_LEVEL; offset += count, count *= 2)
     memcpy(wordlists + offset, wordlists, ptr_size*count);
   sentinel.serialno = 0;
 
