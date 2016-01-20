@@ -126,10 +126,12 @@ def benchmark_tag(wd, tag, count, sudo):
         benchd = {'tag': tag}
         errl = err.strip().split('\n')
         for l in errl:
-            m = re.match(r"^(\d+(,\d+)*){1}\s*([\w-]+).*?\(?(\d+\.\d+%)?\)?$",
+            m = re.match(r"^(\d+(,\d+)*|<not counted>){1}\s*([\w-]+).*?\(?(\d+\.\d+%)?\)?$",
                          l.strip())
             if m is not None:
                 (count, name, percent) = m.group(1, 3, 4)
+                if count == '<not counted>':
+                    count = '-1'
                 benchd[name] = count.replace(',', '')
                 if percent is None:
                     percent = ''
