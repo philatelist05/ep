@@ -17,9 +17,13 @@ def plot_lines(xs, values, labels, names):
         plt.figure(frameon=True, figsize=(14, 9))
         ax = plt.gca()
         ax.get_yaxis().get_major_formatter().set_scientific(False)
+        print '--------------------'
+        print filename
+        print '--------------------'
         print xs
         print labels
         lines = ()
+        m = max(map(max, values))
         for ys in values:
             print ys
             lines += tuple(plt.plot(range(len(ys)), ys))
@@ -30,6 +34,7 @@ def plot_lines(xs, values, labels, names):
         plt.title(title)
         plt.tight_layout()
         plt.autoscale()
+        plt.ylim(0, m)
         plt.savefig(filename + '.png')
 
 
@@ -73,7 +78,8 @@ for root, dirs, files in os.walk('results/'):
             reader = csv.DictReader(csvfile, delimiter=';')
             keys = copy.deepcopy(reader.fieldnames)
             for k in BLACKLIST:
-                keys.remove(k)
+                if k in keys:
+                    keys.remove(k)
             for row in reader:
                 tag = row['tag']
                 if tag is None or len(tag) == 0:
