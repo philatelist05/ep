@@ -14,17 +14,11 @@ EXPECTED = '1ae56547f8865909'
 EXPECTED_KEYS = [
      'tag',
      'instructions',
-     'instructions_percent',
      'cycles',
-     'cycles_percent',
      'branches',
-     'branches_percent',
      'branch-misses',
-     'branch-misses_percent',
      'L1-dcache-loads',
-     'L1-dcache-loads_percent',
      'L1-dcache-load-misses',
-     'L1-dcache-load-misses_percent',
      'seconds']
 ITERATIONS = 5
 PIPEARGS = {'stdout': subprocess.PIPE, 'stderr': subprocess.PIPE}
@@ -133,9 +127,6 @@ def benchmark_tag(wd, tag, count, sudo):
                 if count == '<not counted>':
                     count = '-1'
                 benchd[name] = count.replace(',', '')
-                if percent is None:
-                    percent = ''
-                benchd[name + '_percent'] = percent.strip('%')
 
             m = re.match(r"^(\d+(\.\d+))\s+seconds\s+time\s+elapsed$",
                          l.strip())
