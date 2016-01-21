@@ -27,7 +27,7 @@
 #include <string.h>
 
 #define SECOND_LEVEL 32
-#define THIRD_LEVEL 8
+#define THIRD_LEVEL 16
 
 /* a wordlist is organized as a linked list, so you can reorganize it
    as you see fit */
