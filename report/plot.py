@@ -105,12 +105,11 @@ plot(tags, labels, 'ins_cycles', 'Instructions and cycles')
 labels = ['branches-mean', 'branch-misses-mean']
 plot(tags, labels, 'branches', 'Branches and misses')
 
-labels = ['L1-dcache-loads-mean', 'L1-dcache-loads-misses-mean']
+labels = ['L1-dcache-loads-mean', 'L1-dcache-load-misses-mean']
 plot(tags, labels, 'cache', 'L1 cache loads and misses')
 
 labels = ['seconds-mean']
 plot(tags, labels, 'seconds', 'Runtime in seconds', 'seconds')
 
-labels = ['instructions-mean', 'cycles-mean', 'branches-mean', 'branch-misses-mean', 'L1-dcache-loads-mean', 'L1-dcache-loads-misses-mean']
-labels = ['instructions-mean', 'cycles-mean', 'branches-mean', 'branch-misses-mean', 'L1-dcache-loads-mean']
+labels = ['instructions-mean', 'cycles-mean', 'branches-mean', 'branch-misses-mean', 'L1-dcache-loads-mean', 'L1-dcache-load-misses-mean']
 plot(tags, labels, 'summary', 'Summary')
